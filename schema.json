@@ -334,35 +334,6 @@
       },
       {
         "type": "heading",
-        "content": "Loading Indicators"
-      },
-      {
-        "type": "color",
-        "label": "Page Loading Bar",
-        "id": "pace-progress-backgroundColor"
-      },
-      {
-        "type": "color",
-        "label": "Spinner Light Half",
-        "id": "spinner-borderColor-light"
-      },
-      {
-        "type": "color",
-        "label": "Spinner Dark Half",
-        "id": "spinner-borderColor-dark"
-      },
-      {
-        "type": "color",
-        "label": "Modal Loading Background",
-        "id": "loadingOverlay-backgroundColor"
-      },
-      {
-        "type": "color",
-        "label": "Product Thumbnail Loading Background",
-        "id": "container-fill-base"
-      },
-      {
-        "type": "heading",
         "content": "Image Loading"
       },
       {
@@ -404,78 +375,6 @@
         "label": "Hide Page Heading",
         "force_reload": true,
         "id": "hide_page_heading"
-      },
-      {
-        "type": "checkbox",
-        "label": "Hide Category Page Heading",
-        "force_reload": true,
-        "id": "hide_category_page_heading"
-      },
-      {
-        "type": "checkbox",
-        "label": "Hide Blog Page Heading",
-        "force_reload": true,
-        "id": "hide_blog_page_heading"
-      },
-      {
-        "type": "checkbox",
-        "label": "Hide Contact Us Page Heading",
-        "force_reload": true,
-        "id": "hide_contact_us_page_heading"
-      },
-      {
-        "type": "heading",
-        "content": "Products"
-      },
-      {
-        "type": "select",
-        "id": "product_list_display_mode",
-        "force_reload": true,
-        "label": "Display Style",
-        "options": [
-          {
-            "value": "grid",
-            "label": "Show Products In A Grid"
-          },
-          {
-            "value": "list",
-            "label": "Show Products In A List"
-          }
-        ]
-      },
-      {
-        "type": "heading",
-        "content": "Blog"
-      },
-      {
-        "type": "imageDimension",
-        "id": "blog_size",
-        "force_reload": true,
-        "label": "Size Of Images",
-        "options": [
-          {
-            "value": "190x250",
-            "label": "Optimized For Theme"
-          },
-          {
-            "value": "custom",
-            "label": "Specify Dimensions"
-          }
-        ]
-      },
-      {
-        "type": "heading",
-        "content": "Pricing"
-      },
-      {
-        "type": "checkbox",
-        "label": "Show Price Ranges For Products",
-        "force_reload": true,
-        "id": "price_ranges"
-      },
-      {
-        "type": "heading",
-        "content": "Purchase Options"
       },
       {
         "type": "heading",
