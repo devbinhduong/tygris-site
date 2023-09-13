@@ -1,0 +1,10 @@
+node_modules/
+.stencil
+config.stencil.json
+secrets.stencil.json
+assets/js/bundle.js
+assets/dist
+vendor/bundle
+.bundle
+*.js.map
+*.zip
