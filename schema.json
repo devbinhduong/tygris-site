@@ -1,75 +1,75 @@
 [
   {
-    "name": "i18n.Global",
+    "name": "Global",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.BackgroundAndLines"
+        "content": "Background And Lines"
       },
       {
         "type": "color",
-        "label": "i18n.BannerBackground",
+        "label": "Banner Background",
         "id": "color-primary"
       },
       {
         "type": "color",
-        "label": "i18n.PageBackground",
+        "label": "Page Background",
         "id": "body-bg"
       },
       {
         "type": "color",
-        "label": "i18n.CommonDarkBackground",
+        "label": "Common Dark Background",
         "id": "container-fill-dark"
       },
       {
         "type": "color",
-        "label": "i18n.ModalOverlayBackground",
+        "label": "Modal Overlay Background",
         "id": "overlay-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.AlertPopupBoxBackground",
+        "label": "Alert Popup Box Background",
         "id": "alert-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.AlertPopupTextColor",
+        "label": "Alert Popup Text Color",
         "id": "alert-color"
       },
       {
         "type": "color",
-        "label": "i18n.HorizontalLine",
+        "label": "Horizontal Line",
         "id": "container-border-global-color-base"
       },
       {
         "type": "heading",
-        "content": "i18n.BodyTextAndLinks"
+        "content": "Body Text And Links"
       },
       {
         "type": "font",
-        "label": "i18n.BodyTextFontFamily",
+        "label": "Body Text Font Family",
         "id": "body-font",
         "options": [
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.BodyTextFontSize",
+        "label": "Body Text Font Size",
         "id": "fontSize-root",
         "options": [
           {
@@ -96,78 +96,78 @@
       },
       {
         "type": "color",
-        "label": "i18n.BodyTextColor",
+        "label": "Body Text Color",
         "id": "color-textBase"
       },
       {
         "type": "color",
-        "label": "i18n.BodyTextHoverColor",
+        "label": "Body Text Hover Color",
         "id": "color-textBase--hover"
       },
       {
         "type": "color",
-        "label": "i18n.SecondaryTextColor",
+        "label": "Secondary Text Color",
         "id": "color-textSecondary"
       },
       {
         "type": "color",
-        "label": "i18n.SecondaryTextHoverColor",
+        "label": "Secondary Text Hover Color",
         "id": "color-textSecondary--hover"
       },
       {
         "type": "color",
-        "label": "i18n.LinkColor",
+        "label": "Link Color",
         "id": "color-textLink"
       },
       {
         "type": "color",
-        "label": "i18n.LinkHoverColor",
+        "label": "Link Hover Color",
         "id": "color-textLink--hover"
       },
       {
         "type": "color",
-        "label": "i18n.LinkActiveColor",
+        "label": "Link Active Color",
         "id": "color-textLink--active"
       },
       {
         "type": "heading",
-        "content": "i18n.Headings"
+        "content": "Headings"
       },
       {
         "type": "font",
-        "label": "i18n.HeadingFontFamily",
+        "label": "Heading Font Family",
         "id": "headings-font",
         "options": [
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.Heading1",
+        "label": "Heading 1",
         "id": "fontSize-h1",
         "options": [
           {
@@ -194,7 +194,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.Heading2",
+        "label": "Heading 2",
         "id": "fontSize-h2",
         "options": [
           {
@@ -221,7 +221,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.Heading3",
+        "label": "Heading 3",
         "id": "fontSize-h3",
         "options": [
           {
@@ -248,7 +248,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.Heading4",
+        "label": "Heading 4",
         "id": "fontSize-h4",
         "options": [
           {
@@ -275,7 +275,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.Heading5",
+        "label": "Heading 5",
         "id": "fontSize-h5",
         "options": [
           {
@@ -302,7 +302,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.Heading6",
+        "label": "Heading 6",
         "id": "fontSize-h6",
         "options": [
           {
@@ -329,250 +329,250 @@
       },
       {
         "type": "color",
-        "label": "i18n.HeadingTextColor",
+        "label": "Heading Text Color",
         "id": "color-textHeading"
       },
       {
         "type": "heading",
-        "content": "i18n.LoadingIndicators"
+        "content": "Loading Indicators"
       },
       {
         "type": "color",
-        "label": "i18n.PageLoadingBar",
+        "label": "Page Loading Bar",
         "id": "pace-progress-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.SpinnerLightHalf",
+        "label": "Spinner Light Half",
         "id": "spinner-borderColor-light"
       },
       {
         "type": "color",
-        "label": "i18n.SpinnerDarkHalf",
+        "label": "Spinner Dark Half",
         "id": "spinner-borderColor-dark"
       },
       {
         "type": "color",
-        "label": "i18n.ModalLoadingBackground",
+        "label": "Modal Loading Background",
         "id": "loadingOverlay-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ProductThumbnailLoadingBackground",
+        "label": "Product Thumbnail Loading Background",
         "id": "container-fill-base"
       },
       {
         "type": "heading",
-        "content": "i18n.ImageLoading"
+        "content": "Image Loading"
       },
       {
         "type": "paragraph",
-        "content": "i18n.CornerstoneDoesntLoadMostImages"
+        "content": "Cornerstone Doesnt Load Most Images"
       },
       {
         "type": "select",
         "id": "lazyload_mode",
         "force_reload": true,
-        "label": "i18n.LazyloadingMode",
+        "label": "LazyloadingMode",
         "options": [
           {
             "value": "lazyload",
-            "label": "i18n.Lazyload"
+            "label": "Lazyload"
           },
           {
             "value": "lazyload+lqip",
-            "label": "i18n.LazyloadWithLQIP"
+            "label": "Lazyload With LQIP"
           },
           {
             "value": "disabled",
-            "label": "i18n.Disabled"
+            "label": "Disabled"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.Pages"
+        "content": "Pages"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HideBreadcrumbs",
+        "label": "Hide Breadcrumbs",
         "force_reload": true,
         "id": "hide_breadcrumbs"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HidePageHeading",
+        "label": "Hide Page Heading",
         "force_reload": true,
         "id": "hide_page_heading"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HideCategoryPageHeading",
+        "label": "Hide Category Page Heading",
         "force_reload": true,
         "id": "hide_category_page_heading"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HideBlogPageHeading",
+        "label": "Hide Blog Page Heading",
         "force_reload": true,
         "id": "hide_blog_page_heading"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HideContactUsPageHeading",
+        "label": "Hide Contact Us Page Heading",
         "force_reload": true,
         "id": "hide_contact_us_page_heading"
       },
       {
         "type": "heading",
-        "content": "i18n.Products"
+        "content": "Products"
       },
       {
         "type": "select",
         "id": "product_list_display_mode",
         "force_reload": true,
-        "label": "i18n.DisplayStyle",
+        "label": "Display Style",
         "options": [
           {
             "value": "grid",
-            "label": "i18n.ShowProductsInAGrid"
+            "label": "Show Products In A Grid"
           },
           {
             "value": "list",
-            "label": "i18n.ShowProductsInAList"
+            "label": "Show Products In A List"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.Blog"
+        "content": "Blog"
       },
       {
         "type": "imageDimension",
         "id": "blog_size",
         "force_reload": true,
-        "label": "i18n.SizeOfImages",
+        "label": "Size Of Images",
         "options": [
           {
             "value": "190x250",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.Pricing"
+        "content": "Pricing"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowPriceRangesForProducts",
+        "label": "Show Price Ranges For Products",
         "force_reload": true,
         "id": "price_ranges"
       },
       {
         "type": "heading",
-        "content": "i18n.PurchaseOptions"
+        "content": "Purchase Options"
       },
       {
         "type": "heading",
-        "content": "i18n.FormInputFields"
+        "content": "Form Input Fields"
       },
       {
         "type": "color",
-        "label": "i18n.LabelTextColor",
+        "label": "Label Text Color",
         "id": "form-label-font-color"
       },
       {
         "type": "color",
-        "label": "i18n.FieldTextColor",
+        "label": "Field Text Color",
         "id": "input-font-color"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBackground",
+        "label": "Field Background",
         "id": "input-bg-color"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBackgroundDisabled",
+        "label": "Field Background Disabled",
         "id": "input-disabled-bg"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBorder",
+        "label": "Field Border",
         "id": "input-border-color"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBorderActive",
+        "label": "Field Border Active",
         "id": "input-border-color-active"
       }
     ]
   },
   {
-    "name": "i18n.HeaderAndFooter",
+    "name": "Header And Footer",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.Header"
+        "content": "Header"
       },
       {
         "type": "color",
-        "label": "i18n.HeaderBackground",
+        "label": "Header Background",
         "id": "header-backgroundColor"
       },
       {
         "type": "heading",
-        "content": "i18n.Logo"
+        "content": "Logo"
       },
       {
         "type": "select",
-        "label": "i18n.LogoPosition",
+        "label": "Logo Position",
         "id": "logo-position",
         "force_reload": true,
         "options": [
           {
             "value": "right",
-            "label": "i18n.Right"
+            "label": "Right"
           },
           {
             "value": "center",
-            "label": "i18n.Center"
+            "label": "Center"
           },
           {
             "value": "left",
-            "label": "i18n.Left"
+            "label": "Left"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.LogoImageSize",
+        "label": "Logo Image Size",
         "id": "logo_size",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "force_reload": true,
         "options": [
           {
             "value": "250x100",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "original",
-            "label": "i18n.OriginalAsUploaded"
+            "label": "Original As Uploaded"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.LogoFontSize",
+        "label": "Logo Font Size",
         "id": "logo_fontSize",
         "options": [
           {
@@ -703,106 +703,106 @@
       },
       {
         "type": "color",
-        "label": "i18n.LogoTextColor",
+        "label": "Logo Text Color",
         "id": "storeName-color"
       },
       {
         "type": "heading",
-        "content": "i18n.UtilityNavigation"
+        "content": "Utility Navigation"
       },
       {
         "type": "color",
-        "label": "i18n.TextColor",
+        "label": "Text Color",
         "id": "navUser-color"
       },
       {
         "type": "color",
-        "label": "i18n.TextHoverColor",
+        "label": "Text Hover Color",
         "id": "navUser-color-hover"
       },
       {
         "type": "color",
-        "label": "i18n.CartDropdownBackground",
+        "label": "Cart Dropdown Background",
         "id": "navUser-dropdown-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.CartDropdownBorder",
+        "label": "Cart Dropdown Border",
         "id": "navUser-dropdown-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.CartCounterBackground",
+        "label": "Cart Counter Background",
         "id": "navUser-indicator-backgroundColor"
       },
       {
         "type": "heading",
-        "content": "i18n.MainNavigation"
+        "content": "Main Navigation"
       },
       {
         "type": "checkbox",
-        "label": "i18n.HideLinksToWebPages",
+        "label": "Hide Links To Web Pages",
         "force_reload": true,
         "id": "hide_content_navigation"
       },
       {
         "type": "color",
-        "label": "i18n.TextColor",
+        "label": "Text Color",
         "id": "navPages-color"
       },
       {
         "type": "color",
-        "label": "i18n.TextHoverColor",
+        "label": "Text Hover Color",
         "id": "navPages-color-hover"
       },
       {
         "type": "color",
-        "label": "i18n.DropdownMenuBackground",
+        "label": "Dropdown Menu Background",
         "id": "navPages-subMenu-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.DropdownMenuBorder",
+        "label": "Dropdown MenuBorder",
         "id": "navPages-subMenu-separatorColor"
       },
       {
         "type": "select",
-        "label": "i18n.DropdownMenuDisplayMode",
+        "label": "Dropdown Menu Display Mode",
         "id": "navigation_design",
         "force_reload": true,
         "options": [
           {
             "value": "simple",
-            "label": "i18n.SimpleMenuDisplayDepthOf"
+            "label": "Simple Menu Display Depth Of"
           },
           {
             "value": "alternate",
-            "label": "i18n.AlternateMaxMenuDisplayDepth"
+            "label": "Alternate Max Menu Display Depth"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.QuickSearchBackground",
+        "label": "Quick Search Background",
         "id": "dropdown--quickSearch-backgroundColor"
       },
       {
         "type": "heading",
-        "content": "i18n.SocialMediaIcons"
+        "content": "Social Media Icons"
       },
       {
         "type": "paragraph",
-        "content": "i18n.SocialAccountsMustBeSet"
+        "content": "Social Accounts Must BeSet"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowSocialMediaIcons",
+        "label": "Show Social Media Icons",
         "force_reload": true,
         "id": "social_icon_placement_top"
       },
       {
         "type": "select",
-        "label": "i18n.FooterPlacement",
+        "label": "Footer Placement",
         "id": "social_icon_placement_bottom",
         "force_reload": true,
         "reference": "social_icon_placement_top",
@@ -810,207 +810,207 @@
         "options": [
           {
             "value": "bottom_none",
-            "label": "i18n.None"
+            "label": "None"
           },
           {
             "value": "bottom_right",
-            "label": "i18n.Right"
+            "label": "Right"
           },
           {
             "value": "bottom_left",
-            "label": "i18n.Left"
+            "label": "Left"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.Footer"
+        "content": "Footer"
       },
       {
         "type": "color",
-        "label": "i18n.FooterBackground",
+        "label": "Footer Background",
         "id": "footer-backgroundColor"
       },
       {
         "type": "heading",
-        "content": "i18n.DisplaySettings"
+        "content": "Display Settings"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowPoweredByBigCommerce",
+        "label": "Show Powered By BigCommerce",
         "force_reload": true,
         "id": "show_powered_by"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowBrandsInFooter",
+        "label": "Show Brands In Footer",
         "force_reload": true,
         "id": "shop_by_brand_show_footer"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowCurrentYearAnd",
+        "label": "Show Current Year And",
         "force_reload": true,
         "id": "show_copyright_footer"
       },
       {
         "type": "heading",
-        "content": "i18n.PaymentIcons"
+        "content": "Payment Icons"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowAmericanExpress",
+        "label": "Show American Express",
         "force_reload": true,
         "id": "show_accept_amex"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowDiscover",
+        "label": "Show Discover",
         "force_reload": true,
         "id": "show_accept_discover"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowMastercard",
+        "label": "Show Mastercard",
         "force_reload": true,
         "id": "show_accept_mastercard"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowPayPal",
+        "label": "Show PayPal",
         "force_reload": true,
         "id": "show_accept_paypal"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowVisa",
+        "label": "Show Visa",
         "force_reload": true,
         "id": "show_accept_visa"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowAmazonPay",
+        "label": "Show Amazon Pay",
         "force_reload": true,
         "id": "show_accept_amazonpay"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowGooglePay",
+        "label": "Show Google Pay",
         "force_reload": true,
         "id": "show_accept_googlepay"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowKlarna",
+        "label": "Show Klarna",
         "force_reload": true,
         "id": "show_accept_klarna"
       }
     ]
   },
   {
-    "name": "i18n.HomePage",
+    "name": "Home Page",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.Carousel"
+        "content": "Carousel"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowCarousel",
+        "label": "Show Carousel",
         "force_reload": true,
         "id": "homepage_show_carousel"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowCarouselArrows",
+        "label": "Show Carousel Arrows",
         "force_reload": true,
         "id": "homepage_show_carousel_arrows"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowCarouselPlayPauseButton",
+        "label": "Show Carousel Play Pause Button",
         "force_reload": true,
         "id": "homepage_show_carousel_play_pause_button"
       },
       {
         "type": "checkbox",
-        "label": "i18n.AllowImageToStretchOn",
+        "label": "Allow Image To Stretch On",
         "force_reload": true,
         "id": "homepage_stretch_carousel_images"
       },
       {
         "type": "color",
-        "label": "i18n.ContentBackground",
+        "label": "Content Background",
         "id": "carousel-bgColor"
       },
       {
         "type": "color",
-        "label": "i18n.HeaderText",
+        "label": "Header Text",
         "id": "carousel-title-color"
       },
       {
         "type": "color",
-        "label": "i18n.DescriptionText",
+        "label": "Description Text",
         "id": "carousel-description-color"
       },
       {
         "type": "color",
-        "label": "i18n.Indicator",
+        "label": "Indicator",
         "id": "carousel-dot-color"
       },
       {
         "type": "color",
-        "label": "i18n.IndicatorActive",
+        "label": "Indicator Active",
         "id": "carousel-dot-color-active"
       },
       {
         "type": "color",
-        "label": "i18n.IndicatorBackground",
+        "label": "Indicator Background",
         "id": "carousel-dot-bgColor"
       },
       {
         "type": "color",
-        "label": "i18n.Arrow",
+        "label": "Arrow",
         "id": "carousel-arrow-color"
       },
       {
         "type": "color",
-        "label": "i18n.ArrowBackground",
+        "label": "Arrow Background",
         "id": "carousel-arrow-bgColor"
       },
       {
         "type": "color",
-        "label": "i18n.ArrowBorder",
+        "label": "Arrow Border",
         "id": "carousel-arrow-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.PlayPauseButtonText",
+        "label": "Play Pause Button Text",
         "id": "carousel-play-pause-button-textColor"
       },
       {
         "type": "color",
-        "label": "i18n.PlayPauseButtonBackground",
+        "label": "Play Pause Button Background",
         "id": "carousel-play-pause-button-bgColor"
       },
       {
         "type": "color",
-        "label": "i18n.PlayPauseButtonBorder",
+        "label": "Play Pause Button Border",
         "id": "carousel-play-pause-button-borderColor"
       },
       {
         "type": "heading",
-        "content": "i18n.Products"
+        "content": "Products"
       },
       {
         "type": "select",
-        "label": "i18n.NumberOfFeaturedProducts",
+        "label": "Number Of Featured Products",
         "id": "homepage_featured_products_count",
         "force_reload": true,
         "options": [
           {
             "value": 0,
-            "label": "i18n.Disable"
+            "label": "Disable"
           },
           {
             "value": 1,
@@ -1064,13 +1064,13 @@
       },
       {
         "type": "select",
-        "label": "i18n.NumberOfMostPopularProducts",
+        "label": "Number Of Most Popular Products",
         "id": "homepage_top_products_count",
         "force_reload": true,
         "options": [
           {
             "value": 0,
-            "label": "i18n.Disable"
+            "label": "Disable"
           },
           {
             "value": 1,
@@ -1124,13 +1124,13 @@
       },
       {
         "type": "select",
-        "label": "i18n.NumberOfNewProducts",
+        "label": "Number Of New Products",
         "id": "homepage_new_products_count",
         "force_reload": true,
         "options": [
           {
             "value": 0,
-            "label": "i18n.Disable"
+            "label": "Disable"
           },
           {
             "value": 1,
@@ -1185,39 +1185,39 @@
     ]
   },
   {
-    "name": "i18n.Products",
+    "name": "Products",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.ProductSaleBadges"
+        "content": "Product Sale Badges"
       },
       {
         "type": "select",
-        "label": "i18n.ShowProductSaleBadges",
+        "label": "Show Product Sale Badges",
         "id": "product_sale_badges",
         "force_reload": true,
         "options": [
           {
             "value": "none",
-            "label": "i18n.None"
+            "label": "None"
           },
           {
             "value": "topleft",
-            "label": "i18n.TopLeft"
+            "label": "TopLeft"
           },
           {
             "value": "sash",
-            "label": "i18n.Diagonal"
+            "label": "Diagonal"
           },
           {
             "value": "burst",
-            "label": "i18n.Burst"
+            "label": "Burst"
           }
         ]
       },
       {
         "type": "text",
-        "label": "i18n.ProductSaleBadgeLabel",
+        "label": "Product Sale Badge Label",
         "force_reload": true,
         "id": "pdp_sale_badge_label",
         "reference": "product_sale_badges",
@@ -1225,15 +1225,15 @@
       },
       {
         "type": "text",
-        "label": "i18n.ProductPriceLabelSale",
+        "label": "Product Price Label Sale",
         "force_reload": true,
-        "id": "pdp-sale-price-label",
+      "id": "pdp-sale-price-label",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "text",
-        "label": "i18n.ProductPriceLabelBeforeSale",
+        "label": "Product Price Label Before Sale",
         "force_reload": true,
         "id": "pdp-non-sale-price-label",
         "reference": "product_sale_badges",
@@ -1241,7 +1241,7 @@
       },
       {
         "type": "text",
-        "label": "i18n.ProductPriceLabelRetail",
+        "label": "Product Price Label Retail",
         "force_reload": true,
         "id": "pdp-retail-price-label",
         "reference": "product_sale_badges",
@@ -1249,7 +1249,7 @@
       },
       {
         "type": "text",
-        "label": "i18n.ProductPriceLabel",
+        "label": "Product Price Label",
         "force_reload": true,
         "id": "pdp-price-label",
         "reference": "product_sale_badges",
@@ -1257,64 +1257,64 @@
       },
       {
         "type": "paragraph",
-        "content": "i18n.TheProductPriceLabel",
+        "content": "The Product Price Label",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "color",
-        "label": "i18n.BadgeTextColor",
+        "label": "Badge Text Color",
         "id": "color_text_product_sale_badges",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "color",
-        "label": "i18n.BadgeColor",
+        "label": "Badge Color",
         "id": "color_badge_product_sale_badges",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "color",
-        "label": "i18n.BadgeHoverColor",
+        "label": "Badge Hover Color",
         "id": "color_hover_product_sale_badges",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "paragraph",
-        "content": "i18n.ForTextureSwatchesMaxDimensions",
+        "content": "For Texture Swatches Max Dimensions",
         "reference": "product_sale_badges",
         "reference_default": "none"
       },
       {
         "type": "select",
-        "label": "i18n.ShowProductSoldOutBadges",
+        "label": "Show Product Sold Out Badges",
         "id": "product_sold_out_badges",
         "force_reload": true,
         "options": [
           {
             "value": "none",
-            "label": "i18n.None"
+            "label": "None"
           },
           {
             "value": "topleft",
-            "label": "i18n.TopLeft"
+            "label": "TopLeft"
           },
           {
             "value": "sash",
-            "label": "i18n.Diagonal"
+            "label": "Diagonal"
           },
           {
             "value": "burst",
-            "label": "i18n.Burst"
+            "label": "Burst"
           }
         ]
       },
       {
         "type": "text",
-        "label": "i18n.ProductSoldOutBadgeLabel",
+        "label": "Product Sold Out Badge Label",
         "force_reload": true,
         "id": "pdp_sold_out_label",
         "reference": "product_sold_out_badges",
@@ -1322,50 +1322,50 @@
       },
       {
         "type": "color",
-        "label": "i18n.BadgeTextColor",
+        "label": "Badge Text Color",
         "id": "color_text_product_sold_out_badges",
         "reference": "product_sold_out_badges",
         "reference_default": "none"
       },
       {
         "type": "color",
-        "label": "i18n.BadgeColor",
+        "label": "Badge Color",
         "id": "color_badge_product_sold_out_badges",
         "reference": "product_sold_out_badges",
         "reference_default": "none"
       },
       {
         "type": "color",
-        "label": "i18n.BadgeHoverColor",
+        "label": "Badge Hover Color",
         "id": "color_hover_product_sold_out_badges",
         "reference": "product_sold_out_badges",
         "reference_default": "none"
       },
       {
         "type": "heading",
-        "content": "i18n.DisplaySettings"
+        "content": "Display Settings"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowQuickviewButtonOnProduct",
+        "label": "Show Quickview Button On Product",
         "force_reload": true,
         "id": "show_product_quick_view"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowProductDescriptionTabs",
+        "label": "Show Product Description Tabs",
         "force_reload": true,
         "id": "show_product_details_tabs"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ProductCustomFieldsInTabs",
+        "label": "Product Custom Fields In Tabs",
         "force_reload": true,
         "id": "show_custom_fields_tabs"
       },
       {
         "type": "text",
-        "label": "i18n.ProductCustomFieldsTabLabel",
+        "label": "Product Custom Fields Tab Label",
         "force_reload": true,
         "reference": "show_custom_fields_tabs",
         "reference_default": false,
@@ -1373,37 +1373,37 @@
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowProductWeight",
+        "label": "Show Product Weight",
         "force_reload": true,
         "id": "show_product_weight"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowProductDimensions",
+        "label": "Show Product Dimensions",
         "force_reload": true,
         "id": "show_product_dimensions"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowProductSwatchNames",
+        "label": "Show Product Swatch Names",
         "force_reload": true,
         "id": "show_product_swatch_names"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowShopByPriceIn",
+        "label": "Show Shop By Price In",
         "force_reload": true,
         "id": "shop_by_price_visibility"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowProductReviews",
+        "label": "Show Product Reviews",
         "force_reload": true,
         "id": "show_product_reviews"
       },
       {
         "type": "select",
-        "label": "i18n.NumberOfProductReviews",
+        "label": "Number Of Product Reviews",
         "id": "productpage_reviews_count",
         "reference": "show_product_reviews",
         "reference_default": false,
@@ -1461,22 +1461,22 @@
       },
       {
         "type": "color",
-        "label": "i18n.WishlistDropdownBackground",
+        "label": "Wishlist Dropdown Background",
         "id": "dropdown--wishList-backgroundColor"
       },
       {
         "type": "checkbox",
-        "label": "i18n.ShowQuickPaymentButtons",
+        "label": "Show Quick Payment Buttons",
         "force_reload": true,
         "id": "show_quick_payment_buttons"
       },
       {
         "type": "heading",
-        "content": "i18n.NumberOfProductsDisplayed"
+        "content": "Number Of Products Displayed"
       },
       {
         "type": "select",
-        "label": "i18n.CategoryPage",
+        "label": "Category Page",
         "id": "categorypage_products_per_page",
         "force_reload": true,
         "options": [
@@ -1516,7 +1516,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.BrandPage",
+        "label": "Brand Page",
         "id": "brandpage_products_per_page",
         "force_reload": true,
         "options": [
@@ -1556,7 +1556,7 @@
       },
       {
         "type": "select",
-        "label": "i18n.SearchResultPage",
+        "label": "Search Result Page",
         "id": "searchpage_products_per_page",
         "force_reload": true,
         "options": [
@@ -1596,13 +1596,13 @@
       },
       {
         "type": "select",
-        "label": "i18n.ProductPageRelatedProducts",
+        "label": "Product Page Related Products",
         "id": "productpage_related_products_count",
         "force_reload": true,
         "options": [
           {
             "value": 0,
-            "label": "i18n.Disable"
+            "label": "Disable"
           },
           {
             "value": 1,
@@ -1656,13 +1656,13 @@
       },
       {
         "type": "select",
-        "label": "i18n.ProductPageCustomersAlsoViewed",
+        "label": "Product Page Customers Also Viewed",
         "id": "productpage_similar_by_views_count",
         "force_reload": true,
         "options": [
           {
             "value": 0,
-            "label": "i18n.Disable"
+            "label": "Disable"
           },
           {
             "value": 1,
@@ -1716,339 +1716,339 @@
       },
       {
         "type": "heading",
-        "content": "i18n.ProductCards"
+        "content": "Product Cards"
       },
       {
         "type": "color",
-        "label": "i18n.ProductHeaderTextColor",
+        "label": "Product Header Text Color",
         "id": "card-title-color"
       },
       {
         "type": "color",
-        "label": "i18n.ProductHeaderTextHoverColor",
+        "label": "Product Header Text Hover Color",
         "id": "card-title-color-hover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "card-figcaption-button-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "card-figcaption-button-background"
       },
       {
         "type": "heading",
-        "content": "i18n.ProductCardsQuickSearch"
+        "content": "Product Cards Quick Search"
       },
       {
         "type": "color",
-        "label": "i18n.BackgroundColor",
+        "label": "Background Color",
         "id": "card--alternate-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.BorderColor",
+        "label": "Border Color",
         "id": "card--alternate-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.TextHoverColor",
+        "label": "Text Hover Color",
         "id": "card--alternate-color--hover"
       },
       {
         "type": "heading",
-        "content": "i18n.ImageSizes"
+        "content": "Image Sizes"
       },
       {
         "type": "paragraph",
-        "content": "i18n.PleaseSpecifyAMaximumImage"
+        "content": "Please Specify A Maximum Image"
       },
       {
         "type": "imageDimension",
-        "label": "i18n.MainProductImages",
+        "label": "Main Product Images",
         "id": "product_size",
         "force_reload": true,
         "options": [
           {
             "value": "500x659",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.ThumbnailImageInProductPage",
+        "label": "Thumbnail Image In Product Page",
         "id": "productview_thumb_size",
         "force_reload": true,
         "options": [
           {
             "value": "50x50",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.ThumbnailImageInCartAnd",
+        "label": "Thumbnail Image In Cart And",
         "id": "productthumb_size",
         "force_reload": true,
         "options": [
           {
             "value": "100x100",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.ZoomedImage",
+        "label": "Zoomed Image",
         "id": "zoom_size",
         "force_reload": true,
         "options": [
           {
             "value": "1280x1280",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.ImageInGalleryView",
+        "label": "Image In Gallery View",
         "id": "productgallery_size",
         "force_reload": true,
         "options": [
           {
             "value": "500x659",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "imageDimension",
-        "label": "i18n.BrandImageInGalleryView",
+        "label": "Brand Image In Gallery View",
         "id": "brand_size",
         "force_reload": true,
         "options": [
           {
             "value": "190x250",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
-        "label": "i18n.ProductSwatchImages",
+        "label": "Product Swatch Images",
         "type": "imageDimension",
         "id": "swatch_option_size",
         "force_reload": true,
         "options": [
           {
             "value": "22x22",
-            "label": "i18n.Standard"
+            "label": "Standard"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       }
     ]
   },
   {
-    "name": "i18n.ButtonsAndIcons",
+    "name": "Buttons And Icons",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.PrimaryActionButton"
+        "content": "Primary Action Button"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "button--primary-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextHoverColor",
+        "label": "Button Text Hover Color",
         "id": "button--primary-colorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextActiveColor",
+        "label": "Button Text Active Color",
         "id": "button--primary-colorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "button--primary-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundHover",
+        "label": "Button Background Hover",
         "id": "button--primary-backgroundColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundActive",
+        "label": "Button Background Active",
         "id": "button--primary-backgroundColorActive"
       },
       {
         "type": "heading",
-        "content": "i18n.SecondaryActionButton"
+        "content": "Secondary Action Button"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "button--default-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextHoverColor",
+        "label": "Button Text Hover Color",
         "id": "button--default-colorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextActiveColor",
+        "label": "Button Text Active Color",
         "id": "button--default-colorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorder",
+        "label": "Button Border",
         "id": "button--default-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderHover",
+        "label": "Button Border Hover",
         "id": "button--default-borderColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderActive",
+        "label": "Button Border Active",
         "id": "button--default-borderColorActive"
       },
       {
         "type": "heading",
-        "content": "i18n.TertiaryActionButton"
+        "content": "TertiaryActionButton"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "select-bg-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonArrowIcon",
+        "label": "Button Arrow Icon",
         "id": "select-arrow-color"
       },
       {
         "type": "heading",
-        "content": "i18n.DisabledButton"
+        "content": "Disabled Button"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "button--disabled-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "button--disabled-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorder",
+        "label": "Button Border",
         "id": "button--disabled-borderColor"
       },
       {
         "type": "heading",
-        "content": "i18n.Icons"
+        "content": "Icons"
       },
       {
         "type": "color",
-        "label": "i18n.SocialMediaIcon",
+        "label": "Social Media Icon",
         "id": "icon-color"
       },
       {
         "type": "color",
-        "label": "i18n.SocialMediaIconHover",
+        "label": "Social Media Icon Hover",
         "id": "icon-color-hover"
       },
       {
         "type": "color",
-        "label": "i18n.StarReviewIconFull",
+        "label": "Star Review Icon Full",
         "id": "icon-ratingFull"
       },
       {
         "type": "color",
-        "label": "i18n.StarReviewIconEmpty",
+        "label": "Star Review Icon Empty",
         "id": "icon-ratingEmpty"
       },
       {
         "type": "color",
-        "label": "i18n.IncreasedecreaseButtonIcon",
+        "label": "Increasedecrease ButtonIcon",
         "id": "button--icon-svg-color"
       },
       {
         "type": "heading",
-        "content": "i18n.CheckboxesAndRadioButtons"
+        "content": "Checkboxes And Radio Buttons"
       },
       {
         "type": "color",
-        "label": "i18n.CheckboxAndRadioIcon",
+        "label": "Checkbox And Radio Icon",
         "id": "checkRadio-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "checkRadio-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorder",
+        "label": "Button Border",
         "id": "checkRadio-borderColor"
       }
     ]
   },
   {
-    "name": "i18n.CheckoutPage",
+    "name": "Checkout Page",
     "enable": "ucoEnabled",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.Header"
+        "content": "Header"
       },
       {
         "type": "checkbox",
-        "label": "i18n.UseBackgroundImage",
+        "label": "Use Background Image",
         "id": "optimizedCheckout-show-backgroundImage"
       },
       {
         "type": "optimizedCheckout-image",
-        "label": "i18n.1000X400pxRecommended",
+        "label": "1000X400px Recommended",
         "reference": "optimizedCheckout-show-backgroundImage",
         "reference_default": false,
         "id": "optimizedCheckout-backgroundImage"
@@ -2056,58 +2056,58 @@
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
-        "label": "i18n.HeaderImageSize",
+        "label": "Header Image Size",
         "reference": "optimizedCheckout-backgroundImage",
         "reference_default": "",
         "id": "optimizedCheckout-backgroundImage-size",
         "options": [
           {
             "value": "1000x400",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.BackgroundColor",
+        "label": "Background Color",
         "id": "optimizedCheckout-header-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.HeaderTextColor",
+        "label": "Header Text Color",
         "id": "optimizedCheckout-header-textColor"
       },
       {
         "type": "color",
-        "label": "i18n.HeaderBorder",
+        "label": "Header Border",
         "id": "optimizedCheckout-header-borderColor"
       },
       {
         "type": "heading",
-        "content": "i18n.Logo"
+        "content": "Logo"
       },
       {
         "type": "select",
-        "label": "i18n.LogoType",
+        "label": "Logo Type",
         "id": "optimizedCheckout-show-logo",
         "options": [
           {
             "value": "none",
-            "label": "i18n.Text"
+            "label": "Text"
           },
           {
             "value": "custom",
-            "label": "i18n.Image"
+            "label": "Image"
           }
         ]
       },
       {
         "type": "optimizedCheckout-image",
-        "label": "i18n.250X100pxRecommended",
+        "label": "250X100px Recommended",
         "reference": "optimizedCheckout-show-logo",
         "reference_default": "none",
         "force_reload": true,
@@ -2124,1112 +2124,1112 @@
         "options": [
           {
             "value": "250x100",
-            "label": "i18n.OptimizedForTheme"
+            "label": "Optimized For Theme"
           },
           {
             "value": "custom",
-            "label": "i18n.SpecifyDimensions"
+            "label": "Specify Dimensions"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.LogoPosition",
+        "label": "Logo Position",
         "id": "optimizedCheckout-logo-position",
         "options": [
           {
             "value": "left",
-            "label": "i18n.Left"
+            "label": "Left"
           },
           {
             "value": "center",
-            "label": "i18n.Center"
+            "label": "Center"
           },
           {
             "value": "right",
-            "label": "i18n.Right"
+            "label": "Right"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.DiscountBanner"
+        "content": "Discount Banner"
       },
       {
         "type": "color",
-        "label": "i18n.BannerBackground",
+        "label": "Banner Background",
         "id": "optimizedCheckout-discountBanner-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.BannerTextColor",
+        "label": "Banner Text Color",
         "id": "optimizedCheckout-discountBanner-textColor"
       },
       {
         "type": "color",
-        "label": "i18n.BannerIcon",
+        "label": "Banner Icon",
         "id": "optimizedCheckout-discountBanner-iconColor"
       },
       {
         "type": "heading",
-        "content": "i18n.OrderSummaryBox"
+        "content": "Order Summary Box"
       },
       {
         "type": "color",
-        "label": "i18n.BoxBackground",
+        "label": "Box Background",
         "id": "optimizedCheckout-orderSummary-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.BoxBorder",
+        "label": "Box Border",
         "id": "optimizedCheckout-orderSummary-borderColor"
       },
       {
         "type": "heading",
-        "content": "i18n.CheckoutSteps"
+        "content": "Checkout Steps"
       },
       {
         "type": "color",
-        "label": "i18n.IconBackground",
+        "label": "Icon Background",
         "id": "optimizedCheckout-step-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.IconBorder",
+        "label": "Icon Border",
         "id": "optimizedCheckout-step-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.IconTextColor",
+        "label": "Icon Text Color",
         "id": "optimizedCheckout-step-textColor"
       },
       {
         "type": "heading",
-        "content": "i18n.Headings"
+        "content": "Headings"
       },
       {
         "type": "font",
-        "label": "i18n.Heading1FontFamily",
+        "label": "Heading 1 Font Family",
         "id": "optimizedCheckout-headingPrimary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratBold",
+            "group": "Montserrat",
+            "label": "MontserratBold",
             "value": "Google_Montserrat_700"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.Heading1TextColor",
+        "label": "Heading 1 Text Color",
         "id": "optimizedCheckout-headingPrimary-color"
       },
       {
         "type": "font",
-        "label": "i18n.Heading2FontFamily",
+        "label": "Heading 2 Font Family",
         "id": "optimizedCheckout-headingSecondary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratBold",
+            "group": "Montserrat",
+            "label": "MontserratBold",
             "value": "Google_Montserrat_700"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.Heading2TextColor",
+        "label": "Heading 2 Text Color",
         "id": "optimizedCheckout-headingSecondary-color"
       },
       {
         "type": "heading",
-        "content": "i18n.Body"
+        "content": "Body"
       },
       {
         "type": "color",
-        "label": "i18n.PageBackground",
+        "label": "Page Background",
         "id": "optimizedCheckout-body-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.FocusColor",
+        "label": "Focus Color",
         "id": "optimizedCheckout-colorFocus"
       },
       {
         "type": "heading",
-        "content": "i18n.BodyTextAndLinks"
+        "content": "Body Text And Links"
       },
       {
         "type": "font",
-        "label": "i18n.BodyTextFontFamily",
+        "label": "Body Text Font Family",
         "id": "optimizedCheckout-contentPrimary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.Montserrat",
+            "group": "Montserrat",
+            "label": "Montserrat",
             "value": "Google_Montserrat_500"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.BodyTextColor",
+        "label": "Body Text Color",
         "id": "optimizedCheckout-contentPrimary-color"
       },
       {
         "type": "font",
-        "label": "i18n.SecondaryTextFontFamily",
+        "label": "Secondary Text Font Family",
         "id": "optimizedCheckout-contentSecondary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.Montserrat",
+            "group": "Montserrat",
+            "label": "Montserrat",
             "value": "Google_Montserrat_500"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.SecondaryTextColor",
+        "label": "Secondary Text Color",
         "id": "optimizedCheckout-contentSecondary-color"
       },
       {
         "type": "font",
-        "label": "i18n.LinkFontFamily",
+        "label": "Link Font Family",
         "id": "optimizedCheckout-link-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.Montserrat",
+            "group": "Montserrat",
+            "label": "Montserrat",
             "value": "Google_Montserrat_500"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.LinkColor",
+        "label": "Link Color",
         "id": "optimizedCheckout-link-color"
       },
       {
         "type": "color",
-        "label": "i18n.LinkHoverColor",
+        "label": "Link Hover Color",
         "id": "optimizedCheckout-link-hoverColor"
       },
       {
         "type": "heading",
-        "content": "i18n.PrimaryActionButton"
+        "content": "Primary Action Button"
       },
       {
         "type": "font",
-        "label": "i18n.ButtonTextFontFamily",
+        "label": "Button Text Font Family",
         "id": "optimizedCheckout-buttonPrimary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.Montserrat",
+            "group": "Montserrat",
+            "label": "Montserrat",
             "value": "Google_Montserrat_500"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "optimizedCheckout-buttonPrimary-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextHoverColor",
+        "label": "Button Text Hover Color",
         "id": "optimizedCheckout-buttonPrimary-colorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextActiveColor",
+        "label": "Button Text Active Color",
         "id": "optimizedCheckout-buttonPrimary-colorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextDisabledColor",
+        "label": "Button Text Disabled Color",
         "id": "optimizedCheckout-buttonPrimary-colorDisabled"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "optimizedCheckout-buttonPrimary-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundHover",
+        "label": "Button Background Hover",
         "id": "optimizedCheckout-buttonPrimary-backgroundColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundActive",
+        "label": "Button Background Active",
         "id": "optimizedCheckout-buttonPrimary-backgroundColorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundDisabled",
+        "label": "Button Background Disabled",
         "id": "optimizedCheckout-buttonPrimary-backgroundColorDisabled"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorder",
+        "label": "Button Border",
         "id": "optimizedCheckout-buttonPrimary-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderHover",
+        "label": "Button Border Hover",
         "id": "optimizedCheckout-buttonPrimary-borderColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderActive",
+        "label": "Button Border Active",
         "id": "optimizedCheckout-buttonPrimary-borderColorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderDisabled",
+        "label": "Button Border Disabled",
         "id": "optimizedCheckout-buttonPrimary-borderColorDisabled"
       },
       {
         "type": "heading",
-        "content": "i18n.SecondaryActionButton"
+        "content": "Secondary Action Button"
       },
       {
         "type": "font",
-        "label": "i18n.ButtonTextFontFamily",
+        "label": "Button Text Font Family",
         "id": "optimizedCheckout-buttonSecondary-font",
         "options": [
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSans",
+            "group": "OpenSans",
+            "label": "OpenSans",
             "value": "Google_Open+Sans_400"
           },
           {
-            "group": "i18n.OpenSans",
-            "label": "i18n.OpenSansBold",
+            "group": "OpenSans",
+            "label": "OpenSansBold",
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.MontserratLight",
+            "group": "Montserrat",
+            "label": "MontserratLight",
             "value": "Google_Montserrat_400"
           },
           {
-            "group": "i18n.Montserrat",
-            "label": "i18n.Montserrat",
+            "group": "Montserrat",
+            "label": "Montserrat",
             "value": "Google_Montserrat_500"
           },
           {
-            "group": "i18n.Karla",
-            "label": "i18n.Karla",
+            "group": "Karla",
+            "label": "Karla",
             "value": "Google_Karla_400"
           },
           {
-            "group": "i18n.Roboto",
-            "label": "i18n.Roboto",
+            "group": "Roboto",
+            "label": "Roboto",
             "value": "Google_Roboto_400"
           },
           {
-            "group": "i18n.SourceSansPro",
-            "label": "i18n.SourceSansPro",
+            "group": "SourceSansPro",
+            "label": "SourceSansPro",
             "value": "Google_Source+Sans+Pro_400"
           },
           {
-            "group": "i18n.Volkhov",
-            "label": "i18n.Volkhov",
+            "group": "Volkhov",
+            "label": "Volkhov",
             "value": "Google_Volkhov_400"
           }
         ]
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextColor",
+        "label": "Button Text Color",
         "id": "optimizedCheckout-buttonSecondary-color"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextHoverColor",
+        "label": "Button Text Hover Color",
         "id": "optimizedCheckout-buttonSecondary-colorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonTextActiveColor",
+        "label": "Button Text Active Color",
         "id": "optimizedCheckout-buttonSecondary-colorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackground",
+        "label": "Button Background",
         "id": "optimizedCheckout-buttonSecondary-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundHover",
+        "label": "Button Background Hover",
         "id": "optimizedCheckout-buttonSecondary-backgroundColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBackgroundActive",
+        "label": "Button Background Active",
         "id": "optimizedCheckout-buttonSecondary-backgroundColorActive"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorder",
+        "label": "Button Border",
         "id": "optimizedCheckout-buttonSecondary-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderHover",
+        "label": "Button Border Hover",
         "id": "optimizedCheckout-buttonSecondary-borderColorHover"
       },
       {
         "type": "color",
-        "label": "i18n.ButtonBorderActive",
+        "label": "Button Border Active",
         "id": "optimizedCheckout-buttonSecondary-borderColorActive"
       },
       {
         "type": "heading",
-        "content": "i18n.FormInputFields1"
+        "content": "Form Input Fields 1"
       },
       {
         "type": "color",
-        "label": "i18n.LabelTextColor",
+        "label": "Label Text Color",
         "id": "optimizedCheckout-form-textColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldTextColor",
+        "label": "Field Text Color",
         "id": "optimizedCheckout-formField-textColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldPlaceholderTextColor",
+        "label": "Field Placeholder Text Color",
         "id": "optimizedCheckout-formField-placeholderColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldErrorTextColor",
+        "label": "Field Error Text Color",
         "id": "optimizedCheckout-formField-errorColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBackground",
+        "label": "Field Background",
         "id": "optimizedCheckout-formField-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldInnerShadow",
+        "label": "Field Inner Shadow",
         "id": "optimizedCheckout-formField-shadowColor"
       },
       {
         "type": "color",
-        "label": "i18n.FieldBorder",
+        "label": "Field Border",
         "id": "optimizedCheckout-formField-borderColor"
       },
       {
         "type": "color",
-        "label": "i18n.CheckboxButtonBackground",
+        "label": "Checkbox Button Background",
         "id": "optimizedCheckout-formField-inputControlColor"
       },
       {
         "type": "heading",
-        "content": "i18n.FormChecklist"
+        "content": "Form Checklist"
       },
       {
         "type": "color",
-        "label": "i18n.BackgroundColor",
+        "label": "Background Color",
         "id": "optimizedCheckout-formChecklist-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.FormBackground",
+        "label": "Form Background",
         "id": "optimizedCheckout-formChecklist-backgroundColorSelected"
       },
       {
         "type": "color",
-        "label": "i18n.FormHeaderTextColor",
+        "label": "Form Header Text Color",
         "id": "optimizedCheckout-formChecklist-color"
       },
       {
         "type": "color",
-        "label": "i18n.FormBorderColor",
+        "label": "Form Border Color",
         "id": "optimizedCheckout-formChecklist-borderColor"
       },
       {
         "type": "heading",
-        "content": "i18n.LoadingToaster"
+        "content": "LoadingToaster"
       },
       {
         "type": "color",
-        "label": "i18n.ToasterBackground",
+        "label": "Toaster Background",
         "id": "optimizedCheckout-loadingToaster-backgroundColor"
       },
       {
         "type": "color",
-        "label": "i18n.ToasterTextColor",
+        "label": "Toaster Text Color",
         "id": "optimizedCheckout-loadingToaster-textColor"
       }
     ]
   },
   {
-    "name": "i18n.PaymentButtons",
+    "name": "Payment Buttons",
     "enable": "smartButtons",
     "settings": [
       {
         "type": "heading",
-        "content": "i18n.ProductDetailsPage",
+        "content": "Product Details Page",
         "enable": "payPalProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.PayPalButtonColor",
+        "label": "PayPal Button Color",
         "id": "paymentbuttons-paypal-product-details-page-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.PayLaterButtonColor",
+        "label": "Pay Later Button Color",
         "id": "paymentbuttons-paylater-product-details-page-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.VenmoButtonColor",
+        "label": "Venmo Button Color",
         "id": "paymentbuttons-venmo-product-details-page-color",
         "enable": "venmoProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "paymentbuttons-paypal-product-details-page-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "Pay With PayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "Buy Now"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "Pay Pal"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.CartPageAddToCart"
+        "content": "Cart Page Add To Cart"
       },
       {
         "type": "select",
-        "label": "i18n.PayPalButtonColor",
+        "label": "PayPal Button Color",
         "id": "paymentbuttons-paypal-cart-page-add-cart-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.PayLaterButtonColor",
+        "label": "Pay Later Button Color",
         "id": "paymentbuttons-paylater-cart-page-add-cart-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.VenmoButtonColor",
+        "label": "Venmo Button Color",
         "id": "paymentbuttons-venmo-cart-page-add-cart-color",
         "enable": "venmoProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "paymentbuttons-paypal-cart-page-add-cart-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "PayWithPayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "BuyNow"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "PayPal"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.CheckoutOnTop"
+        "content": "Checkout On Top"
       },
       {
         "type": "select",
-        "label": "i18n.PayPalButtonColor",
+        "label": "PayPal Button Color",
         "id": "paymentbuttons-paypal-checkout-on-top-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.PayLaterButtonColor",
+        "label": "Pay Later Button Color",
         "id": "paymentbuttons-paylater-checkout-on-top-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.VenmoButtonColor",
+        "label": "Venmo Button Color",
         "id": "paymentbuttons-venmo-checkout-on-top-color",
         "enable": "venmoProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "paymentbuttons-paypal-checkout-on-top-payment-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "Pay With PayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "Buy Now"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "Pay Pal"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.CheckoutPayment"
+        "content": "Checkout Payment"
       },
       {
         "type": "select",
-        "label": "i18n.PayPalButtonColor",
+        "label": "PayPal Button Color",
         "id": "paymentbuttons-paypal-checkout-payment-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.PayLaterButtonColor",
+        "label": "Pay Later Button Color",
         "id": "paymentbuttons-paylater-checkout-payment-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.VenmoButtonColor",
+        "label": "Venmo Button Color",
         "id": "paymentbuttons-venmo-checkout-payment-color",
         "enable": "venmoProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "paymentbuttons-paypal-checkout-payment-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "Pay With PayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "Buy Now"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "PayPal"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonSize",
+        "label": "Button Size",
         "id": "paymentbuttons-paypal-checkout-payment-size",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "small",
-            "label": "i18n.Small"
+            "label": "Small"
           },
           {
             "value": "medium",
-            "label": "i18n.Medium"
+            "label": "Medium"
           },
           {
             "value": "large",
-            "label": "i18n.Large"
+            "label": "Large"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.PaymentButtonsContainer"
+        "content": "Payment Buttons Container"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContainer",
+        "label": "Button Container",
         "force_reload": true,
         "id": "paymentbuttons-container",
         "options": [
@@ -3249,11 +3249,11 @@
       },
       {
         "type": "heading",
-        "content": "i18n.QuickPaymentButtons"
+        "content": "Quick Payment Buttons"
       },
       {
         "type": "select",
-        "label": "i18n.NumberOfButtonsAlwaysVisible",
+        "label": "Number Of Buttons Always Visible",
         "force_reload": true,
         "id": "paymentbuttons-number-of-buttons",
         "options": [
@@ -3269,569 +3269,564 @@
       },
       {
         "type": "sort",
-        "label": "i18n.ProviderSortingOrderLabel",
+        "label": "Provider Sorting Order Label",
         "id": "paymentbuttons-provider-sorting",
         "force_reload": true,
         "options": [
           {
             "value": "paypal",
-            "label": "i18n.PayPalProviderSortingLabel",
+            "label": "PayPal Provider Sorting Label",
             "enabledBy": "paypal"
           },
           {
             "value": "paypal-credit",
-            "label": "i18n.PayPalCreditProviderSortingLabel",
+            "label": "PayPal Credit Provider Sorting Label",
             "enabledBy": "paypal-credit"
           },
           {
             "value": "paypal-venmo",
-            "label": "i18n.PayPalVenmoProviderSortingLabel",
+            "label": "PayPal Venmo Provider Sorting Label",
             "enabledBy": "paypal-venmo"
           },
           {
             "value": "sepa",
-            "label": "i18n.PayPalSepaProviderSortingLabel",
+            "label": "PayPal Sepa Provider Sorting Label",
             "enabledBy": "sepa"
           },
           {
             "value": "googlepay",
-            "label": "i18n.GooglepayProviderSortingLabel",
+            "label": "Googlepay Provider Sorting Label",
             "enabledBy": "googlepay"
           },
           {
             "value": "applepay",
-            "label": "i18n.ApplepayProviderSortingLabel",
+            "label": "Applepay Provider Sorting Label",
             "enabledBy": "applepay"
           },
           {
             "value": "afterpay",
-            "label": "i18n.AfterpayProviderSortingLabel",
+            "label": "Afterpay Provider Sorting Label",
             "enabledBy": "afterpay"
           },
           {
             "value": "amazonpay",
-            "label": "i18n.AmazonProviderSortingLabel",
+            "label": "Amazon Provider Sorting Label",
             "enabledBy": "amazonpay"
           },
           {
             "value": "masterpass",
-            "label": "i18n.MasterpassProviderSortingLabel",
+            "label": "Masterpass Provider Sorting Label",
             "enabledBy": "masterpass"
-          },
-          {
-            "value": "bolt",
-            "label": "i18n.BoltProviderSortingLabel",
-            "enabledBy": "bolt"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.SmartPaypalButton",
+        "content": "Smart Paypal Button",
         "enable": "payPalProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "paymentbuttons-paypal-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonShape",
+        "label": "Button Shape",
         "id": "paymentbuttons-paypal-shape",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "pill",
-            "label": "i18n.Pill"
+            "label": "Pill"
           },
           {
             "value": "rect",
-            "label": "i18n.Rectangle"
+            "label": "Rectangle"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "paymentbuttons-paypal-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "Pay With PayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "Buy Now"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "PayPal"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.CheckoutPayPalButton",
+        "content": "Checkout PayPal Button",
         "enable": "payPalProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "checkout-paymentbuttons-paypal-color",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "silver",
-            "label": "i18n.Silver"
+            "label": "Silver"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonShape",
+        "label": "Button Shape",
         "id": "checkout-paymentbuttons-paypal-shape",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "pill",
-            "label": "i18n.Pill"
+            "label": "Pill"
           },
           {
             "value": "rect",
-            "label": "i18n.Rectangle"
+            "label": "Rectangle"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonSize",
+        "label": "Button Size",
         "id": "checkout-paymentbuttons-paypal-size",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "small",
-            "label": "i18n.Small"
+            "label": "Small"
           },
           {
             "value": "medium",
-            "label": "i18n.Medium"
+            "label": "Medium"
           },
           {
             "value": "large",
-            "label": "i18n.Large"
+            "label": "Large"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.ButtonContent",
+        "label": "Button Content",
         "id": "checkout-paymentbuttons-paypal-label",
         "enable": "payPalProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "checkout",
-            "label": "i18n.PayPalCheckout"
+            "label": "PayPal Checkout"
           },
           {
             "value": "pay",
-            "label": "i18n.PayWithPayPal"
+            "label": "Pay With PayPal"
           },
           {
             "value": "buynow",
-            "label": "i18n.BuyNow"
+            "label": "Buy Now"
           },
           {
             "value": "paypal",
-            "label": "i18n.PayPal"
+            "label": "Pay Pal"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.GooglePaySettings",
+        "content": "Google Pay Settings",
         "enable": "googleProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "googlepay-button-color",
         "enable": "googleProvidersEnabled",
         "options": [
           {
             "value": "black",
-            "label": "i18n.BlackWhiteText"
+            "label": "Black White Text"
           },
           {
             "value": "white",
-            "label": "i18n.WhiteBlackText"
+            "label": "White Black Text"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.ApplePaySettings",
+        "content": "Apple Pay Settings",
         "enable": "appleProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "applePay-button",
         "enable": "appleProvidersEnabled",
         "options": [
           {
             "value": "black",
-            "label": "i18n.BlackWhiteText"
+            "label": "Black White Text"
           },
           {
             "value": "white",
-            "label": "i18n.WhiteBlackText"
+            "label": "White Black Text"
           },
           {
             "value": "white-border",
-            "label": "i18n.WhiteBlackTextWithBorder"
+            "label": "White Black Text With Border"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.AfterPaySettings",
+        "content": "AfterPay Settings",
         "enable": "afterpayProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "afterpay-button-color",
         "enable": "afterpayProvidersEnabled",
         "options": [
           {
             "value": "black-mint",
-            "label": "i18n.BlackOnMintText"
+            "label": "Black On Mint Text"
           },
           {
             "value": "mint-black",
-            "label": "i18n.MintOnBlackText"
+            "label": "Mint On Black Text"
           },
           {
             "value": "white",
-            "label": "i18n.BlackWhiteText"
+            "label": "Black White Text"
           },
           {
             "value": "black",
-            "label": "i18n.WhiteBlackText"
+            "label": "White Black Text"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.AmazonSettings",
+        "content": "Amazon Settings",
         "enable": "amazonProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "amazon-button-color",
         "enable": "amazonProvidersEnabled",
         "options": [
           {
             "value": "Gold",
-            "label": "i18n.Gold"
+            "label": "Gold"
           },
           {
-            "value": "LightGray",
-            "label": "i18n.LightGray"
+            "value": "Light Gray",
+            "label": "Light Gray"
           },
           {
-            "value": "DarkGray",
-            "label": "i18n.DarkGray"
+            "value": "Dark Gray",
+            "label": "Dark Gray"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.MasterpassSettings",
-        "enable": "masterpassProvidersEnabled"
+        "content": "Masterpass Settings",
+        "enable": "masterpass Providers Enabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonColor",
+        "label": "Button Color",
         "id": "masterpass-button-color",
         "enable": "masterpassProvidersEnabled",
         "options": [
           {
             "value": "black",
-            "label": "i18n.BlackWhiteText"
+            "label": "BlackWhiteText"
           },
           {
             "value": "white",
-            "label": "i18n.WhiteBlackText"
+            "label": "WhiteBlackText"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.SmartBoltButton",
+        "content": "Smart Bolt Button",
         "enable": "isBoltProvidersEnabled"
       },
       {
         "type": "select",
-        "label": "i18n.ButtonShape",
+        "label": "Button Shape",
         "id": "paymentbuttons-bolt-shape",
         "enable": "isBoltProvidersEnabled",
         "force_reload": true,
         "options": [
           {
             "value": "pill",
-            "label": "i18n.Pill"
+            "label": "Pill"
           },
           {
             "value": "rect",
-            "label": "i18n.Rectangle"
+            "label": "Rectangle"
           }
         ]
       }
     ]
   },
   {
-    "name": "i18n.PaymentBanners",
+    "name": "PaymentBanners",
     "enable": "paymentBanners",
     "settings": [
       {
         "type": "paragraph",
-        "content": "i18n.BannersMessaging"
+        "content": "BannersMessaging"
       },
       {
         "type": "heading",
-        "content": "i18n.ProductPageBanner"
+        "content": "ProductPageBanner"
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleColor",
+        "label": "Banner Style Color",
         "id": "paymentbanners-proddetailspage-color",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           },
           {
             "value": "white-no-border",
-            "label": "i18n.White-no-border"
+            "label": "White-no-border"
           },
           {
             "value": "gray",
-            "label": "i18n.gray"
+            "label": "gray"
           },
           {
             "value": "monochrome",
-            "label": "i18n.monochrome"
+            "label": "monochrome"
           },
           {
             "value": "grayscale",
-            "label": "i18n.grayscale"
+            "label": "grayscale"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleRatio",
+        "label": "Banner Style Ratio",
         "id": "paymentbanners-proddetailspage-ratio",
         "force_reload": true,
         "options": [
           {
             "value": "8x1",
-            "label": "i18n.8x1"
+            "label": "8x1"
           },
           {
             "value": "20x1",
-            "label": "i18n.20x1"
+            "label": "20x1"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.HomePageBanner"
+        "content": "HomePageBanner"
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleColor",
+        "label": "Banner Style Color",
         "id": "paymentbanners-homepage-color",
         "force_reload": true,
         "options": [
           {
             "value": "blue",
-            "label": "i18n.Blue"
+            "label": "Blue"
           },
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           },
           {
             "value": "white-no-border",
-            "label": "i18n.White-no-border"
+            "label": "White-no-border"
           },
           {
             "value": "gray",
-            "label": "i18n.gray"
+            "label": "gray"
           },
           {
             "value": "monochrome",
-            "label": "i18n.monochrome"
+            "label": "monochrome"
           },
           {
             "value": "grayscale",
-            "label": "i18n.grayscale"
+            "label": "grayscale"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleRatio",
+        "label": "Banner Style Ratio",
         "id": "paymentbanners-homepage-ratio",
         "force_reload": true,
         "options": [
           {
             "value": "8x1",
-            "label": "i18n.8x1"
+            "label": "8x1"
           },
           {
             "value": "20x1",
-            "label": "i18n.20x1"
+            "label": "20x1"
           }
         ]
       },
       {
         "type": "heading",
-        "content": "i18n.CartPageBanner"
+        "content": "CartPageBanner"
       },
       {
         "type": "select",
-        "label": "i18n.BannerTextStyleColor",
+        "label": "Banner Text Style Color",
         "id": "paymentbanners-cartpage-text-color",
         "force_reload": true,
         "options": [
           {
             "value": "black",
-            "label": "i18n.Black"
+            "label": "Black"
           },
           {
             "value": "white",
-            "label": "i18n.White"
+            "label": "White"
           },
           {
             "value": "monochrome",
-            "label": "i18n.monochrome"
+            "label": "monochrome"
           },
           {
             "value": "grayscale",
-            "label": "i18n.grayscale"
+            "label": "grayscale"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleLogoPosition",
+        "label": "Banner Style Logo Position",
         "id": "paymentbanners-cartpage-logo-position",
         "force_reload": true,
         "options": [
           {
             "value": "left",
-            "label": "i18n.left"
+            "label": "left"
           },
           {
             "value": "right",
-            "label": "i18n.right"
+            "label": "right"
           },
           {
             "value": "top",
-            "label": "i18n.top"
+            "label": "top"
           }
         ]
       },
       {
         "type": "select",
-        "label": "i18n.BannerStyleLogoType",
+        "label": "Banner Style Logo Type",
         "id": "paymentbanners-cartpage-logo-type",
         "force_reload": true,
         "options": [
           {
             "value": "inline",
-            "label": "i18n.inline"
+            "label": "inline"
           },
           {
             "value": "primary",
-            "label": "i18n.primary"
+            "label": "primary"
           },
           {
             "value": "alternative",
-            "label": "i18n.alternative"
+            "label": "alternative"
           },
           {
             "value": "none",
-            "label": "i18n.none"
+            "label": "none"
           }
         ]
       }
