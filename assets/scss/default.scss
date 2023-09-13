@@ -1,0 +1,235 @@
+/* Popin Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 22px;
+
+    &.container-full {
+        max-width: 100%;
+    }
+
+    &.container-1920 {
+        max-width: 1920px;
+    }
+
+    &.container-main {
+        max-width: 1362px;
+    }
+}
+
+.custom-section {
+    @media (min-width: 1025px) {
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+}
+
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hide-on-desktop {
+    @media (min-width: 1025px) {
+        display: none;
+    }
+}
+
+.hide-on-tablet {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.hide-on-mb {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: unset;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.heading-h1 {
+    font-size: $fontSize-largest;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.497em;
+}
+
+.heading-h2 {
+    font-size: $fontSize-larger;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.53em;
+}
+
+.heading-h3 {
+    font-size: $fontSize-large;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.458em;
+}
+
+.heading-h4 {
+    font-size: $fontSize-small;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.5625em;
+}
+
+.heading-h5 {
+    font-size: $fontSize-smaller;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.53em;
+}
+
+.heading-h6 {
+    font-size: $fontSize-smallest;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 1.78em;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-main {
+    color: #ff5100;
+}
+
+.bg-main {
+    background-color: #ff5100;
+}
+
+.section-heading {
+
+}
+
+
+.section-title {
+
+}
+
+.section-desc {
+
+}
+
+.btn {
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 0.84px;
+    line-height: 1.5em;
+    text-decoration: none;
+    min-width: 188px;
+    text-align: center;
+
+    &.btn-large {
+        min-width: 259px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &.btn-primary {
+        color: stencilColor("button--primary-color");
+        background-color: stencilColor("button--primary-backgroundColor");
+
+        &:hover,
+        &:active {
+            color: stencilColor("button--primary-colorHover");
+            background-color: stencilColor("button--primary-backgroundColorHover");
+        }
+    }
+
+    &.btn-secondary {
+        color: stencilColor("button--default-color");
+        background-color: stencilColor("button--default-backgroundColor");
+
+        &:hover {
+            background-color: stencilColor("button--default-backgroundColorHover ");
+        }
+    }
+
+    &.btn-disable {
+        cursor: not-allowed;
+        pointer-events: none;
+        color: stencilColor("button--disabled-color");
+        background-color: stencilColor("button--disabled-backgroundColor");
+        border-color: stencilColor("button--disabled-borderColor");
+
+    }
+}
+
