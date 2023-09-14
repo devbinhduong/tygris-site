@@ -14,6 +14,8 @@ import privacyCookieNotification from './global/cookieNotification';
 import carousel from './common/carousel';
 import svgInjector from './global/svg-injector';
 
+import customGlobal from './custom/customGlobal';
+
 export default class Global extends PageManager {
     onReady() {
         const { cartId, secureBaseUrl } = this.context;
@@ -27,5 +29,7 @@ export default class Global extends PageManager {
         mobileMenuToggle();
         privacyCookieNotification();
         svgInjector();
+
+        customGlobal(this.context);
     }
 }

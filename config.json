@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone Done Schema",
+  "name": "Cornerstone Add Default Done",
   "version": "6.12.0",
   "template_engine": "handlebars_v4",
   "meta": {
