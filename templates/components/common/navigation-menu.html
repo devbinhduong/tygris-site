@@ -2,30 +2,44 @@
     <div class="navPages-quickSearch">
         {{> components/common/quick-search name='nav-menu-quick-search'}}
     </div>
-    <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
-        {{#each categories}}
-            <li class="navPages-item">
-            {{#if ../theme_settings.navigation_design '===' 'simple'}}
-                {{> components/common/navigation-list}}
-            {{/if}}
-            {{#if ../theme_settings.navigation_design '===' 'alternate'}}
-                {{> components/common/navigation-list-alternate}}
-            {{/if}}
-            </li>
-        {{/each}}
-        {{#unless theme_settings.hide_content_navigation}}
-            {{#each pages}}
-                 <li class="navPages-item navPages-item-page">
-                     <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
-                        href="{{url}}"
-                        aria-label="{{name}}"
-                     >
-                         {{name}}
-                     </a>
-                 </li>
-             {{/each}}
-        {{/unless}}
-    </ul>
+
+    <div class="custom-header">
+        <!-- Logo -->
+        {{#if page_type '===' 'default'}}
+            <h1 class="header-logo header-logo--desktop header-logo--{{theme_settings.logo-position}}">
+                {{> components/common/store-logo}}
+            </h1>
+        {{else}}
+            <div class="header-logo header-logo--desktop header-logo--{{theme_settings.logo-position}}">
+                {{> components/common/store-logo}}
+            </div>
+        {{/if}}
+        <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
+            {{#each categories}}
+                <li class="navPages-item">
+                {{#if ../theme_settings.navigation_design '===' 'simple'}}
+                    {{> components/common/navigation-list}}
+                {{/if}}
+                {{#if ../theme_settings.navigation_design '===' 'alternate'}}
+                    {{> components/common/navigation-list-alternate}}
+                {{/if}}
+                </li>
+            {{/each}}
+            {{#unless theme_settings.hide_content_navigation}}
+                {{#each pages}}
+                     <li class="navPages-item navPages-item-page">
+                         <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
+                            href="{{url}}"
+                            aria-label="{{name}}"
+                         >
+                             {{name}}
+                         </a>
+                     </li>
+                 {{/each}}
+            {{/unless}}
+        </ul>
+    </div>
+    
     <ul class="navPages-list navPages-list--user">
         {{#if currency_selector.currencies.length '>' 1}}
             <li class="navPages-item">

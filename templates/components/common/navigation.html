@@ -30,26 +30,56 @@
                 {{lang 'common.compare'}} <span class="countPill countPill--positive countPill--alt"></span>
             </a>
         </li>
+
+        <!-- Quote -->
+        <a href="#" class="header-top__link flex-align-center">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-document-icon.png" alt="Quote Icon">
+            </div>
+            <span class="header-top__text">
+                My Quote
+            </span>
+        </a>
+
+        <!-- Cart -->
+        <li class="navUser-item navUser-item--cart">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-header-cart-icon.png" alt="cart Icon">
+            </div>
+            <a class="navUser-action header-top__text"
+               data-cart-preview
+               data-dropdown="cart-preview-dropdown"
+               data-options="align:right"
+               href="{{urls.cart}}"
+               aria-label="{{lang 'cart.nav_aria_label'}}"
+               >
+                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span>
+                <span class="countPill cart-quantity"></span>
+            </a>
+
+            <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
+        </li>
+
+        <!-- Wish List -->
+        <a href="#" class="header-top__link flex-align-center">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-wishlist-icon.png" alt="Wish List Icon">
+            </div>
+            <span class="header-top__text">
+                Wish List
+            </span>
+        </a>
+
         {{#if theme_settings.social_icon_placement_top}}
             <li class="navUser-item navUser-item--social">
                 {{> components/common/social-links}}
             </li>
             <li class="navUser-item navUser-item--divider">|</li>
         {{/if}}
-        <li class="navUser-item">
-            <button class="navUser-action navUser-action--quickSearch"
-               type="button"
-               id="quick-search-expand"
-               data-search="quickSearch"
-               aria-controls="quickSearch"
-               aria-label="{{lang 'common.search'}}"
-            >
-                {{lang 'common.search'}}
-            </button>
-        </li>
+        
         {{#if settings.gift_certificates_enabled}}
             <li class="navUser-item">
-                <a class="navUser-action"
+                <a class="navUser-action header-top__text"
                    href="{{urls.gift_certificate.purchase}}"
                    aria-label="{{lang 'common.gift_cert'}}"
                 >
@@ -57,30 +87,35 @@
                 </a>
             </li>
         {{/if}}
+
+        <!-- Acount -->
         <li class="navUser-item navUser-item--account">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-user-icon.png" alt="Acount Icon">
+            </div>
             {{#if customer}}
-                <a class="navUser-action"
+                <a class="navUser-action header-top__text"
                    href="{{urls.account.index}}"
                    aria-label="{{lang 'common.account'}}"
                 >
                     {{lang 'common.account'}}
                 </a>
-                <a class="navUser-action"
+                <a class="navUser-action header-top__text"
                    href="{{urls.auth.logout}}"
                    aria-label="{{lang 'common.logout'}}"
                 >
                     {{lang 'common.logout'}}
                 </a>
             {{else}}
-                <a class="navUser-action"
+                <a class="navUser-action header-top__text"
                    href="{{urls.auth.login}}"
                    aria-label="{{lang 'common.login'}}"
                 >
                     {{lang 'common.login'}}
                 </a>
                 {{#if settings.account_creation_enabled}}
-                    <span class="navUser-or">{{lang 'common.or'}}</span>
-                    <a class="navUser-action"
+                    <span class="navUser-or header-top__text">{{lang 'common.or'}}</span>
+                    <a class="navUser-action header-top__text"
                        href="{{urls.auth.create_account}}"
                        aria-label="{{lang 'common.sign_up'}}"
                     >
@@ -89,19 +124,20 @@
                 {{/if}}
             {{/if}}
         </li>
-        <li class="navUser-item navUser-item--cart">
-            <a class="navUser-action"
-               data-cart-preview
-               data-dropdown="cart-preview-dropdown"
-               data-options="align:right"
-               href="{{urls.cart}}"
-               aria-label="{{lang 'cart.nav_aria_label'}}"
-            >
-                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span>
-                <span class="countPill cart-quantity"></span>
-            </a>
 
-            <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
+        <!-- Search -->
+        <li class="navUser-item">
+            <button class="navUser-action navUser-action--quickSearch"
+               type="button"
+               id="quick-search-expand"
+               data-search="quickSearch"
+               aria-controls="quickSearch"
+               aria-label="{{lang 'common.search'}}"
+            >
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-search-icon.png" alt="Acount Icon">
+                </div>
+            </button>
         </li>
     </ul>
     <div class="dropdown dropdown--quickSearch" id="quickSearch" aria-hidden="true" data-prevent-quick-search-close>

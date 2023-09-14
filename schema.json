@@ -421,32 +421,38 @@
       },
       {
         "type": "color",
+        "label": "Header Top Background",
+        "id": "header_top_bg"
+      },
+
+      {
+        "type": "color",
+        "label": "Header Top Text Color",
+        "id": "header_top_color"
+      },
+      {
+        "type": "color",
+        "label": "Header Top Text Color Hover",
+        "id": "header_top_colorHover"
+      },
+      {
+        "type": "text",
+        "label": "Header Top Left Text 1",
+        "id": "header-top-left-1"
+      },
+      {
+        "type": "text",
+        "label": "Header Top Left Text 2",
+        "id": "header-top-left-2"
+      },
+      {
+        "type": "color",
         "label": "Header Background",
         "id": "header-backgroundColor"
       },
       {
         "type": "heading",
         "content": "Logo"
-      },
-      {
-        "type": "select",
-        "label": "Logo Position",
-        "id": "logo-position",
-        "force_reload": true,
-        "options": [
-          {
-            "value": "right",
-            "label": "Right"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "left",
-            "label": "Left"
-          }
-        ]
       },
       {
         "type": "imageDimension",
@@ -684,20 +690,6 @@
         "type": "color",
         "label": "Quick Search Background",
         "id": "dropdown--quickSearch-backgroundColor"
-      },
-      {
-        "type": "heading",
-        "content": "Social Media Icons"
-      },
-      {
-        "type": "paragraph",
-        "content": "Social Accounts Must BeSet"
-      },
-      {
-        "type": "checkbox",
-        "label": "Show Social Media Icons",
-        "force_reload": true,
-        "id": "social_icon_placement_top"
       },
       {
         "type": "select",

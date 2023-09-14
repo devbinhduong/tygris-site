@@ -40,8 +40,29 @@
     }
 }
 
+.neusa-font {
+    font-family: 'Neusa Next Pro';
+}
+
+.proxima-font {
+    font-family: 'Proxima Nova Rg';
+}
+
+.smooch-font {
+    font-family: 'Smooch';
+}
+
+.zooja-font {
+    font-family: 'ZoojaPro';
+}
+
 .flex {
     display: flex;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
 }
 
 .flex-center {
@@ -233,4 +254,4 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Custom Slick Arrow */
+

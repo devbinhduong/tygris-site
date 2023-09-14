@@ -274,3 +274,117 @@
 
     }
 }
+
+
+/* Custom Start */
+.header-top__wrapper {
+    background-color: stencilColor("header_top_bg");
+    .header-top__icon {
+        img {
+            max-width: 20px;
+            max-height: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .header-top__text {
+        color: stencilColor("header_top_color");
+        font-weight: normal;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 1.538em;
+        text-transform: uppercase;
+
+        &:hover {
+            color: stencilColor("header_top_colorHover");
+        }
+    }
+
+    .header-top__link {
+    }
+
+    .header-top__right {
+        .navUser {
+            @media (min-width: 801px) {
+                position: unset;
+            }
+        }
+
+        .header-top__text {
+            @media (min-width: 801px) and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .navUser-section {
+            @media (min-width: 801px) {
+                display: flex;
+                align-items: center;
+            }
+
+            .navUser-item {
+                @media (min-width: 801px) {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/* Logo */
+.header-logo--mobile {
+    @media (min-width: 801px) {
+        display: none;
+    }
+}
+
+.header-logo--desktop {
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
+.navPages-container-custom {
+    background-color: #ff5100;
+    .navPages {
+        @media (min-width: 801px) {
+            max-width: 100%;
+        }
+    }
+    .custom-header {
+        @media (min-width: 801px) {
+            display: flex;
+
+            .header-logo--desktop {
+                position: relative;
+                margin: 0;
+                padding-left: 60px;
+                padding-right: 93px;
+                background-color: #232323;
+
+                &::after {
+                    content: "";
+                    border-color: transparent #ff5100 #ff5100 transparent;
+                    border-style: solid;
+                    border-width: 28px 28px 28px 28px;
+                    height: 0px;
+                    width: 0px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    
+                }
+            }
+
+            .header-logo-image-container {
+                @media (min-width: 801px) {
+                    min-height: unset;
+                }
+            }
+        }
+
+    }
+}
+
