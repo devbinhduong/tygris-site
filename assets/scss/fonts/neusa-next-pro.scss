@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondLightIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondLightIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondLightIta.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondMedIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondMedIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondMedIta.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedMedium.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedMedium.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedLight.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedLight.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedThin.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedThin.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedRegular.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedRegular.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-MediumItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-MediumItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondThinIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondThinIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondThinIta.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Medium.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Medium.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Italic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Italic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-LightItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Light.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Light.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Regular.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Regular.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Thin.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Thin.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-ThinItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-ThinItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideLight.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideLight.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideLightItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideLightItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideThin.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideThin.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideBold.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideBold.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideMediumItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideMediumItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideMedium.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideMedium.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideRegular.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideRegular.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideBoldItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideBoldItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Wide';
+    src: url('../fonts/NeusaNextPro-WideThinItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-WideThinItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-WideThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactBoldIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactBoldIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactBoldIta.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-Bold.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-Bold.woff') format('woff'),
+        url('../fonts/NeusaNextPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactBold.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactBold.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactLight.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactLight.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro';
+    src: url('../fonts/NeusaNextPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-BoldItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactRegular.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactRegular.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedItalic.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedItalic.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondensedBold.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondensedBold.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactMedium.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactMedium.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Condensed';
+    src: url('../fonts/NeusaNextPro-CondBoldIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CondBoldIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CondBoldIta.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactThin.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactThin.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactThinIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactThinIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactThinIta.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactLightIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactLightIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactLightIta.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa Next Pro Compact';
+    src: url('../fonts/NeusaNextPro-CompactMedIta.woff2') format('woff2'),
+        url('../fonts/NeusaNextPro-CompactMedIta.woff') format('woff'),
+        url('../fonts/NeusaNextPro-CompactMedIta.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

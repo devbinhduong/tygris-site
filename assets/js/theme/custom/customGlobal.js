@@ -65,25 +65,20 @@ export default function(context) {
             arrows: true,
             infinite: false,
             mobileFirst: true,
-            slidesToShow: 2,
+            slidesToShow: showMobile,
             slidesToScroll: 1,
-            responsive: [{
-                    breakpoint: 1399,
-                    settings: {
-                        arrows: true,
-                        slidesToShow: showDesktop
-                    }
-                },
+
+            responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: showTablet
+                        slidesToShow: showDesktop
                     }
                 },
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: showMobile
+                        slidesToShow: showTablet
                     }
                 }
             ]
