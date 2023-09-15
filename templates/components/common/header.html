@@ -15,33 +15,35 @@
         <span class="mobileMenu-toggleIcon">Toggle menu</span>
     </a>
 
-    <div class="header-top__wrapper">
-        <div class="container container-1920">
-            <div class="flex-between">
-                <div class="header-top__left flex-align-center">
-                   <a href="#" class="header-top__link flex-align-center">
-                    <div class="header-top__icon">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-trade-icon-removebg-preview.png" alt="Trade Icon">
+    {{#if theme_settings.show-header-top}}
+        <div class="header-top__wrapper">
+            <div class="container container-1920">
+                <div class="flex-between">
+                    <div class="header-top__left flex-align-center">
+                    <a href="#" class="header-top__link flex-align-center">
+                        <div class="header-top__icon">
+                            <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-trade-icon-removebg-preview.png" alt="Trade Icon">
+                        </div>
+                        <span class="header-top__text">
+                            {{theme_settings.header-top-left-1}}
+                        </span>
+                    </a>
+                    <a href="tel:+{{theme_settings.header-top-left-1}}" class="header-top__link flex-align-center">
+                        <div class="header-top__icon">
+                            <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-phone-icon.png?" alt="Phone Icon">
+                        </div>
+                        <span class="header-top__text">
+                            CALL THE TEAM: {{theme_settings.header-top-left-2}}
+                        </span>
+                    </a>
                     </div>
-                    <span class="header-top__text">
-                        {{theme_settings.header-top-left-1}}
-                    </span>
-                   </a>
-                   <a href="tel:+{{theme_settings.header-top-left-1}}" class="header-top__link flex-align-center">
-                    <div class="header-top__icon">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/replace-phone-icon.png?" alt="Phone Icon">
+                    <div class="header-top__right">
+                        {{> components/common/navigation}}
                     </div>
-                    <span class="header-top__text">
-                        CALL THE TEAM: {{theme_settings.header-top-left-2}}
-                    </span>
-                   </a>
-                </div>
-                <div class="header-top__right">
-                    {{> components/common/navigation}}
                 </div>
             </div>
         </div>
-    </div>
+    {{/if}}
 
     {{#if page_type '===' 'default'}}
         <h1 class="header-logo header-logo--mobile header-logo--{{theme_settings.logo-position}}">

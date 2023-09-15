@@ -17,6 +17,7 @@ export default function(context) {
             checkJS_load = false;
 
             /* Add Funcion Here */
+            activeMansory();
         }
     }
 
@@ -82,6 +83,43 @@ export default function(context) {
                     }
                 }
             ]
+        });
+    }
+
+    function mansoryMenu() {
+        var container = document.querySelector('.navPage-subMenu-list');
+        var msnry = new Masonry( container, {
+            itemSelector: '.navPage-subMenu-item',
+            columnWidth: '.navPage-subMenu-item',
+            gutter: 20,
+        });
+    }
+
+    function activeMansory() {
+        let menuList = document.querySelector('.custom-header .navPages-list'),
+            menuItems = menuList.querySelectorAll('.navPages-item');
+
+        forEach(menuItems, (item) => {
+            /* Hover Event For Menu Item */
+            const action = item.querySelector('.navPages-action'),
+                subMenu = item.querySelector('.navPage-subMenu');
+
+            if(!subMenu) return;
+            
+            /* Event Hover In */
+            item.addEventListener('mouseover', (e) => {
+                action.classList.add('is-open');
+                subMenu.classList.add('is-open');
+
+                /* Run Mansory */
+                mansoryMenu();
+            })
+
+            /* Event Hover Out */
+            item.addEventListener('mouseleave', (e) => {
+                action.classList.remove('is-open');
+                subMenu.classList.remove('is-open');
+            })
         });
     }
 }

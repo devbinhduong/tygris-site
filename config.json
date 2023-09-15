@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone Header Part 3",
+  "name": "Cornerstone Header Part 4",
   "version": "6.12.0",
   "template_engine": "handlebars_v4",
   "meta": {
@@ -596,8 +596,8 @@
         "navUser-dropdown-backgroundColor": "#ffffff",
         "navUser-dropdown-borderColor": "#cccccc",
         "navUser-indicator-backgroundColor": "#333333",
-        "navPages-color": "#333333",
-        "navPages-color-hover": "#757575",
+        "navPages-color": "#232323",
+        "navPages-color-hover": "#ffffff",
         "navPages-subMenu-backgroundColor": "#e5e5e5",
         "navPages-subMenu-separatorColor": "#cccccc",
         "dropdown--quickSearch-backgroundColor": "#e5e5e5",
