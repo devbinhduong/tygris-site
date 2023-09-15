@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone Header Part 4 - Start Mega Menu Style",
+  "name": "Cornerstone Header Part 4 - Done Mega Menu Not CSS",
   "version": "6.12.0",
   "template_engine": "handlebars_v4",
   "meta": {
@@ -761,6 +761,24 @@
         "header_top_bg": "#000000",
         "header_top_color": "#ffffff",
         "header_top_colorHover": "#ff5100",
+        "megamenu_item1": 1,
+        "megamenu_item1_img":"mega-menu-image-1.png",
+        "megamenu_item1_link":"#",
+        "megamenu_item2": 2,
+        "megamenu_item2_img":"mega-menu-image-1.png",
+        "megamenu_item2_link":"#",
+        "megamenu_item3": 3,
+        "megamenu_item3_img":"mega-menu-image-1.png",
+        "megamenu_item3_link":"#",
+        "megamenu_item4": 4,
+        "megamenu_item4_img":"mega-menu-image-1.png",
+        "megamenu_item4_link":"#",
+        "megamenu_item5": 5,
+        "megamenu_item5_img":"mega-menu-image-1.png",
+        "megamenu_item5_link":"#",
+        "megamenu_item6": 6,
+        "megamenu_item6_img":"mega-menu-image-1.png",
+        "megamenu_item6_link":"#",
         "paymentbuttons-provider-sorting": [
 
         ]

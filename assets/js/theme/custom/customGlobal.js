@@ -4,6 +4,8 @@ import { load } from 'webfontloader';
 import event from '../global/jquery-migrate/event';
 import { forEach } from 'lodash';
 
+import megamenuEditor from './megamenuEditor';
+
 export default function(context) {
     const $context = context,
     theme_settings = context.themeSettings;
@@ -17,7 +19,9 @@ export default function(context) {
             checkJS_load = false;
 
             /* Add Funcion Here */
-            // activeMansory();
+            /* Mega Menu */
+            megamenuEditor($context);
+            activeMansory();
         }
     }
 
