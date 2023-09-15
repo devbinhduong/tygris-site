@@ -21,7 +21,7 @@ export default function(context) {
             /* Add Funcion Here */
             /* Mega Menu */
             megamenuEditor($context);
-            activeMansory();
+            // activeMansory();
         }
     }
 
@@ -54,7 +54,10 @@ export default function(context) {
         });
 
         /* Resize */
-        $(window).on('resize', (e) => {});
+        $(window).on('resize', (e) => {
+            console.log('resize');
+            activeMansory();
+        });
     }
     eventLoad();
 
@@ -102,6 +105,8 @@ export default function(context) {
     function activeMansory() {
         let menuList = document.querySelector('.custom-header .navPages-list'),
             menuItems = menuList.querySelectorAll('.navPages-item');
+        
+        if(window.innerWidth < 1024) return;
 
         forEach(menuItems, (item) => {
             /* Hover Event For Menu Item */

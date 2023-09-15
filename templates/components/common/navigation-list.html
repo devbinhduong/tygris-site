@@ -10,7 +10,7 @@
 </a>
 <div class="navPage-subMenu" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
     <ul class="navPage-subMenu-list">
-        <li class="navPage-subMenu-item">
+        <li class="navPage-subMenu-item navPage-subMenu-item--all">
             <a class="navPage-subMenu-action navPages-action"
                href="{{url}}"
                aria-label="{{lang 'category.view_all.name' category=name}}"
@@ -20,6 +20,15 @@
         </li>
         {{#each children}}
             <li class="navPage-subMenu-item">
+                <!-- Menu Item Image -->
+                <span class="navPage-subMenu-image">
+                    {{#if image}}
+                        <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage image '298x298'}}" alt="{{name}}">
+                    {{else}}
+                        <img src="https://cdn11.bigcommerce.com/s-{{../../settings.store_hash}}/images/stencil/original/image-manager/categorydefault.jpg" alt="{{name}}">
+                    {{/if}}
+                </span>
+
                 {{#if children}}
                     <a class="navPage-subMenu-action navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
                        href="{{url}}"

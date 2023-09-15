@@ -328,6 +328,10 @@
 
     &.is-open {
         display: block;
+
+        @media (min-width: $min-1025) {
+            display: flex;
+        }
     }
 
     .navPages-list:not(.navPages-list-depth-max) .navPages-action.has-subMenu + & {
