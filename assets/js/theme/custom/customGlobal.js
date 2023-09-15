@@ -17,7 +17,7 @@ export default function(context) {
             checkJS_load = false;
 
             /* Add Funcion Here */
-            activeMansory();
+            // activeMansory();
         }
     }
 
