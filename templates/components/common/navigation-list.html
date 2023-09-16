@@ -12,8 +12,8 @@
     <ul class="navPage-subMenu-list">
         <li class="navPage-subMenu-item navPage-subMenu-item--all">
             <a class="navPage-subMenu-action navPages-action"
-               href="{{url}}"
-               aria-label="{{lang 'category.view_all.name' category=name}}"
+                href="{{url}}"
+                aria-label="{{lang 'category.view_all.name' category=name}}"
             >
                 {{lang 'category.view_all.name' category=name}}
             </a>
@@ -24,15 +24,13 @@
                 <span class="navPage-subMenu-image">
                     {{#if image}}
                         <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage image '298x298'}}" alt="{{name}}">
-                    {{else}}
-                        <img src="https://cdn11.bigcommerce.com/s-{{../../settings.store_hash}}/images/stencil/original/image-manager/categorydefault.jpg" alt="{{name}}">
                     {{/if}}
                 </span>
 
                 {{#if children}}
                     <a class="navPage-subMenu-action navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
-                       href="{{url}}"
-                       aria-label="{{name}}"
+                        href="{{url}}"
+                        aria-label="{{name}}"
                     >
                         {{name}}
                         <span class="collapsible-icon-wrapper"
@@ -50,8 +48,8 @@
                         {{#each children}}
                         <li class="navPage-childList-item">
                             <a class="navPage-childList-action navPages-action{{#if is_active}} activePage{{/if}}"
-                               href="{{url}}"
-                               aria-label="{{name}}"
+                                href="{{url}}"
+                                aria-label="{{name}}"
                             >
                                 {{name}}
                             </a>
@@ -60,8 +58,8 @@
                     </ul>
                 {{else}}
                     <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}"
-                       href="{{url}}"
-                       aria-label="{{name}}"
+                        href="{{url}}"
+                        aria-label="{{name}}"
                     >
                         {{name}}
                     </a>
@@ -72,8 +70,8 @@
 </div>
 {{else}}
 <a class="navPages-action{{#if is_active}} activePage{{/if}}"
-   href="{{url}}"
-   aria-label="{{name}}"
+    href="{{url}}"
+    aria-label="{{name}}"
 >
     {{name}}
 </a>

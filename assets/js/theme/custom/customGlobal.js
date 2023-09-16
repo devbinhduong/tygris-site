@@ -55,8 +55,7 @@ export default function(context) {
 
         /* Resize */
         $(window).on('resize', (e) => {
-            console.log('resize');
-            activeMansory();
+            // activeMansory();
         });
     }
     eventLoad();
