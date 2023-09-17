@@ -1,8 +1,4 @@
 <nav class="navPages">
-    <div class="navPages-quickSearch">
-        {{> components/common/quick-search name='nav-menu-quick-search'}}
-    </div>
-
     <div class="container container-1920 custom-header">
         <!-- Logo -->
         {{#if page_type '===' 'default'}}
@@ -16,7 +12,7 @@
         {{/if}}
         <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
             {{#each categories}}
-                <li class="navPages-item flex-align-center">
+                <li class="navPages-item">
                 {{#if ../theme_settings.navigation_design '===' 'simple'}}
                     {{> components/common/navigation-list}}
                 {{/if}}
@@ -27,7 +23,7 @@
             {{/each}}
             {{#unless theme_settings.hide_content_navigation}}
                 {{#each pages}}
-                    <li class="navPages-item flex-align-center navPages-item-page">
+                    <li class="navPages-item navPages-item-page">
                         <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
                             href="{{url}}"
                             aria-label="{{name}}"
@@ -91,18 +87,13 @@
         </li>
 
         <li class="navPages-item flex-align-center navPages-item--cart">
-            <div class="header-top__icon">
-                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-cart-icon.png" alt="cart Icon">
-            </div>
-            <a class="navUser-action header-top__text"
-               data-cart-preview
-               data-dropdown="cart-preview-dropdown"
-               data-options="align:right"
-               href="{{urls.cart}}"
-               aria-label="{{lang 'cart.nav_aria_label'}}"
-               >
-                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span>
-                <span class="countPill cart-quantity"></span>
+            <a href="{{urls.cart}}" class="header-top__link navUser-item  flex-align-center">
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-cart-icon.png" alt="Cart Icon">
+                </div>
+                <span class="header-top__text">
+                    {{lang 'common.cart'}}
+                </span>
             </a>
         </li>
 

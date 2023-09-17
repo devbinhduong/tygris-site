@@ -11,8 +11,19 @@
 </div>
 {{/if}}
 <header class="header" role="banner">
+    <div class="custom-search-mobile">
+        <a href="#" class="mobileSearch-toggle" data-mobile-search-toggle="search">
+            <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-search-mobile-icon.png" alt="Header Search Icon">
+        </a>
+
+        <div class="navPages-quickSearch">
+            {{> components/common/quick-search name='nav-menu-quick-search'}}
+        </div>
+    </div>
+
     <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
-        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+        <!-- <span class="mobileMenu-toggleIcon">Toggle menu</span> -->
+        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-menu-mobile-icon.png" alt="Header Menu Icon">
     </a>
 
     {{#if theme_settings.show-header-top}}

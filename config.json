@@ -382,6 +382,7 @@
     "header_top_bg": "#000000",
     "header_top_color": "#ffffff",
     "header_top_colorHover": "#ff5100",
+    "header-background-color": "#ff5100",
     "paymentbuttons-provider-sorting": [
 
     ]
@@ -783,6 +784,7 @@
         "megamenu_item6": 6,
         "megamenu_item6_img":"",
         "megamenu_item6_link":"#",
+        "header-background-color": "#ff5100",
         "paymentbuttons-provider-sorting": [
 
         ]

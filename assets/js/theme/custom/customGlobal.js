@@ -25,6 +25,10 @@ export default function(context) {
             if(window.innerWidth > 1024) {
                 menuDesktopAnimate();
             }
+
+            if(window.innerWidth < 1024) {
+                searchMobile();
+            }
         }
     }
 
@@ -130,5 +134,15 @@ export default function(context) {
 
             sr.reveal(item, { delay: delay, origin: origin });
         });
+    }
+
+    function searchMobile() {
+        let searchButton = document.querySelector(".mobileSearch-toggle"),
+            searchForm = document.querySelector(".custom-search-mobile");
+
+        searchButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            searchForm.classList.toggle("is-open");
+        })
     }
 }
