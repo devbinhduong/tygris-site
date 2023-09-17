@@ -280,12 +280,28 @@
 .header-top__wrapper {
     background-color: stencilColor("header_top_bg");
     .header-top__icon {
+        margin-right: 15px;
+        display: inline-flex;
+
+        @media (max-width: 1600px) {
+            margin-right: 8px;
+        }
+
         img {
             max-width: 20px;
-            max-height: 20px;
+            max-height: 15px;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+    }
+    .navUser-action--quickSearch {
+        .header-top__icon {
+            img {
+                max-width: 32px;
+                max-height: 32px;
+            }
         }
     }
 
@@ -303,6 +319,16 @@
     }
 
     .header-top__link {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+        & + .header-top__link {
+            margin-left: 32px;
+
+            @media (max-width: 1600px) {
+                margin-left: 20px;
+            }
+        }
     }
 
     .header-top__right {
@@ -313,10 +339,20 @@
         }
 
         .header-top__text {
-            @media (min-width: 1025px) and (max-width: 1024px) {
+            @media (min-width: 1025px) and (max-width: 1400px) {
                 display: none;
             }
         }
+
+        .header-top__icon {
+            img {
+                @media (min-width: 1025px) and (max-width: 1400px) {
+                    max-width: 32px;
+                    max-height: 32px;
+                }
+            }
+        }
+
         .navUser-section {
             @media (min-width: 1025px) {
                 display: flex;
@@ -341,7 +377,7 @@
 }
 
 .header-logo--desktop {
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
         display: none;
     }
 }

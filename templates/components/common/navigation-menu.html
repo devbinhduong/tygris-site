@@ -16,7 +16,7 @@
         {{/if}}
         <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
             {{#each categories}}
-                <li class="navPages-item">
+                <li class="navPages-item flex-align-center">
                 {{#if ../theme_settings.navigation_design '===' 'simple'}}
                     {{> components/common/navigation-list}}
                 {{/if}}
@@ -27,7 +27,7 @@
             {{/each}}
             {{#unless theme_settings.hide_content_navigation}}
                 {{#each pages}}
-                    <li class="navPages-item navPages-item-page">
+                    <li class="navPages-item flex-align-center navPages-item-page">
                         <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
                             href="{{url}}"
                             aria-label="{{name}}"
@@ -43,8 +43,103 @@
     </div>
     
     <ul class="navPages-list navPages-list--user">
+        <li class="navPages-item flex-align-center navPages-item--account">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-account-icon.png" alt="Acount Icon">
+            </div>
+            {{#if customer}}
+                <a class="navUser-action header-top__text"
+                   href="{{urls.account.index}}"
+                   aria-label="{{lang 'common.account'}}"
+                >
+                    {{lang 'common.account'}}
+                </a>
+                <a class="navUser-action header-top__text"
+                   href="{{urls.auth.logout}}"
+                   aria-label="{{lang 'common.logout'}}"
+                >
+                    {{lang 'common.logout'}}
+                </a>
+            {{else}}
+                <a class="navUser-action header-top__text"
+                   href="{{urls.auth.login}}"
+                   aria-label="{{lang 'common.login'}}"
+                >
+                    {{lang 'common.login'}}
+                </a>
+                {{#if settings.account_creation_enabled}}
+                    <span class="navUser-or header-top__text">{{lang 'common.or'}}</span>
+                    <a class="navUser-action header-top__text"
+                       href="{{urls.auth.create_account}}"
+                       aria-label="{{lang 'common.sign_up'}}"
+                    >
+                        {{lang 'common.sign_up'}}
+                    </a>
+                {{/if}}
+            {{/if}}
+        </li>
+
+        <li class="navPages-item flex-align-center navPages-item--wishList">
+            <a href="#" class="header-top__link navUser-item  flex-align-center">
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-heart-icon.png" alt="Wish List Icon">
+                </div>
+                <span class="header-top__text">
+                    Wish List
+                </span>
+            </a>
+        </li>
+
+        <li class="navPages-item flex-align-center navPages-item--cart">
+            <div class="header-top__icon">
+                <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-cart-icon.png" alt="cart Icon">
+            </div>
+            <a class="navUser-action header-top__text"
+               data-cart-preview
+               data-dropdown="cart-preview-dropdown"
+               data-options="align:right"
+               href="{{urls.cart}}"
+               aria-label="{{lang 'cart.nav_aria_label'}}"
+               >
+                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span>
+                <span class="countPill cart-quantity"></span>
+            </a>
+        </li>
+
+        <li class="navPages-item flex-align-center navPages-item--quote">
+            <a href="#" class="header-top__link flex-align-center navUser-item">
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-quote-icon.png" alt="Quote Icon">
+                </div>
+                <span class="header-top__text">
+                    My Quote
+                </span>
+            </a>
+        </li>
+
+        <li class="navPages-item flex-align-center navPages-item--call">
+            <a href="#" class="header-top__link flex-align-center">
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-trade-icon.png" alt="Trade Icon">
+                </div>
+                <span class="header-top__text">
+                    {{theme_settings.header-top-left-1}}
+                </span>
+            </a>
+        </li>
+        <li class="navPages-item flex-align-center navPages-item--trade">
+            <a href="tel:+{{theme_settings.header-top-left-1}}" class="header-top__link flex-align-center">
+                <div class="header-top__icon">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/header-top-phone-icon.png" alt="Phone Icon">
+                </div>
+                <span class="header-top__text">
+                    CALL THE TEAM: {{theme_settings.header-top-left-2}}
+                </span>
+            </a>
+        </li>
+
         {{#if currency_selector.currencies.length '>' 1}}
-            <li class="navPages-item">
+            <li class="navPages-item flex-align-center">
                 <a class="navPages-action has-subMenu"
                    href="#"
                    data-collapsible="navPages-currency"
@@ -85,7 +180,7 @@
             </li>
         {{/if}}
         {{#if settings.gift_certificates_enabled}}
-            <li class="navPages-item">
+            <li class="navPages-item flex-align-center">
                 <a class="navPages-action"
                    href="{{urls.gift_certificate.purchase}}"
                    aria-label="{{lang 'common.gift_cert'}}"
@@ -95,14 +190,14 @@
             </li>
         {{/if}}
         {{#if customer.store_credit.value '>' 0}}
-            <li class="navPages-item">
+            <li class="navPages-item flex-align-center">
                 <a class="navPages-action navPages-action--storeCredit">
                     {{lang 'common.store_credit_overview' credit=customer.store_credit.formatted}}
                 </a>
             </li>
         {{/if}}
         {{#if theme_settings.product_list_display_mode '==' 'list'}}
-            <li class="navPages-item">
+            <li class="navPages-item flex-align-center">
                 <a class="navPages-action navPages-action--compare"
                    href="{{urls.compare}}"
                    data-compare-nav
@@ -113,120 +208,8 @@
                 </a>
             </li>
         {{/if}}
-        {{#if customer}}
-            <li class="navPages-item">
-                <a class="navPages-action has-subMenu"
-                   href="{{urls.account.index}}"
-                   data-collapsible="navPages-account"
-                   aria-label="{{lang 'common.account'}}"
-                >
-                    {{lang 'common.account'}}
-                    <i class="icon navPages-action-moreIcon" aria-hidden="true">
-                        <svg><use href="#icon-chevron-down" /></svg>
-                    </i>
-                </a>
-                <div class="navPage-subMenu" id="navPages-account" aria-hidden="true" tabindex="-1">
-                    <ul class="navPage-subMenu-list">
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.orders.all}}"
-                               aria-label="{{lang 'account.nav.orders'}}"
-                            >
-                                {{lang 'account.nav.orders'}}
-                            </a>
-                        </li>
-                        {{#if settings.returns_enabled}}
-                            <li class="navPage-subMenu-item">
-                                <a class="navPage-subMenu-action navPages-action"
-                                   href="{{urls.account.returns}}"
-                                   aria-label="{{lang 'account.nav.returns'}}"
-                                >
-                                    {{lang 'account.nav.returns'}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.inbox}}"
-                               aria-label="{{lang 'account.mobile_nav.messages'}}"
-                            >
-                                {{lang 'account.mobile_nav.messages'}}
-                            </a>
-                        </li>
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.addresses}}"
-                               aria-label="{{lang 'account.nav.addresses'}}"
-                            >
-                                {{lang 'account.nav.addresses'}}
-                            </a>
-                        </li>
-                        {{#if settings.show_payment_methods}}
-                            <li class="navPage-subMenu-item">
-                                <a class="navPage-subMenu-action navPages-action"
-                                   href="{{urls.account.payment_methods.all}}"
-                                   aria-label="{{lang 'account.nav.payment_methods'}}"
-                                >
-                                    {{lang 'account.nav.payment_methods'}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.wishlists.all}}"
-                               aria-label="{{lang 'account.mobile_nav.wishlists'}}"
-                            >
-                                {{lang 'account.mobile_nav.wishlists'}}
-                            </a>
-                        </li>
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.recent_items}}"
-                               aria-label="{{lang 'account.nav.recently_viewed'}}"
-                            >
-                                {{lang 'account.nav.recently_viewed'}}
-                            </a>
-                        </li>
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action"
-                               href="{{urls.account.details}}"
-                               aria-label="{{lang 'account.nav.settings'}}"
-                            >
-                                {{lang 'account.nav.settings'}}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="navPages-item">
-                <a class="navPages-action"
-                   href="{{urls.auth.logout}}"
-                   aria-label="{{lang 'common.logout'}}"
-                >
-                    {{lang 'common.logout'}}
-                </a>
-            </li>
-        {{else}}
-            <li class="navPages-item">
-                <a class="navPages-action"
-                   href="{{urls.auth.login}}"
-                   aria-label="{{lang 'common.login'}}"
-                >
-                    {{lang 'common.login'}}
-                </a>
-                {{#if settings.account_creation_enabled}}
-                    {{lang 'common.or'}}
-                    <a class="navPages-action"
-                       href="{{urls.auth.create_account}}"
-                       aria-label="{{lang 'common.sign_up'}}"
-                    >
-                        {{lang 'common.sign_up'}}
-                    </a>
-                {{/if}}
-            </li>
-        {{/if}}
         {{#if theme_settings.social_icon_placement_top}}
-            <li class="navPages-item">
+            <li class="navPages-item flex-align-center">
                 {{> components/common/social-links}}
             </li>
         {{/if}}
