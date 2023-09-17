@@ -1,7 +1,9 @@
 {{#if children}}
-<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
-   href="{{url}}"
-   data-collapsible="navPages-{{id}}"
+<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}} sr-animate-header"
+    href="{{url}}"
+    data-collapsible="navPages-{{id}}"
+    data-sr-delay="{{multiply @index 100}}"
+    data-sr-origin="top"
 >
     {{name}}
     <i class="icon navPages-action-moreIcon" aria-hidden="true">
@@ -69,9 +71,11 @@
     </ul>
 </div>
 {{else}}
-<a class="navPages-action{{#if is_active}} activePage{{/if}}"
+<a class="navPages-action{{#if is_active}} activePage{{/if}} sr-animate-header"
     href="{{url}}"
     aria-label="{{name}}"
+    data-sr-delay="{{multiply @index 100}}"
+    data-sr-origin="top"
 >
     {{name}}
 </a>

@@ -195,7 +195,9 @@ export class Collapsible {
             return;
         }
 
-        event.preventDefault();
+        if(window.innerWidth < 1024) {
+            event.preventDefault();
+        }
 
         this.toggle();
     }

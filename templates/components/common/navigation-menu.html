@@ -27,19 +27,19 @@
             {{/each}}
             {{#unless theme_settings.hide_content_navigation}}
                 {{#each pages}}
-                     <li class="navPages-item navPages-item-page">
-                         <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
+                    <li class="navPages-item navPages-item-page">
+                        <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
                             href="{{url}}"
                             aria-label="{{name}}"
-                         >
-                             {{name}}
-                         </a>
-                     </li>
-                 {{/each}}
+                        >
+                            {{name}}
+                        </a>
+                    </li>
+                {{/each}}
             {{/unless}}
         </ul>
 
-        <a href="#" class="btn btn-primary">GREASE FINDER</a>
+        <a href="#" class="btn btn-primary sr-animate" data-sr-delay="400" data-sr-origin="bottom">GREASE FINDER</a>
     </div>
     
     <ul class="navPages-list navPages-list--user">

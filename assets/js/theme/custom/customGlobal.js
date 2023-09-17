@@ -19,8 +19,12 @@ export default function(context) {
             checkJS_load = false;
 
             /* Add Funcion Here */
-            /* Mega Menu */
             megamenuEditor($context);
+            scrollAnimation();
+
+            if(window.innerWidth > 1024) {
+                menuDesktopAnimate();
+            }
         }
     }
 
@@ -87,6 +91,44 @@ export default function(context) {
                     }
                 }
             ]
+        });
+    }
+
+    /* Scroll Animate */
+    function scrollAnimation() {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+        });
+
+        let srElement = document.querySelectorAll('.sr-animate');
+
+        forEach(srElement, (item) => {
+            let delay = item.getAttribute('data-sr-delay'),
+                origin = item.getAttribute('data-sr-origin');
+
+            if(!delay) delay = 0;
+            if(!origin) origin = 'top';
+
+            sr.reveal(item, { delay: delay, origin: origin });
+        });
+    }
+
+    function menuDesktopAnimate() {
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '0',
+            duration: 2500,
+        });
+
+        let srElement = document.querySelectorAll('.sr-animate-header');
+
+        forEach(srElement, (item) => {
+            let delay = item.getAttribute('data-sr-delay'),
+                origin = item.getAttribute('data-sr-origin');
+
+            sr.reveal(item, { delay: delay, origin: origin });
         });
     }
 }

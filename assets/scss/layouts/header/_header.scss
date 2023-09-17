@@ -443,6 +443,14 @@
             &.has-megamenu {
                 position: relative;
             }
+
+            &:hover {
+                @media (min-width: 1025px) {
+                    .navPage-subMenu {
+                        display: flex;
+                    }
+                }
+            }
         }
         .navPage-subMenu {
             @media (min-width: $min-1025) {
