@@ -65,6 +65,14 @@ blog:
         </div>
     </section>
 
+    {{> components/custom/homepage/product-block-id 
+        list_id=theme_settings.home_product_custom_block_1_list_id 
+        id='productBlockID_1'
+        title=theme_settings.products_block_listID_1_title 
+        block_columns=5
+        block_limit=25
+    }}
+
     <section class="section-slick-banner">
         <h5 class="heading-h5 custom-home-tilte"><span>Deals of the Month</span></h5>
         <div class="section-slick slick-banner__list" data-slick-show-desktop="2" data-slick-show-tablet="2" data-slick-show-mobile="1">
