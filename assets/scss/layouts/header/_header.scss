@@ -486,6 +486,12 @@
                     }
                 }
             }
+
+            .iconMore-action-menu {
+                @media (min-width: 1025px) {
+                    display: none;
+                }
+            }
         }
         .navPage-subMenu {
             @media (min-width: $min-1025) {

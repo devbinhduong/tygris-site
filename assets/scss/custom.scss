@@ -21,6 +21,10 @@
     
         .desc {
             margin-bottom: 0;
+            color: #232323;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 1.5em;
 
             @media (max-width: 1400px) {
                 margin-bottom: 15px;
