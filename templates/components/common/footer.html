@@ -11,7 +11,7 @@
 {{/if}}
 <footer class="footer" role="contentinfo">
     <h2 class="footer-title-sr-only">{{lang 'footer.title'}}</h2>
-    <div class="container">
+    <div class="container container-1684">
         <section class="footer-info">
             <article class="footer-info-col" data-section-type="newsletterSubscription">
                 {{#if settings.show_newsletter_box}}
@@ -21,7 +21,13 @@
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
-                <h3 class="footer-info-heading">{{lang 'footer.categories'}}</h3>
+                <h3 class="footer-info-heading">
+                    {{lang 'footer.categories'}}
+
+                    <i class="iconMore-action-menu">
+                        <span class="custom-plus-icon"></span>
+                   </i>
+                </h3>
                 <ul class="footer-info-list">
                     {{#each categories}}
                         <li>
@@ -32,21 +38,43 @@
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
-                <h3 class="footer-info-heading">Customer Service</h3>
+                <h3 class="footer-info-heading">
+                    {{lang 'footer.customer_service'}}
+
+                    <i class="iconMore-action-menu">
+                        <span class="custom-plus-icon"></span>
+                   </i>
+                </h3>
                 <ul class="footer-info-list">
                     <li>
                         <a href="#">MyTYGRIS</a>
+                    </li>
+                    <li>
                         <a href="#">Sample Request</a>
+                    </li>
+                    <li>
                         <a href="#">Order Tracking & Returns</a>
+                    </li>
+                    <li>
                         <a href="#">Shipping & Returns Policy</a>
+                    </li>
+                    <li>
                         <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
                         <a href="#">Privacy Policy</a>
                     </li>
                 </ul>
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <h3 class="footer-info-heading">{{lang 'footer.navigate'}}</h3>
+                <h3 class="footer-info-heading">
+                    {{lang 'footer.navigate'}}
+
+                    <i class="iconMore-action-menu">
+                        <span class="custom-plus-icon"></span>
+                   </i>
+                </h3>
                 <ul class="footer-info-list">
                     {{#each pages}}
                         <li>
@@ -60,29 +88,41 @@
             </article>
 
             {{#if settings.address}}
-            <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
+            <article class="footer-info-col footer-info-col--small footer-info-col--contact" data-section-type="storeInfo">
                 <h3 class="footer-info-heading">{{lang 'footer.info'}}</h3>
                 <address>{{nl2br settings.address}}</address>
                 {{#if settings.phone_number}}
-                    <strong>{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
+                    <a href="tel:+{{settings.phone_number}}">{{settings.phone_number}}</a>
                 {{/if}}
+
+                <a href="mailto:{{theme_settings.footer-contact-email}}" class="footer-contact-email">{{theme_settings.footer-contact-email}}</a>
 
                 <div class="footer-socials">
                     {{> components/common/social-links}}
                 </div>
+
+                <!-- Image Intro On Mobile -->
+                <img class="custom-footer-intro-image" src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-intro-image.png" alt="Fotter Intro Image">
+
             </article>
             {{/if}}
         </section>
-        {{#if theme_settings.show_powered_by}}
-            <div class="footer-copyright">
-                <p class="powered-by">{{lang 'footer.powered_by'}} <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">BigCommerce</a></p>
-            </div>
-        {{/if}}
-        {{#if theme_settings.show_copyright_footer}}
-            <div class="footer-copyright">
-                <p class="powered-by">&copy; {{moment format="YYYY"}} {{settings.store_name}} </p>
-            </div>
-        {{/if}}
+    </div>
+
+    <div class="footer-copy-right-section">
+        <div class="container container-1684">
+            {{#if theme_settings.show_copyright_footer}}
+                <div class="footer-copyright flex-between">
+                    <p class="powered-by">&copy; {{moment format="YYYY"}} TYGRIS | {{lang 'footer.powered_by'}} <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">bspoq</a></p>
+
+                    <div class="footer-copy-right-image">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-visa-payment.png" alt="Visa Image">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-paypal-payment.png" alt="Paypal Image">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-master-card-payment.png" alt="Master Card Image">
+                    </div>
+                </div>
+            {{/if}}
+        </div>
     </div>
     {{{region name="ssl_site_seal--global"}}}
 </footer>

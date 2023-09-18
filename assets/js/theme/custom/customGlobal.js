@@ -30,6 +30,10 @@ export default function(context) {
                 searchMobile();
                 closeMenuMobileSidebar();
             }
+
+            if(window.innerWidth < 550) {
+                footerMobileTab();
+            }
         }
     }
 
@@ -63,6 +67,7 @@ export default function(context) {
 
         /* Resize */
         $(window).on('resize', (e) => {
+            footerMobileTab();
         });
     }
     eventLoad();
@@ -154,5 +159,16 @@ export default function(context) {
             e.preventDefault();
             document.querySelector(".mobileMenu-toggle").click();
         });
+    }
+
+    function footerMobileTab () {
+        let footerTabTitle = document.querySelectorAll(".footer-info-col");
+
+        for (let item of footerTabTitle) {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+                item.classList.toggle("is-open");
+            })
+        }
     }
 }

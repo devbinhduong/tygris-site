@@ -6,9 +6,10 @@
     "footer": {
         "title": "Footer Start",
         "brands": "Popular Brands",
-        "navigate": "Navigate",
-        "info": "Info",
-        "categories": "Categories",
+        "navigate": "Information",
+        "customer_service": "Customer Service",
+        "info": "Contact Us",
+        "categories": "Shop",
         "call_us": "Call us at {phone_number}",
         "powered_by": "Powered by"
     },
@@ -834,9 +835,9 @@
     },
     "newsletter": {
         "subscribe": "Subscribe to our newsletter",
-        "subscribe_intro": "Get the latest updates on new products and upcoming sales",
-        "subscribe_submit": "Subscribe",
-        "email_placeholder": "Your email address",
+        "subscribe_intro": "Join the revolution",
+        "subscribe_submit": "Go >",
+        "email_placeholder": "Your email...",
         "subscribed_heading": "Thanks for Subscribing!",
         "subscribed_heading_error": "Oops...",
         "subscribed_message": "Thank you for joining our mailing list. You'll be sent the next issue of our newsletter shortly",

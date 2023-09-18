@@ -17,6 +17,10 @@
     &.container-main {
         max-width: 1362px;
     }
+
+    &.container-1684 {
+        max-width: 1684px;
+    }
 }
 
 .custom-section {
@@ -223,6 +227,10 @@ h1, h2, h3, h4, h5, h6 {
         @media (max-width: 767px) {
             width: 100%;
         }
+    }
+
+    &.btn-small {
+        min-width: 50px;
     }
 
     &.btn-primary {

@@ -1,7 +1,12 @@
-<h3 class="footer-info-heading">{{lang 'newsletter.subscribe'}}</h3>
+<a href="#" class="footer-logo-link">
+    <img class="footer-logo-image" src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-logo.png" alt="Footer Logo">
+</a>
+
+<img class="custom-footer-intro-image" src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/footer-intro-image.png" alt="Fotter Intro Image">
+
 <p>{{lang 'newsletter.subscribe_intro'}}</p>
 
-<form class="form" action="{{urls.subscribe.action}}" method="post">
+<form class="form custom-footer-form" action="{{urls.subscribe.action}}" method="post">
     <fieldset class="form-fieldset">
         <input type="hidden" name="action" value="subscribe">
         <input type="hidden" name="nl_first_name" value="bc">
@@ -19,7 +24,7 @@
                        aria-required="true"
                        required
                 >
-                <input class="button button--primary form-prefixPostfix-button--postfix"
+                <input class="btn btn-secondary btn-small form-prefixPostfix-button--postfix"
                        type="submit"
                        value="{{lang 'newsletter.subscribe_submit'}}"
                 >

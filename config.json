@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone Done Header No Test",
+  "name": "Cornerstone Done Footer No Test",
   "version": "6.12.0",
   "template_engine": "handlebars_v4",
   "meta": {
@@ -212,6 +212,9 @@
     "body-bg": "#ffffff",
     "header-backgroundColor": "#ffffff",
     "footer-backgroundColor": "#ffffff",
+    "footer-text-color": "#ffffff",
+    "footer-text-colorHover": "#ff5100",
+    "footer-contact-email": "team101@tygrisindustrial.com",
     "navUser-color": "#333333",
     "navUser-color-hover": "#757575",
     "navUser-dropdown-backgroundColor": "#ffffff",
@@ -593,7 +596,10 @@
         "storeName-color": "#333333",
         "body-bg": "#ffffff",
         "header-backgroundColor": "#ffffff",
-        "footer-backgroundColor": "#ffffff",
+        "footer-backgroundColor": "#232323",
+        "footer-text-color": "#ffffff",
+        "footer-text-colorHover": "#ff5100",
+        "footer-contact-email": "team101@tygrisindustrial.com",
         "navUser-color": "#333333",
         "navUser-color-hover": "#757575",
         "navUser-dropdown-backgroundColor": "#ffffff",
