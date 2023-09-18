@@ -590,9 +590,16 @@
             }
 
             .navPages {
+                position: relative;
                 background: #000000;
                 padding: 0;
                 padding-top: 55px;
+
+                .custom-close-menuSidebar {
+                    position: absolute;
+                    right: 18px;
+                    top: 15px;
+                }
 
                 .custom-header {
                     padding: 0;
@@ -605,8 +612,17 @@
                         border-bottom: 1px solid #707070;
 
                         .navPages-action {
+                            position: relative;
                             padding-top: 20px;
                             padding-bottom: 20px;
+
+                            &.is-open {
+                                > .iconMore-action-menu .custom-plus-icon {
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+                            }
                         }
 
                         .navPage-subMenu {
@@ -631,6 +647,16 @@
 
                                 .navPage-childList {
                                     width: 100%;
+                                }
+
+                                .collapsible-icon-wrapper {
+                                    &.is-open {
+                                        .custom-plus-icon {
+                                            &::before {
+                                                display: none;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -776,6 +802,43 @@
             margin: 0;
             max-height: 41px;
             transform: skew(45deg);
+        }
+    }
+}
+
+/* Custom Plus Icon */
+.iconMore-action-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+
+    .custom-plus-icon {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        display: inline-block;
+        
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: #ff5100;
+        }
+        
+        &:before {
+            width: 2px;
+            height: 12px;
+            top: 0;
+            left: 5px;
+        }
+        
+        &:after {
+            width: 12px;
+            height: 2px;
+            top: 5px;
+            left: 0;
         }
     }
 }

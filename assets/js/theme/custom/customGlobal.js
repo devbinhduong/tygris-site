@@ -28,6 +28,7 @@ export default function(context) {
 
             if(window.innerWidth < 1024) {
                 searchMobile();
+                closeMenuMobileSidebar();
             }
         }
     }
@@ -144,5 +145,14 @@ export default function(context) {
             e.preventDefault();
             searchForm.classList.toggle("is-open");
         })
+    }
+
+    function closeMenuMobileSidebar () {
+        let closeSidebarButton = document.querySelector(".custom-close-menuSidebar");
+
+        closeSidebarButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector(".mobileMenu-toggle").click();
+        });
     }
 }
