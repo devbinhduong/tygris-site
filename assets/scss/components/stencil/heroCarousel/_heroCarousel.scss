@@ -234,3 +234,38 @@
 .heroCarousel-action {
     margin: spacing("single") 0 0;
 }
+
+
+
+/* ------------------ Custom Start ------------------ */
+.heroCarousel {
+    margin-bottom: 0;
+    max-width: 1920px;
+    .heroCarousel-content {
+        text-align: left;
+        width: 100%;
+        max-width: 1920px;
+        padding-left: 90px;
+        background: transparent;
+
+        .heroCarousel-action {
+            text-transform: uppercase;
+        }
+    }
+
+    .heroCarousel-image-wrapper {
+        height: fit-content;
+        
+        .heroCarousel-image {
+            @media (max-width: 550px) {
+                display: none;
+            }
+        }
+        .image-mobile {
+            display: none;
+            @media (max-width: 550px) {
+                display: block;
+            }
+        }
+    }
+}

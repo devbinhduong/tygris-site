@@ -16,6 +16,48 @@
     <a href="{{url}}" data-hero-slide="{{@index}}" aria-label="{{#if this.alt_text.length '!=' 0}}{{this.alt_text}}{{else}}{{lang 'carousel.slide_number' slide_number=(add @index 1)}}{{/if}}">
     {{/if}}
         <div class="heroCarousel-slide {{#if ../theme_settings.homepage_stretch_carousel_images}}stretch{{/if}} {{#if @first}}heroCarousel-slide--first{{/if}}">
+
+            {{#if @index '==' 0}}
+                    {{#if (merge this subheading=../theme_settings.homepage_show_carousel_0_subheading)}}{{/if}}
+                    {{#if (merge this position=../theme_settings.homepage_show_carousel_0_position-content)}}{{/if}}
+                    {{#if (merge this imageMobile=../theme_settings.homepage_show_carousel_0_mobile-image)}}{{/if}}
+                    {{#if (merge this customTextBtn=../theme_settings.homepage_show_carousel_0_customtextbtn)}}{{/if}}
+                    {{#if (merge this customBtn=../theme_settings.homepage_show_carousel_0_custombtn)}}{{/if}}
+                    {{#if (merge this hasBackground=../theme_settings.carousel-bgColor)}}{{/if}}
+                {{/if}}
+                {{#if @index '==' 1}}
+                    {{#if (merge this subheading=../theme_settings.homepage_show_carousel_1_subheading)}}{{/if}}
+                    {{#if (merge this position=../theme_settings.homepage_show_carousel_1_position-content)}}{{/if}}
+                    {{#if (merge this imageMobile=../theme_settings.homepage_show_carousel_1_mobile-image)}}{{/if}}
+                    {{#if (merge this customTextBtn=../theme_settings.homepage_show_carousel_1_customtextbtn)}}{{/if}}
+                    {{#if (merge this customBtn=../theme_settings.homepage_show_carousel_1_custombtn)}}{{/if}}
+                    {{#if (merge this hasBackground=../theme_settings.carousel-bgColor)}}{{/if}}
+                {{/if}}
+                {{#if @index '==' 2}}
+                    {{#if (merge this subheading=../theme_settings.homepage_show_carousel_2_subheading)}}{{/if}}
+                    {{#if (merge this position=../theme_settings.homepage_show_carousel_2_position-content)}}{{/if}}
+                    {{#if (merge this imageMobile=../theme_settings.homepage_show_carousel_2_mobile-image)}}{{/if}}
+                    {{#if (merge this customTextBtn=../theme_settings.homepage_show_carousel_2_customtextbtn)}}{{/if}}
+                    {{#if (merge this customBtn=../theme_settings.homepage_show_carousel_2_custombtn)}}{{/if}}
+                    {{#if (merge this hasBackground=../theme_settings.carousel-bgColor)}}{{/if}}
+                {{/if}}
+                {{#if @index '==' 3}}
+                    {{#if (merge this subheading=../theme_settings.homepage_show_carousel_3_subheading)}}{{/if}}
+                    {{#if (merge this position=../theme_settings.homepage_show_carousel_3_position-content)}}{{/if}}
+                    {{#if (merge this imageMobile=../theme_settings.homepage_show_carousel_3_mobile-image)}}{{/if}}
+                    {{#if (merge this customTextBtn=../theme_settings.homepage_show_carousel_3_customtextbtn)}}{{/if}}
+                    {{#if (merge this customBtn=../theme_settings.homepage_show_carousel_3_custombtn)}}{{/if}}
+                    {{#if (merge this hasBackground=../theme_settings.carousel-bgColor)}}{{/if}}
+                {{/if}}
+                {{#if @index '==' 4}}
+                    {{#if (merge this subheading=../theme_settings.homepage_show_carousel_4_subheading)}}{{/if}}
+                    {{#if (merge this position=../theme_settings.homepage_show_carousel_4_position-content)}}{{/if}}
+                    {{#if (merge this imageMobile=../theme_settings.homepage_show_carousel_4_mobile-image)}}{{/if}}
+                    {{#if (merge this customTextBtn=../theme_settings.homepage_show_carousel_4_customtextbtn)}}{{/if}}
+                    {{#if (merge this customBtn=../theme_settings.homepage_show_carousel_4_custombtn)}}{{/if}}
+                    {{#if (merge this hasBackground=../theme_settings.carousel-bgColor)}}{{/if}}
+                {{/if}}
+
             {{#if button_text}}
             <a href="{{url}}" class="heroCarousel-image-wrapper">
             {{else}}
@@ -36,6 +78,12 @@
                     lazyload='lazyload'
                 }}
             {{/if}}
+            {{#if imageMobile}}
+                <img class="lazyload image-mobile" src="{{cdn 'img/loading.svg'}}{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{../settings.store_hash}}/product_images/uploaded_images/{{imageMobile}}" alt="{{stencil_image.alt}}" title="{{stencil_image.alt}}">
+            {{else}}
+                <img class="lazyload image-mobile" src="{{cdn 'img/loading.svg'}}{{cdn 'img/loading.svg'}}" data-src="{{getImageSrcset stencil_image 1x=(default fallback_size '960w')}}" alt="{{stencil_image.alt}}" title="{{stencil_image.alt}}">
+            {{/if}}
+
             {{#if button_text}}
             </a>
             {{else}}

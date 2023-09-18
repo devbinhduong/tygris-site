@@ -17,15 +17,78 @@ blog:
         {{> components/carousel arrows=theme_settings.homepage_show_carousel_arrows play_pause_button=theme_settings.homepage_show_carousel_play_pause_button}}
     {{/and}}
     {{{region name="home_below_carousel"}}}
+
+    
+    <section class="custom-section-below-carousel">
+        <div class="container container-main">
+            <div class="section-below-carouse__wrapper flex-between">
+                <h3 class="heading-h3 title">GREASE FINDER</h3>
+                <span class="separate"></span>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad .</p>
+                <a href="#" class="btn btn-large btn-primary">Grease Finder</a>
+            </div>
+        </div>
+    </section>
 {{/partial}}
 
 {{#partial "page"}}
-
+ 
     {{#each shipping_messages}}
         {{> components/common/alert/alert-info message}}
     {{/each}}
 
 <div class="main full">
+    <section class="custom-banner-with-text">
+        <div class="grid gap-9">
+            <div class="row">
+                <div class="col l-4 m-2 s-2 banner-with-text-item">
+                    <a href="#" class="banner-with-text-link">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
+                    </a>
+                </div>
+                <div class="col l-4 m-2 s-2 banner-with-text-item">
+                    <a href="#" class="banner-with-text-link">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
+                    </a>
+                </div>
+                <div class="col l-4 m-2 s-2 banner-with-text-item">
+                    <a href="#" class="banner-with-text-link">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
+                    </a>
+                </div>
+                <div class="col l-4 m-2 s-2 banner-with-text-item">
+                    <a href="#" class="banner-with-text-link">
+                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slick-banner">
+        <h5 class="heading-h5 custom-home-tilte"><span>Deals of the Month</span></h5>
+        <div class="section-slick slick-banner__list" data-slick-show-desktop="2" data-slick-show-tablet="2" data-slick-show-mobile="1">
+            <div class="slick-banner__item">
+                <a href="#" class="slick-banner__link">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
+                </a>
+            </div>
+
+            <div class="slick-banner__item">
+                <a href="#" class="slick-banner__link">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
+                </a>
+            </div>
+
+            <div class="slick-banner__item">
+                <a href="#" class="slick-banner__link">
+                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}

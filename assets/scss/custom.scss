@@ -1,0 +1,66 @@
+/* Section Below Home Carousel */
+.custom-section-below-carousel {
+    background-color: #ff5100;
+    padding-top: 13px;
+    padding-bottom: 16px;
+
+    @media (max-width: 767px) {
+        padding-top: 8px;
+        padding-bottom: 14px;    
+    }
+
+    .section-below-carouse__wrapper {
+        @media (max-width: 1400px) {
+            flex-direction: column;
+        }
+
+        .title {
+            margin: 0;
+    
+        }
+    
+        .desc {
+            margin-bottom: 0;
+
+            @media (max-width: 1400px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .separate {
+            width: 1px;
+            height: 30px;
+            background-color: #ffffff;
+
+            @media (max-width: 1400px) {
+                display: none;
+            }
+        }
+
+        .btn {
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+/* Section Banner With Text 1 */
+.custom-banner-with-text {
+    margin-top: 28px;
+
+    .banner-with-text-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* Section Slick Banner */
+.section-slick-banner {
+    .slick-list {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    .slick-banner__item {
+        padding: 0 5px;
+    }
+}

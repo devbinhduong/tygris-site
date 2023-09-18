@@ -15,7 +15,8 @@
     }
 
     &.container-main {
-        max-width: 1362px;
+        // max-width: 1362px;
+        max-width: 1406px;
     }
 
     &.container-1684 {
@@ -194,6 +195,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-main {
     background-color: #ff5100;
+}
+
+.custom-home-tilte {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #232323;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #efefef;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+    }
+
+    span {
+        position: relative;
+        z-index: 9;
+        padding-left: 37.5px;
+        padding-right: 37.5px;
+        background-color: #ffffff;
+        display: inline-block;
+    }
 }
 
 .section-heading {

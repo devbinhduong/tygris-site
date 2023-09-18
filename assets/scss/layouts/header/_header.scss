@@ -35,7 +35,7 @@
 
 .header {
     background-color: $header-bg;
-    border-bottom: container("border");
+    border-bottom: none;
     height: $header-height;
     position: fixed;
     top: 0;
@@ -43,7 +43,7 @@
     z-index: zIndex("higher");
 
     @include breakpoint("medium") {
-        border-bottom: container("border");
+        border-bottom: none;
         display: flex;
         flex-direction: column;
         height: auto;
