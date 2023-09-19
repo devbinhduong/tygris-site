@@ -25,6 +25,7 @@ export default function(context) {
 
             if(window.innerWidth > 1024) {
                 menuDesktopAnimate();
+                activeMansory();
             }
 
             if(window.innerWidth < 1024) {
@@ -311,4 +312,30 @@ export default function(context) {
             });
         }
     }
+
+    function mansoryMenu() {
+        var navPageList = document.querySelectorAll('.navPage-subMenu-list');
+        for(let item of navPageList) {
+            var msnry = new Masonry( item, {
+                itemSelector: '.navPage-subMenu-item',
+                columnWidth: '.navPage-subMenu-item',
+            });
+        }
+    }
+
+    function activeMansory() {
+        let menuList = document.querySelector('.custom-header .navPages-list'),
+            menuItems = menuList.querySelectorAll('.navPages-item');
+
+        forEach(menuItems, (item) => {
+            
+            /* Event Hover In */
+            item.addEventListener('mouseover', (e) => {
+                /* Run Mansory */
+                mansoryMenu();
+            })
+        });
+    }
+
+
 }

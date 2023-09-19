@@ -515,6 +515,8 @@
                     width: 100%;
                     max-width: calc(100% - 200px);
                     padding-left: 40px;
+                    // display: flex;
+                    // flex-wrap: wrap;
                 }
 
                 .imageArea {
@@ -536,7 +538,7 @@
                         position: relative;
 
                         &.no-subCategory {
-                            margin-bottom: 12px;
+                            // margin-bottom: 12px;
                         }
                     }
 
@@ -555,7 +557,9 @@
                     }
 
                     @media (min-width: 1025px) {
-                        width: 50%;
+                        /* Test */
+                        width: 100%;
+                        max-width: 200px;
 
                         .navPage-subMenu-image {
                             position: absolute;
