@@ -1,10 +1,12 @@
-<div id="{{id}}" class="home-product-block">
-    <div class="custom_page-heading-wrapper text-center">
-        <div class="heading-h5 custom-home-tilte">
-            <span>{{title}}</span>
+<div class="container container-main">
+    <div id="{{id}}" class="home-product-block">
+        <div class="custom_page-heading-wrapper text-center">
+            <div class="heading-h5 custom-home-tilte">
+                <span>{{title}}</span>
+            </div>
         </div>
-    </div>
-    <div id="list-{{id}}" class="product-block" data-columns="{{block_columns}}" data-limit="{{block_limit}}" data-dots="false">
-        {{> components/custom/homepage/ajax-products-by-list-id list_id=list_id id=id}}
+        <div id="list-{{id}}" class="product-block" data-columns="{{block_columns}}" data-limit="{{block_limit}}" data-dots="false">
+            {{> components/custom/homepage/ajax-products-by-list-id list_id=list_id id=id}}
+        </div>
     </div>
 </div>

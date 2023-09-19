@@ -21,7 +21,7 @@
             </a>
         </li>
         {{#each children}}
-            <li class="navPage-subMenu-item">
+            <li class="navPage-subMenu-item{{#unless children}} no-subCategory{{/unless}}">
                 <!-- Menu Item Image -->
                 <span class="navPage-subMenu-image">
                     {{#if image}}

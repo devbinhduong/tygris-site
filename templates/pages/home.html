@@ -19,16 +19,9 @@ blog:
     {{{region name="home_below_carousel"}}}
 
     
-    <section class="custom-section-below-carousel">
-        <div class="container container-main">
-            <div class="section-below-carouse__wrapper flex-between">
-                <h3 class="heading-h3 title">GREASE FINDER</h3>
-                <span class="separate"></span>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad .</p>
-                <a href="#" class="btn btn-large btn-primary">Grease Finder</a>
-            </div>
-        </div>
-    </section>
+    {{> components/custom/homepage/banner-below-carousel}}
+    {{{region name="home_banner_below_carousel"}}}
+
 {{/partial}}
 
 {{#partial "page"}}
@@ -38,32 +31,8 @@ blog:
     {{/each}}
 
 <div class="main full">
-    <section class="custom-banner-with-text">
-        <div class="grid gap-9">
-            <div class="row">
-                <div class="col l-4 m-2 s-2 banner-with-text-item">
-                    <a href="#" class="banner-with-text-link">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
-                    </a>
-                </div>
-                <div class="col l-4 m-2 s-2 banner-with-text-item">
-                    <a href="#" class="banner-with-text-link">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
-                    </a>
-                </div>
-                <div class="col l-4 m-2 s-2 banner-with-text-item">
-                    <a href="#" class="banner-with-text-link">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
-                    </a>
-                </div>
-                <div class="col l-4 m-2 s-2 banner-with-text-item">
-                    <a href="#" class="banner-with-text-link">
-                        <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/home-banner-with-text-image.png" alt="Banner With Text Image">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{> components/custom/homepage/banner-with-text-1}}
+    {{{region name="home_below_banner_with_text_1"}}}
 
     {{> components/custom/homepage/product-block-id 
         list_id=theme_settings.home_product_custom_block_1_list_id 
@@ -72,45 +41,19 @@ blog:
         block_columns=5
         block_limit=25
     }}
+    {{{region name="home_below_product_block_id"}}}
 
-    <section class="section-slick-banner">
-        <h5 class="heading-h5 custom-home-tilte"><span>Deals of the Month</span></h5>
-        <div class="section-slick slick-banner__list" data-slick-show-desktop="2" data-slick-show-tablet="2" data-slick-show-mobile="1">
-            <div class="slick-banner__item">
-                <a href="#" class="slick-banner__link">
-                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
-                </a>
-            </div>
+    {{> components/custom/homepage/home-slick-banner}}
+    {{{region name="home_below_slick_banner"}}}
 
-            <div class="slick-banner__item">
-                <a href="#" class="slick-banner__link">
-                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
-                </a>
-            </div>
+    {{> components/custom/homepage/banner-button-text}}
+    {{region name="home_below_banner_button_text"}}
 
-            <div class="slick-banner__item">
-                <a href="#" class="slick-banner__link">
-                    <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/section-slick-banner-image.png" alt="Slick Banner Image">
-                </a>
-            </div>
-        </div>
-    </section>
-    
+    {{> components/custom/homepage/home-blogs}}
+    {{{region name="home_below_blogs"}}}
 
-    {{#if products.featured}}
-        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_featured_products"}}}
-
-    {{#if products.top_sellers}}
-        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_top_products"}}}
-
-    {{#if products.new}}
-        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_new_products"}}}
+    {{> components/custom/homepage/home-testimonial}}
+    {{{region name="home_below_testimonial"}}}
 </div>
 {{/partial}}
 {{> layout/base}}

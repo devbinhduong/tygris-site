@@ -1,0 +1,37 @@
+<section class="home-block-post bg-main-2">
+    <div class="container container-main">
+        <div class="block-header">
+            <h3 class="heading-h3 color-white text-center uppercase">TYGRIS ACADEMY</h3>
+            <p class="section-desc color-white text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad .
+            </p>
+        </div>
+
+        <div class="block-recent-post">
+            <div class="row section-slick" data-slick-show-desktop="3" data-slick-show-tablet="2" data-slick-show-mobile="1">
+                {{#each (limit blog.recent_posts 3)}}
+                    <div class="item">
+                        <div class="item-image">
+                            <a class="image-with-overlay" href="{{url}}">
+                                {{> components/common/responsive-img
+                                    image=thumbnail
+                                    class=""
+                                    fallback_size=../theme_settings.recent_blog_size
+                                    default_image=../theme_settings.default_image_product
+                                }}
+                            </a>
+                        </div>
+                        <div class="item-content bg-black">
+                            <h3 class="title text-center">
+                                <a href="{{url}}" class="color-white fw-bold">{{title}}</a>
+                            </h3>
+                            <div class="summary section-desc text-center fw-400">
+                                {{{ellipsis summary 87}}}
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>

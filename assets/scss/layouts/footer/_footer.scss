@@ -15,7 +15,7 @@
 
 .footer {
     background-color: $footer-background;
-    border-top: container("border");
+    border-top: none;
     padding-top: 50px;
     position: relative;
     transform: translateZ(0); // 3
@@ -400,7 +400,6 @@
 
 /* Copy Right Section */
 .footer-copy-right-section {
-    background-color: #000000;
     color: #ffffff;
     padding-top: 21px;
     padding-bottom: 18px;
