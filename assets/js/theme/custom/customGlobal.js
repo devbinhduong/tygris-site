@@ -274,7 +274,7 @@ export default function(context) {
                 infinite: false,
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                dots: true,
+                dots: false,
                 arrows: false,
                 mobileFirst: true,
                 nextArrow: "<svg class='slick-next slick-arrow'><use xlink:href='#slick-arrow-next'></use></svg>",
@@ -304,7 +304,7 @@ export default function(context) {
                             slidesToShow: homeProColumn - 2,
                             slidesToScroll: homeProColumn - 2,
                             arrows: false,
-                            dots: true
+                            dots: false
                         }
                     }
                 ]

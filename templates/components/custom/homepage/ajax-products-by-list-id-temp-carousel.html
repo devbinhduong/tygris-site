@@ -1,25 +1,6 @@
 <div class="productCarousel-slide">
     <article class="card" data-product-id="{{product.id}}">
         <div class="card-figure">
-            <div class="custom_badges">
-                {{#or product.price.non_sale_price_with_tax product.price.non_sale_price_without_tax}}
-                    <div class="sale-badge custom_badge">
-                        <span class="text">Sale</span>
-                    </div>
-                {{/or}}
-                {{#each product.custom_fields}}
-                    {{#if name '===' 'customlabel'}}
-                    <div class="custom-badge custom_badge">
-                        <span class="text">{{{value}}}</span>
-                    </div>
-                    {{/if}}
-                {{/each}}
-                {{#if product.out_of_stock_message}}
-                    <div class="soldOut-badge custom_badge">
-                        <span class="text">sold out</span>
-                    </div>
-                {{/if}}
-            </div>
             <a href="{{product.url}}" class="product_img_link" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}}>
                 <div class="card-img-container">
                     <img class="card-image lazyload card-image-loading" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage product.main_image 'productgallery_size' (cdn theme_settings.default_image_product)}}" alt="{{product.title}}" title="{{product.title}}">
@@ -35,43 +16,37 @@
                 </div>
             </a>
             <div class="card-buttonGroup">
+                {{#if settings.show_wishlist}}
+                    <a href="/wishlist.php?action=add&product_id={{product.id}}" aria-label="wishlist" class="btn btn-primary card-button-wishlist" title="{{lang 'account.wishlists.add_item'}}">
+                        Add To Wishlist
+                        <span class="icon icon--card-wish-list">
+                            <svg width="800px" height="800px" viewBox="0 -0.5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <title>heart-like</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-100.000000, -880.000000)" fill="#ff5100"> <path d="M128,893.682 L116,908 L104,893.623 C102.565,891.629 102,890.282 102,888.438 C102,884.999 104.455,881.904 108,881.875 C110.916,881.851 114.222,884.829 116,887.074 C117.731,884.908 121.084,881.875 124,881.875 C127.451,881.875 130,884.999 130,888.438 C130,890.282 129.553,891.729 128,893.682 L128,893.682 Z M124,880 C120.667,880 118.145,881.956 116,884 C113.957,881.831 111.333,880 108,880 C103.306,880 100,884.036 100,888.438 C100,890.799 100.967,892.499 102.026,894.097 L114.459,909.003 C115.854,910.48 116.118,910.48 117.513,909.003 L129.974,894.097 C131.22,892.499 132,890.799 132,888.438 C132,884.036 128.694,880 124,880 L124,880 Z" id="heart-like" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+                                </svg>
+                        </span>
+                    </a>
+                {{/if}}
+
                 {{#unless product.hide_product_quick_view}}
                     {{#if theme_settings.show_product_quick_view}}
                         {{#unless demo}}
-                            <a href="javascript:void(0)" aria-label="quickview" class="card-button-quickview quickview" data-product-id="{{product.id}}" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}} >
-                                <svg title="icon eye"><use xlink:href="#icon-eye"/></svg>
-                                <span class="text">quick view</span>
+                            <a href="javascript:void(0)" aria-label="quickview" class="btn btn-primary card-button-quickview quickview" data-product-id="{{product.id}}" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}} >
+                                Quick View
+                                <span class="icon icon--plus">
+                                    <svg width="800px" height="800px" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <g id="SVGRepo_iconCarrier"> <title>plus [#1512]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -240.000000)" fill="#ff5100"> <g id="icons" transform="translate(56.000000, 160.000000)"> <polygon id="plus-[#1512]" points="344 89 344 91 334.55 91 334.55 100 332.45 100 332.45 91 323 91 323 89 332.45 89 332.45 80 334.55 80 334.55 89"> </polygon> </g> </g> </g> </g>
+                                    </svg>
+                                </span>
                             </a>
                         {{/unless}}
                     {{/if}}
                 {{/unless}}
-                {{#if theme_settings.show_product_wishlist}}
-                {{#if settings.show_wishlist}}
-                    <a href="/wishlist.php?action=add&product_id={{product.id}}" aria-label="wishlist" class="card-button-wishlist" title="{{lang 'account.wishlists.add_item'}}">
-                        <svg title="icon heart"><use xlink:href="#icon-heart"/></svg>
-                    </a>
-                {{/if}}
-                {{/if}}
             </div>
-            <div class="card-figcaption">
-                {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
-                        {{#if product.out_of_stock_message }}
-                            <a href="{{product.url}}" data-event-type="product-click" class="button card-figcaption-button out_stock" disabled data-product-id="{{product.id}}">{{product.out_of_stock_message}}</a>
-                        {{else}}
-                            {{#if product.options}}
-                                <a href="{{product.url}}" aria-label="choose options" data-event-type="product-click" class="button card-figcaption-button" data-product-id="{{product.id}}">{{lang 'products.choose_options'}}</a>
-                            {{else}}
-                                {{#if product.pre_order}}
-                                    <a href="{{product.url}}" aria-label="pre order" class="button card-figcaption-button">{{lang 'products.pre_order'}}</a>
-                                {{else}}
-                                    {{#if product.can_purchase }}
-                                        <a href="{{product.cart_url}}?action=add&product_id={{product.id}}" aria-label="add to cart" data-button-type="add-cart" class="button card-figcaption-button custom_btnATC" data-product-id="{{product.id}}" data-wait-message="{{lang 'products.adding_to_cart'}}">{{lang 'products.add_to_cart'}}</a>
-                                    {{/if}}
-                                {{/if}}
-                            {{/if}}
-                        {{/if}}
-                {{/or}}
-            </div>
+            
         </div>
         <div class="card-body">
             {{#if product.brand.name}}
@@ -101,6 +76,24 @@
                     {{/or}}
                 </div>
             </div>
+
+            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                    {{#if product.out_of_stock_message }}
+                        <a href="{{product.url}}" data-event-type="product-click" class="btn btn-disable card-figcaption-button out_stock" disabled data-product-id="{{product.id}}">{{product.out_of_stock_message}}</a>
+                    {{else}}
+                        {{#if product.options}}
+                            <a href="{{product.url}}" aria-label="choose options" data-event-type="product-click" class="btn btn-secondary card-figcaption-button" data-product-id="{{product.id}}">{{lang 'products.choose_options'}}</a>
+                        {{else}}
+                            {{#if product.pre_order}}
+                                <a href="{{product.url}}" aria-label="pre order" class="btn btn-secondary card-figcaption-button">{{lang 'products.pre_order'}}</a>
+                            {{else}}
+                                {{#if product.can_purchase }}
+                                    <a href="{{product.cart_url}}?action=add&product_id={{product.id}}" aria-label="add to cart" data-button-type="add-cart" class="btn btn-secondary card-figcaption-button custom_btnATC" data-product-id="{{product.id}}" data-wait-message="{{lang 'products.adding_to_cart'}}">{{lang 'products.add_to_cart'}}</a>
+                                {{/if}}
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+            {{/or}}
         </div>
     </article>
 </div>
