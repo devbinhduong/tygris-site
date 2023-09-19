@@ -331,8 +331,9 @@ export default function(context) {
             
             /* Event Hover In */
             item.addEventListener('mouseover', (e) => {
-                /* Run Mansory */
-                mansoryMenu();
+                setTimeout(() => {
+                    mansoryMenu();
+                }, 500);
             })
         });
     }

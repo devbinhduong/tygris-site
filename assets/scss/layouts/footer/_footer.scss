@@ -335,6 +335,14 @@
             }
         }
 
+        a {
+            text-decoration: none;
+
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+
         .custom-footer-intro-image {
             @media (min-width: 551px) {
                 display: none;
