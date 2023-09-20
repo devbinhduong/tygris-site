@@ -335,6 +335,15 @@
         .navUser {
             @media (min-width: 1025px) {
                 position: unset;
+                padding-right: 0;
+
+                .navUser-action--quickSearch{
+                    padding-right: 0;
+
+                    .header-top__icon {
+                        margin-right: 0;
+                    }
+                }
             }
 
 
@@ -421,7 +430,7 @@
             .header-logo--desktop {
                 position: absolute;
                 margin: 0;
-                padding-left: 60px;
+                padding-left: 20px;
                 padding-right: 53px;
                 background-color: #232323;
                 transform: skew(-45deg);
@@ -496,7 +505,7 @@
 
         .header-middle-button {
             position: relative;
-            z-index: -1;
+            z-index: 1;
         }
         /* CSS for Mega Menu */
         .navPages-item {
