@@ -20,11 +20,9 @@ export default function(context) {
 
             /* Add Funcion Here */
             megamenuEditor($context);
-            // scrollAnimation();
             homeProductsListID();
 
             if(window.innerWidth > 1024) {
-                // menuDesktopAnimate();
                 activeMansory();
             }
 
@@ -53,8 +51,6 @@ export default function(context) {
             })
 
             scrollAnimation(tScroll);
-
-
         })
 
         /* Scroll Event */
@@ -73,7 +69,15 @@ export default function(context) {
 
         /* Resize */
         $(window).on('resize', (e) => {
-            footerMobileTab();
+            if(window.innerWidth > 1024) {
+                activeMansory();
+            }
+            if(window.innerWidth < 1024) {
+                searchMobile();
+                closeMenuMobileSidebar();
+                footerMobileTab();
+            }
+            
         });
     }
     eventLoad();
@@ -112,12 +116,17 @@ export default function(context) {
 
     function searchMobile() {
         let searchButton = document.querySelector(".mobileSearch-toggle"),
-            searchForm = document.querySelector(".custom-search-mobile");
+            searchForm = document.querySelector(".custom-search-mobile"),
+            searchInput = searchForm.querySelector("#nav-menu-quick-search");
 
         searchButton.addEventListener("click", (e) => {
             e.preventDefault();
             searchForm.classList.toggle("is-open");
         })
+
+        searchInput.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
     }
 
     function closeMenuMobileSidebar () {

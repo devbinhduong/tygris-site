@@ -470,6 +470,16 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+
+    @media (min-width: 1262px) and (max-width: 1480px) {
+        .slick-next {
+            right: 0;
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+    }
 }
 
 /* Animation Scrool */
