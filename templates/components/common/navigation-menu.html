@@ -16,7 +16,7 @@
         {{/if}}
         <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
             {{#each categories}}
-                <li class="navPages-item">
+                <li class="navPages-item custom-animation" data-step-animate="{{@index}}">
                 {{#if ../theme_settings.navigation_design '===' 'simple'}}
                     {{> components/common/navigation-list}}
                 {{/if}}
@@ -39,7 +39,7 @@
             {{/unless}}
         </ul>
 
-        <a href="#" class="btn btn-primary sr-animate" data-sr-delay="400" data-sr-origin="bottom">GREASE FINDER</a>
+        <a href="#" class="btn btn-primary custom custom-animation header-middle-button" data-step-animate="1">GREASE FINDER</a>
     </div>
     
     <ul class="navPages-list navPages-list--user">

@@ -59,9 +59,9 @@
                 {{/if}}
 
             {{#if button_text}}
-            <a href="{{url}}" class="heroCarousel-image-wrapper">
+            <a href="{{url}}" class="heroCarousel-image-wrapper custom-animation" data-step-animate="1">
             {{else}}
-            <div class="heroCarousel-image-wrapper">
+            <div class="heroCarousel-image-wrapper custom-animation" data-step-animate="1">
             {{/if}}
             {{#if @first}}
                 {{> components/common/responsive-img

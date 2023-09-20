@@ -13,14 +13,14 @@
     <h2 class="footer-title-sr-only">{{lang 'footer.title'}}</h2>
     <div class="container container-1684">
         <section class="footer-info">
-            <article class="footer-info-col" data-section-type="newsletterSubscription">
+            <article class="footer-info-col custom-animation" data-section-type="newsletterSubscription" data-step-animate="1">
                 {{#if settings.show_newsletter_box}}
                     {{> components/common/subscription-form}}
                 {{/if}}
                 {{> components/common/payment-icons}}
             </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+            <article class="footer-info-col custom-animation footer-info-col--small" data-section-type="footer-categories" data-step-animate="2">
                 <h3 class="footer-info-heading">
                     {{lang 'footer.categories'}}
 
@@ -37,7 +37,7 @@
                 </ul>
             </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
+            <article class="footer-info-col custom-animation footer-info-col--small" data-section-type="footer-brands" data-step-animate="3">
                 <h3 class="footer-info-heading">
                     {{lang 'footer.customer_service'}}
 
@@ -67,7 +67,7 @@
                 </ul>
             </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+            <article class="footer-info-col custom-animation footer-info-col--small" data-section-type="footer-webPages" data-step-animate="4">
                 <h3 class="footer-info-heading">
                     {{lang 'footer.navigate'}}
 
@@ -88,7 +88,7 @@
             </article>
 
             {{#if settings.address}}
-            <article class="footer-info-col footer-info-col--small footer-info-col--contact" data-section-type="storeInfo">
+            <article class="footer-info-col custom-animation footer-info-col--small footer-info-col--contact" data-section-type="storeInfo" data-step-animate="5">
                 <h3 class="footer-info-heading">{{lang 'footer.info'}}</h3>
                 <address>{{nl2br settings.address}}</address>
                 {{#if settings.phone_number}}
@@ -109,7 +109,7 @@
         </section>
     </div>
 
-    <div class="footer-copy-right-section bg-black">
+    <div class="footer-copy-right-section bg-black custom-animation" data-step-animate="6">
         <div class="container container-1684">
             {{#if theme_settings.show_copyright_footer}}
                 <div class="footer-copyright flex-between">

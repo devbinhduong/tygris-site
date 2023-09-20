@@ -10,7 +10,7 @@
         <div class="block-recent-post">
             <div class="row section-slick" data-slick-show-desktop="3" data-slick-show-tablet="2" data-slick-show-mobile="1">
                 {{#each (limit blog.recent_posts 3)}}
-                    <div class="item">
+                    <div class="item custom-animation" data-step-animate="{{@index}}">
                         <div class="item-image">
                             <a class="image-with-overlay" href="{{url}}">
                                 {{> components/common/responsive-img

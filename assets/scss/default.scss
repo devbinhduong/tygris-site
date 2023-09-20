@@ -425,3 +425,33 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
+
+/* Animation Scrool */
+.no-js .custom-animation {
+    transform: translatey(0);
+}
+
+.custom-animation {
+    transform: translatey(100px);
+}
+
+.js .custom-animation {
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transform: translatey(100px);
+    opacity: 0;
+
+    &[data-step-animate="1"] {}
+
+    @for $i from 0 through 100 {
+        &[data-step-animate="#{$i}"] {
+            transition-delay: .1s + $i*0.05;
+            transition-duration: .5s + $i*0.1;
+        }
+    }
+}
+
+.js .animated.custom-animation {
+    transform: translatey(0);
+    opacity: 1;
+}

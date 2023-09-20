@@ -388,6 +388,13 @@
                 fill: #000000;
             }
         }
+
+        &:hover {
+            background: #C8C9C8;
+            &:before, &:after {
+                background: #C8C9C8;
+            }
+        }
     }
     .shield:before, .shield:after {
         content:"";
@@ -404,6 +411,7 @@
     }
     .shield:after {transform: scale(-1,1) translateX(-11px) rotate(-20deg);}
     .shield, .shield:before, .shield:after {background: #ff5100;}
+
 }
 
 /* Copy Right Section */
