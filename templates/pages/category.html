@@ -16,40 +16,48 @@ category:
 
 {{#partial "page"}}
 
+<div class="category-top-banner" style="background-image: url({{#if category.image}}{{getImageSrcset category.image 1x=(default fallback_size '1920w')}}{{else}}https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/category-default-image.png{{/if}});">
+    <div class="top-banner__content text-center">
+        <div class="content__heading color-main smooch-font">{{category.name}}</div>
+        <div class="content__description color-white section-text">
+            {{{category.description}}}
+        </div>
+        <a href="#" class="view-more-category-button section-text uppercase color-main no-underline inline-block">Read More...</a>
+    </div>
+    {{{region name="category_top_banner"}}}
+</div>
+
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-{{#if category.image}}
-    {{> components/common/responsive-img
-        image=category.image
-        fallback_size=theme_settings.zoom_size
-        lazyload=theme_settings.lazyload_mode
-        class="category-header-image"
-    }}
-{{/if}}
+
 {{#unless theme_settings.hide_category_page_heading }}
     <h1 class="page-heading">{{category.name}}</h1>
     {{{region name="category_below_header"}}}
 {{/unless}}
-{{{category.description}}}
-<div class="page">
-    {{#if category.faceted_search_enabled}}
-        <aside class="page-sidebar" id="faceted-search-container">
-            {{> components/category/sidebar}}
-        </aside>
-    {{else if category.subcategories}}
-        <aside class="page-sidebar" id="faceted-search-container">
-            {{> components/category/sidebar}}
-        </aside>
-    {{else if category.shop_by_price}}
-        {{#if theme_settings.shop_by_price_visibility}}
-             <aside class="page-sidebar" id="faceted-search-container">
+
+<div class="container container-1446">
+    {{> components/custom/category/custom-subCategory}}
+    
+    <div class="page">
+        {{#if category.faceted_search_enabled}}
+            <aside class="page-sidebar" id="faceted-search-container">
                 {{> components/category/sidebar}}
             </aside>
+        {{else if category.subcategories}}
+            <aside class="page-sidebar" id="faceted-search-container">
+                {{> components/category/sidebar}}
+            </aside>
+        {{else if category.shop_by_price}}
+            {{#if theme_settings.shop_by_price_visibility}}
+                 <aside class="page-sidebar" id="faceted-search-container">
+                    {{> components/category/sidebar}}
+                </aside>
+            {{/if}}
         {{/if}}
-    {{/if}}
-
-    <div class="page-content" id="product-listing-container">
-        {{> components/category/product-listing}}
-        {{{region name="category_below_content"}}}
+    
+        <div class="page-content" id="product-listing-container">
+            {{> components/category/product-listing}}
+            {{{region name="category_below_content"}}}
+        </div>
     </div>
 </div>
 

@@ -1,5 +1,5 @@
 {{#if children}}
-<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
+<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}} custom-animation" data-step-animate="{{@index}}"
     href="{{url}}"
     data-collapsible="navPages-{{id}}"
 >
@@ -69,7 +69,7 @@
     </ul>
 </div>
 {{else}}
-<a class="navPages-action{{#if is_active}} activePage{{/if}} sr-animate-header"
+<a class="navPages-action{{#if is_active}} activePage{{/if}} custom-animation" data-step-animate="{{@index}}"
     href="{{url}}"
     aria-label="{{name}}"
     data-sr-delay="{{multiply @index 100}}"

@@ -9,3 +9,109 @@
 .category-header-image {
     width: 100%;
 }
+
+/* Custom Start */
+.category-top-banner {
+    min-height: 198px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .top-banner__content {
+        max-width: 1067px;
+        margin: 0 auto;
+        padding: 32px 31px 38px 31px;
+
+        @media (max-width: 767px) {
+            padding-top: 12px;
+            padding-bottom: 25px;
+        }
+
+        @media (max-width: 400px) {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        .content__heading {
+            font-size: 36px;
+            letter-spacing: 0;
+            line-height: 1.388em;
+        }
+
+        .content__description {
+            max-height: 50px;
+            overflow: hidden;
+
+            @media (max-width: 767px) {
+                max-height: 100px;
+            }
+
+            &.show {
+                max-height: none;
+            }
+        }
+
+        .view-more-category-button {
+            @media (max-width: 767px) {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+/* Sub Categories */
+.subCategories__list {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 11px;
+
+    @media (max-width: 767px) {
+       max-width: 320px;
+    }
+
+    .item {
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 1600px) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 50%;
+
+            .sub-category {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .sub-category {
+            max-width: 125px;
+
+            .content {
+                .title {
+                    font-size: 12px;
+                    letter-spacing: 0.84px;
+                    line-height: 1.1666em;
+                    min-height: 28px;
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        + .item {
+            @media (min-width: 1600px) {
+                margin-left: 35px;
+            }
+        }
+        
+        &:hover {
+            transform: translateY(-8px);
+            .title {
+                color: #ff5100
+            }
+        }
+    }
+}

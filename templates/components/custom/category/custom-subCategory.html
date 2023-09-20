@@ -1,0 +1,22 @@
+{{#if category.subcategories}}
+    <div class="subCategories__list flex-center flex-wrap">
+        {{#each category.subcategories}}
+            <div class="item">
+                <div class="sub-category flex-center-column">
+                    <div class="image">
+                        <a href="{{url}}">
+                            {{#if image}}
+                            <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage image '298x298'}}" alt="{{name}}">
+                            {{else}}
+                            <img src="https://cdn11.bigcommerce.com/s-{{../../settings.store_hash}}/images/stencil/original/image-manager/categorydefault.jpg" alt="{{name}}">
+                            {{/if}}
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a class="title no-underline fw-600 inline-block text-center" href="{{url}}">{{name}}</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/if}}

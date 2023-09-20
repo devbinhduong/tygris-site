@@ -1,7 +1,18 @@
 /* Popin Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    @media (max-width: 1024px) {
+        padding-top: 83px;
+    }
+}
+
 .body {
     margin-bottom: 0;
+    margin-top: 0;
+}
+
+.skip-to-main-link {
+    display: none;
 }
 
 .container {
@@ -28,6 +39,10 @@
 
     &.container-1684 {
         max-width: 1684px;
+    }
+
+    &.container-1446 {
+        max-width: 1446px;
     }
 }
 
@@ -70,6 +85,11 @@
 
 .flex {
     display: flex;
+
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-align-center {
@@ -224,6 +244,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffffff;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
 
 .custom-home-tilte {
     position: relative;
@@ -266,10 +298,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-desc {
-    // color: stencilColor("color-textBase");
     font-size: 14px;
     letter-spacing: 0;
     line-height: 1.5em;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.5625em;
+    letter-spacing: 0;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
 }
 
 .btn {

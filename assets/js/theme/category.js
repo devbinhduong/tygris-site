@@ -46,6 +46,9 @@ export default class Category extends CatalogPage {
         $('a.reset-btn').on('click', () => this.setLiveRegionsAttributes($('span.reset-message'), 'status', 'polite'));
 
         this.ariaNotifyNoProducts();
+
+        /* Custom Start */
+        this.viewMoreCategoryDesc();
     }
 
     ariaNotifyNoProducts() {
@@ -99,6 +102,24 @@ export default class Category extends CatalogPage {
                 maxPriceNotEntered,
                 onInvalidPrice,
             },
+        });
+    }
+
+    /* Custom Start */
+    viewMoreCategoryDesc() {
+        let categoryDesc = document.querySelector(".content__description"),
+            viewMoreButton = document.querySelector(".view-more-category-button");
+        
+        if (!categoryDesc || !viewMoreButton) return;
+
+        viewMoreButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            categoryDesc.classList.toggle("show");
+            viewMoreButton.classList.toggle("show");
+
+            if(categoryDesc.classList.contains("show")) {
+                viewMoreButton.innerHTML = "Read Less";
+            }
         });
     }
 }

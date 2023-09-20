@@ -217,8 +217,7 @@
         }
     }
 
-    &:hover,
-    &.activePage {
+    &:hover {
         color: $navPage-subMenu-item--is-highlighted-color;
 
         svg {
