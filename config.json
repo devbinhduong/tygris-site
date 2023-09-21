@@ -357,6 +357,7 @@
     "paymentbanners-proddetailspage-color": "white",
     "paymentbanners-proddetailspage-ratio": "8x1",
     "paymentbuttons-container": "medium",
+    "home_product_custom_block_1_list_id": "113,114,115,116,117",
     "supported_card_type_icons": [
       "american_express",
       "diners_club",
@@ -432,7 +433,7 @@
       "settings": {
         "hide_breadcrumbs": false,
         "hide_page_heading": false,
-        "home_product_custom_block_1_list_id": "107,104,111,97,98",
+        "home_product_custom_block_1_list_id": "113,114,115,116,117",
         "products_block_listID_1_title": "Best Sellers",
         "hide_category_page_heading": true,
         "show-header-top": true,
