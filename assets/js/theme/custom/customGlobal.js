@@ -21,7 +21,6 @@ export default function(context) {
             /* Add Funcion Here */
             megamenuEditor($context);
             homeProductsListID();
-            showFilterMobile();
 
             if(window.innerWidth > 1024) {
                 activeMansory();
@@ -70,8 +69,6 @@ export default function(context) {
 
         /* Resize */
         $(window).on('resize', (e) => {
-            showFilterMobile();
-
             if(window.innerWidth > 1024) {
                 activeMansory();
             }
@@ -115,23 +112,6 @@ export default function(context) {
                 }
             ]
         });
-    }
-
-    /* Left Sidebar */
-    function showLeftSidebar() {
-        let body = document.body;
-        body.classList.add("show-sidebar");
-
-        function closeSidebar() {
-            let closeSidebarButton = document.querySelector(".custom-close-sidebar");
-
-            closeSidebarButton.addEventListener("click", (e) => {
-                e.preventDefault();
-                body.classList.remove("show-sidebar");
-            });
-        }
-
-        closeSidebar();
     }
 
     function searchMobile() {
@@ -367,30 +347,6 @@ export default function(context) {
                     $element.eq(i).addClass('animated');
                 }
             });
-        }
-    }
-
-    function showFilterMobile() {
-        let filterMobileButton = document.querySelector(".custom-filter-button-mobile"),
-            body = document.body;
-
-        if(!filterMobileButton) return;
-
-        filterMobileButton.addEventListener("click", (e) => {
-            e.preventDefault();
-            showLeftSidebar();
-        });
-
-        if(body.classList.contains("page-type-category")) {
-            let facetedSearch = document.querySelector("#facetedSearch-navList"),
-                sidebarContent = document.querySelector(".sidebar-content"),
-                cmsBlockImage = document.querySelector(".custom-category-banner");
-
-            if(facetedSearch) {
-                /* Append facetedSearch To Sidebar */
-                sidebarContent.appendChild(facetedSearch);
-                sidebarContent.appendChild(cmsBlockImage);
-            }
         }
     }
 }

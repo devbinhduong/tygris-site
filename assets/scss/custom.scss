@@ -11,6 +11,11 @@ body {
         width: 100%;
         transition: all 0.4s ease;
         padding-top: 67px;
+
+        .custom-category-banner,
+        #facetedSearch-navList {
+            display: block !important;
+        }
     }
 
     &.show-sidebar {

@@ -15,6 +15,7 @@ import carousel from './common/carousel';
 import svgInjector from './global/svg-injector';
 
 import customGlobal from './custom/customGlobal';
+import customSidebar from './custom/customSidebar';
 
 export default class Global extends PageManager {
     onReady() {
@@ -31,5 +32,6 @@ export default class Global extends PageManager {
         svgInjector();
 
         customGlobal(this.context);
+        customSidebar();
     }
 }

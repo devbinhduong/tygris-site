@@ -4,6 +4,8 @@ import compareProducts from './global/compare-products';
 import FacetedSearch from './common/faceted-search';
 import { createTranslationDictionary } from '../theme/common/utils/translations-utils';
 
+import customSidebar from './custom/customSidebar';
+
 export default class Category extends CatalogPage {
     constructor(context) {
         super(context);
@@ -89,7 +91,7 @@ export default class Category extends CatalogPage {
             $productListingContainer.html(content.productListing);
             $facetedSearchContainer.html(content.sidebar);
 
-            this.showFilterMobile();
+            customSidebar();
 
             $('body').triggerHandler('compareReset');
 
@@ -125,28 +127,4 @@ export default class Category extends CatalogPage {
         });
     }
 
-    showFilterMobile() {
-        let filterMobileButton = document.querySelector(".custom-filter-button-mobile"),
-            body = document.body;
-
-        if(!filterMobileButton) return;
-        
-
-        filterMobileButton.addEventListener("click", (e) => {
-            e.preventDefault();
-            // showLeftSidebar();
-        });
-
-        if(body.classList.contains("page-type-category")) {
-            let facetedSearch = document.querySelector("#facetedSearch-navList"),
-                sidebarContent = document.querySelector(".sidebar-content"),
-                cmsBlockImage = document.querySelector(".custom-category-banner");
-
-            if(facetedSearch) {
-                /* Append facetedSearch To Sidebar */
-                sidebarContent.appendChild(facetedSearch);
-                sidebarContent.appendChild(cmsBlockImage);
-            }
-        }
-    }
 }
