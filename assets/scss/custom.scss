@@ -1,3 +1,40 @@
+/* Custom left Side bar */
+body {
+    position: relative;
+
+    .custom-left-sidebar {
+        position: absolute;
+        top: 83px;
+        bottom: 0;
+        left: -100%;
+        background-color: #000000;
+        width: 100%;
+        transition: all 0.4s ease;
+        padding-top: 67px;
+    }
+
+    &.show-sidebar {
+        .custom-left-sidebar {
+            left: 0;
+        }
+    }
+
+    &.show-sidebar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    &.show-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .custom-close-sidebar {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+}
+
 /* Grease Finder Button */
 .grease-finder-button {
    img {
@@ -209,6 +246,10 @@
     margin-top: 29px;
     padding-top: 14px;
     padding-bottom: 17px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     h2 {
         margin-top: 0;

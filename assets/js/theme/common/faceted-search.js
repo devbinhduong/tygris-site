@@ -427,7 +427,8 @@ class FacetedSearch {
         if (!searchParams.has('page')) {
             const linkUrl = $('.pagination-link').attr('href');
             const re = /page=[0-9]+/i;
-            const updatedLinkUrl = linkUrl.replace(re, 'page=1');
+            // const updatedLinkUrl = linkUrl.replace(re, 'page=1');
+            const updatedLinkUrl = linkUrl?.replace(re, 'page=1');
             window.history.replaceState({}, document.title, updatedLinkUrl);
         }
         $(window).trigger('statechange');

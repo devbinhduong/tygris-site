@@ -89,6 +89,8 @@ export default class Category extends CatalogPage {
             $productListingContainer.html(content.productListing);
             $facetedSearchContainer.html(content.sidebar);
 
+            this.showFilterMobile();
+
             $('body').triggerHandler('compareReset');
 
             $('html, body').animate({
@@ -121,5 +123,30 @@ export default class Category extends CatalogPage {
                 viewMoreButton.innerHTML = "Read Less";
             }
         });
+    }
+
+    showFilterMobile() {
+        let filterMobileButton = document.querySelector(".custom-filter-button-mobile"),
+            body = document.body;
+
+        if(!filterMobileButton) return;
+        
+
+        filterMobileButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            // showLeftSidebar();
+        });
+
+        if(body.classList.contains("page-type-category")) {
+            let facetedSearch = document.querySelector("#facetedSearch-navList"),
+                sidebarContent = document.querySelector(".sidebar-content"),
+                cmsBlockImage = document.querySelector(".custom-category-banner");
+
+            if(facetedSearch) {
+                /* Append facetedSearch To Sidebar */
+                sidebarContent.appendChild(facetedSearch);
+                sidebarContent.appendChild(cmsBlockImage);
+            }
+        }
     }
 }

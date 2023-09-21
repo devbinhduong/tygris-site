@@ -368,7 +368,7 @@
 
         .header-top__text {
             @media (min-width: 1025px) and (max-width: 1400px) {
-                display: none;
+                display: none !important;
             }
         }
 

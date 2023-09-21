@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone Done Home Page",
+  "name": "Cornerstone Category Part 1",
   "version": "6.12.0",
   "template_engine": "handlebars_v4",
   "meta": {
@@ -486,7 +486,7 @@
         "gallery_size": "300x300",
         "productgallery_size": "500x659",
         "homepage_show_carousel_0_subheading": "New Collection",
-        "homepage_show_carousel_0_mobile-image": "slider-01-mb.png",
+        "homepage_show_carousel_0_mobile-image": "banner-mobile.jpg",
         "homepage_show_carousel_0_position-content": "center",
         "homepage_show_carousel_1_mobile-image": "",
         "homepage_show_carousel_1_position-content": "left",
