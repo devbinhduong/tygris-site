@@ -309,8 +309,27 @@ export default function(context) {
                 setTimeout(() => {
                     mansoryMenu();
                 }, 200);
-            })
+            });
+
+
+            /* Add row below Menu Item */
+            item.addEventListener('mouseover', (e) => {
+                let menuListSub = item.querySelector('.navPage-subMenu'),
+                links = item.querySelector('.navPages-action.has-subcategories');
+
+                if(menuListSub && links) {
+                    menuListSub.addEventListener('mouseover', function() {
+                        links.classList.add('hovered');
+                    });
+
+                    menuListSub.addEventListener('mouseout', function() {
+                        links.classList.remove('hovered');
+                    });
+                }
+            });
+            
         });
+
     }
 
     /* Scroll Animation */

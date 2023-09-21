@@ -283,6 +283,10 @@
         margin-right: 15px;
         display: inline-flex;
 
+        + .header-top__text  {
+            padding-left: 0;
+        }
+
         @media (max-width: 1600px) {
             margin-right: 8px;
         }
@@ -530,7 +534,8 @@
 
             > .navPages-action.has-subcategories {
                 @media (min-width: 1025px) {
-                    &:hover {
+                    &:hover,
+                    &.hovered {
                         &::before {
                             content: "";
                             position: absolute;
