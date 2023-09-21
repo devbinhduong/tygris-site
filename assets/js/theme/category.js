@@ -5,6 +5,8 @@ import FacetedSearch from './common/faceted-search';
 import { createTranslationDictionary } from '../theme/common/utils/translations-utils';
 
 import customSidebar from './custom/customSidebar';
+import customDisplayMode from './custom/customDisplayMode';
+
 
 export default class Category extends CatalogPage {
     constructor(context) {
@@ -51,6 +53,7 @@ export default class Category extends CatalogPage {
 
         /* Custom Start */
         this.viewMoreCategoryDesc();
+        customDisplayMode();
     }
 
     ariaNotifyNoProducts() {

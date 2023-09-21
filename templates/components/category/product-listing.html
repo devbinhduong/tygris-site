@@ -1,7 +1,10 @@
 {{inject 'noCompareMessage' (lang 'compare.no_compare')}}
 
 {{#if category.products}}
-    {{> components/products/filter sort=pagination.category.sort}}
+    <div class="custom-toolbar-wrapper flex-between">
+        {{> components/products/filter sort=pagination.category.sort}}
+        {{> components/custom/gallery/custom-view-as}}
+    </div>
 
     <div data-list-name="Category: {{category.name}}">
         {{#if theme_settings.product_list_display_mode '===' 'grid'}}
