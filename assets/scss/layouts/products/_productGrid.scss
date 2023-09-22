@@ -131,3 +131,58 @@
         }
     }
 }
+
+
+/* Custom Grid List Layout */
+#grid-list-layout {
+    .productListing {
+        margin-left: -8px;
+        margin-right: -8px;
+
+        .product {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+    &.productGrid--maxCol1 {
+        .productListing {
+            .product {
+                width: 100%;
+
+                .card {
+                    display: flex;
+    
+                    .card-figure {
+                        flex: 0 0 33%;
+                    }
+    
+                    .card-body {
+                        flex: 0 0 67%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.productGrid--maxCol2 {
+        .productListing {
+            .product {
+                width: 50%;
+            }
+        }
+    }
+    &.productGrid--maxCol4 {
+        .productListing {
+            .product {
+                width: 25%;
+            }
+        }
+    }
+    &.productGrid--maxCol5 {
+        .productListing {
+            .product {
+                width: 20%;
+            }
+        }
+    }
+}

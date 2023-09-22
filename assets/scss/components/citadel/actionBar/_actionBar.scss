@@ -40,3 +40,154 @@
         height: $input-small-height - remCalc($input-border-width * 2);
     }
 }
+
+
+/* Custom Grid/List Sort */
+.view-as-btn {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    > a {
+        height: 26px;
+        min-width: 19px;
+        margin-left: 5px;
+        position: relative;
+        vertical-align: top;
+        display: inline-block;
+        border: 1px solid #dcdcdc;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:before {
+            top: 3px;
+            left: 3px;
+            content: "";
+            position: absolute;
+            background: #dcdcdc;
+            transition: all 0.3s ease;
+        }
+    }
+    > #list-view {
+        width: 26px;
+        &:before {
+            width: 18px;
+            height: 4px;
+            box-shadow: 0px 7px 0 #dcdcdc, 0px 14px 0 #dcdcdc;
+        }
+        .productGrid--maxCol1 & {
+            border-color: #323232;
+            &:before {
+                background-color: #323232;
+                box-shadow: 0px 7px 0 #323232, 0px 14px 0 #323232;
+            }
+        }
+    }
+    > #grid-view-2 {
+        width: 19px;
+        &:before {
+            width: 4px;
+            height: 18px;
+            box-shadow: 7px 0 0 #dcdcdc;
+        }
+        .productGrid--maxCol2 &,
+        .productGrid--maxCol3 &,
+        .productGrid--maxCol4 &,
+        .productGrid--maxCol5 & {
+            border-color: #323232;
+            &:before {
+                background-color: #323232;
+                box-shadow: 7px 0 0 #323232;
+            }
+        }
+        @include breakpoint("small") {
+            .productGrid--maxCol5 &,
+            .productGrid--maxCol4 &,
+            .productGrid--maxCol3 & {
+                border-color: #dcdcdc;
+                &:before {
+                    background-color: #dcdcdc;
+                    box-shadow: 7px 0 0 #dcdcdc;
+                }
+            }
+        }
+    }
+    > #grid-view-3 {
+        width: 26px;
+        display: none;
+        &:before {
+            width: 4px;
+            height: 18px;
+            box-shadow: 7px 0 0 #dcdcdc, 14px 0 0 #dcdcdc;
+        }
+        @include breakpoint("small") {
+            display: inline-block;
+            .productGrid--maxCol5 &,
+            .productGrid--maxCol4 &,
+            .productGrid--maxCol3 & {
+                border-color: #323232;
+                &:before {
+                    background-color: #323232;
+                    box-shadow: 7px 0 0 #323232, 14px 0 0 #323232;
+                }
+            }
+        }
+        @media (min-width: 993px) {
+            .productGrid--maxCol5 &,
+            .productGrid--maxCol4 & {
+                border-color: #dcdcdc;
+                &:before {
+                    background-color: #dcdcdc;
+                    box-shadow: 7px 0 0 #dcdcdc, 14px 0 0 #dcdcdc;
+                }
+            }
+        }
+    }
+    > #grid-view-4 {
+        width: 33px;
+        display: none;
+        &:before {
+            width: 4px;
+            height: 18px;
+            box-shadow: 7px 0 0 #dcdcdc, 14px 0 0 #dcdcdc, 21px 0 0 #dcdcdc;
+        }
+        @media (min-width: 993px) {
+            display: inline-block;
+            .productGrid--maxCol5 &,
+            .productGrid--maxCol4 & {
+                border-color: #323232;
+                &:before {
+                    background-color: #323232;
+                    box-shadow: 7px 0 0 #323232, 14px 0 0 #323232, 21px 0 0 #323232;
+                }
+            }
+        }
+        @media (min-width: 1025px) {
+            .productGrid--maxCol5 & {
+                border-color: #dcdcdc;
+                &:before {
+                    background-color: #dcdcdc;
+                    box-shadow: 7px 0 0 #dcdcdc, 14px 0 0 #dcdcdc, 21px 0 0 #dcdcdc;
+                }
+            }
+        }
+    }
+    > #grid-view-5 {
+        width: 40px;
+        display: none;
+        &:before {
+            width: 4px;
+            height: 18px;
+            box-shadow: 7px 0 0 #dcdcdc, 14px 0 0 #dcdcdc, 21px 0 0 #dcdcdc, 28px 0 0 #dcdcdc;
+        }
+        @media (min-width: 1025px) {
+            display: inline-block;
+            .productGrid--maxCol5 & {
+                border-color: #323232;
+                &:before {
+                    background-color: #323232;
+                    box-shadow: 7px 0 0 #323232, 14px 0 0 #323232, 21px 0 0 #323232, 28px 0 0 #323232;
+                }
+            }
+        }
+    }
+}

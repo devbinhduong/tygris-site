@@ -1,14 +1,12 @@
-<div class="view-as-btn">
-    <label class="form-label">View as:</label>
-    <div class="form-group">
-        <a href="javascript:void(0);" class="btn btn-primary btn-view grid-view{{#if theme_settings.product_list_display_mode '===' 'grid'}} current-view{{/if}}" id="grid-view" aria-label="{{lang 'ada.grid_view'}}">
-            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-grid-view"></use></svg>
-
-            Grid
-        </a>
-        <a href="javascript:void(0);" class="btn btn-primary btn-view list-view{{#if theme_settings.product_list_display_mode '===' 'list'}} current-view{{/if}}" id="list-view" aria-label="{{lang 'ada.list_view'}}">
-            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-view"></use></svg>
-            List
-        </a>
+<div class="item item-viewas">
+    <div class="view-as-group">
+        <label class="form-label">View As:</label>
+        <div class="view-as-btn">
+            <a href="javascript:void(0);" id="list-view" data-layout="productGrid--maxCol1" title="List View"></a>
+            <a href="javascript:void(0);" id="grid-view-2" data-layout="productGrid--maxCol2" title="Grid View 2"></a>
+            <a href="javascript:void(0);" id="grid-view-3" data-layout="productGrid--maxCol3" title="Grid View 3"></a>
+            <a href="javascript:void(0);" id="grid-view-4" data-layout="productGrid--maxCol4" title="Grid View 4"></a>
+            <a href="javascript:void(0);" id="grid-view-5" data-layout="productGrid--maxCol5" title="Grid View 5"></a>
+        </div>
     </div>
 </div>
