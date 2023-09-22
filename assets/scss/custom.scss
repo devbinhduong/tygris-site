@@ -412,3 +412,105 @@ body {
         }
     }
 }
+
+/* Contact Us Page */
+.custom-contact-us-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+
+    .contact-us__top {
+        .contact-us-top__wrapper {
+            display: flex;
+
+            @media (max-width: 800px) {
+                flex-direction: column;
+            }
+        }
+        .contact-us__form {
+            @media (min-width: 801px) {
+                width: 100%;
+                max-width: 694px;
+            }
+
+            .col-2 {
+                width: 100%;
+                max-width: 100%;
+
+                @media (min-width: 801px) {
+                    width: 50%;
+                    max-width: 341px;
+                    + .col-2 {
+                        margin-left: 12px;
+                    }
+                }
+            }
+
+            .col-3 {
+                width: 100%;
+                max-width: 100%;
+
+                @media (min-width: 801px) {
+                    width: 33.3333%;
+                    max-width: 222px;
+                    + .col-3 {
+                        margin-left: 11px;
+                    }
+                }
+            }
+
+            .col-full {
+                width: 100%;
+            }
+
+            .wrap-small-col {
+                @media (max-width: 800px) {
+                    flex-wrap: wrap;
+                }
+            }
+            .form-field {
+                margin-bottom: 11px;
+
+                .form-input::placeholder {
+                    color: #232323;
+                }
+            }
+
+            select {
+                min-height: 40px;
+                padding-left: 12px;
+                padding-right: 16px;
+                color: #232323;
+
+                &::placeholder {
+                    color: #232323;
+                }
+            }
+        }
+    
+        .contact-us__info {
+            position: relative;
+            background-color: #393939;
+
+            @media (min-width: 801px) {
+                width: 100%;
+                max-width: 641px;
+                margin-left: 29px;
+            }
+
+            @media (max-width: 800px) {
+                min-height: 278px;
+            }
+
+            .content {
+                @media (min-width: 801px) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                
+            }
+        }
+    }
+}

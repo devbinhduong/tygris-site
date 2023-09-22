@@ -10,6 +10,14 @@ body:not(.page-type-default){
     .body {
         margin-top: 0;
     }
+
+    .custom-banner-button-text {
+        margin-top: 0;
+    }
+}
+
+.page {
+    margin: 0;
 }
 
 .body {
@@ -52,6 +60,10 @@ body:not(.page-type-default){
 
     &.container-1424 {
         max-width: 1424px;
+    }
+
+    &.container-1408 {
+        max-width: 1408px;
     }
 }
 
@@ -316,6 +328,14 @@ input,
     font-size: 14px;
     letter-spacing: 0;
     line-height: 1.5em;
+}
+
+.section-text-12 {
+    color: #232323;
+    font-size: 12px;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 600;
 }
 
 .section-text {
