@@ -11,10 +11,30 @@ body {
         width: 100%;
         transition: all 0.4s ease;
         padding-top: 67px;
+        z-index: 9;
 
-        .custom-category-banner,
+        .custom-category-banner {
+            display: block !important;
+
+            @media (max-width: 1024px) {
+                padding-left: 30px;
+                padding-right: 30px;
+
+                img {
+                    display: block;
+
+                    + img {
+                        margin-top: 28px;
+                    }
+                }
+            }
+        }
         #facetedSearch-navList {
             display: block !important;
+
+            @media (max-width: 1024px) {
+                margin-top: -5px;
+            }
         }
     }
 

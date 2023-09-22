@@ -175,6 +175,18 @@
         .productListing {
             .product {
                 width: 25%;
+
+                @media (max-width: 1024px) {
+                    width: 33.3333%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
             }
         }
     }

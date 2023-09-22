@@ -167,3 +167,43 @@
         }
     }
 }
+
+
+/* Custom Start */
+.card {
+    .card-figure {
+        padding: 0;
+        .card-img-container::after {
+            padding-bottom: 100%;
+        }
+
+        .card-figcaption-body {
+            .card-figcaption-button {
+                background-color: transparent;
+                padding: 0;
+                max-width: 61px;
+            }
+        }
+        
+    }
+
+    .card-body {
+        .card-text[data-test-info-type="brandName"] {
+            display: none;
+        }
+        .card-text,
+        .card-title {
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.5rem;
+            letter-spacing: 0.84px;
+            font-weight: 600;
+            color: #232323;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 3px;
+        }
+    }
+}
