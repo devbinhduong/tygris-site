@@ -1,4 +1,4 @@
-import { hooks } from '@bigcommerce/stencil-utils';
+import { hooks, api } from '@bigcommerce/stencil-utils';
 import CatalogPage from './catalog';
 import compareProducts from './global/compare-products';
 import FacetedSearch from './common/faceted-search';
@@ -54,6 +54,7 @@ export default class Category extends CatalogPage {
         /* Custom Start */
         this.viewMoreCategoryDesc();
         customDisplayMode();
+        this.showMoreProduct();
     }
 
     ariaNotifyNoProducts() {
@@ -95,6 +96,8 @@ export default class Category extends CatalogPage {
             $facetedSearchContainer.html(content.sidebar);
 
             customSidebar();
+            this.showMoreProduct();
+
 
             $('body').triggerHandler('compareReset');
 
@@ -130,4 +133,50 @@ export default class Category extends CatalogPage {
         });
     }
 
+    /* View More Button */
+    showMoreProduct() {
+        const $productListingContainer = $('#product-listing-container .productListing');
+        const nextPage = $('.pagination-item--current').next();
+        var clickCount =  1;
+
+        if(nextPage.length == 0) {
+            $('#listing-showmoreBtn > a').addClass('btn-disable');
+            $('#listing-showmoreBtn > a').text('No More Products');
+        }
+
+        $('#listing-showmoreBtn > a').on('click', (event) => {
+            event.preventDefault();
+            clickCount++;
+
+            var nextPage = $('.pagination-item--current').next(),
+                link = nextPage.find("a").attr("href"),
+                paginationLength = $('.pagination-item').length - 1;
+
+            if (link == undefined) {
+                if (!$('#listing-showmoreBtn > a').hasClass('disable')) {
+                    $('#listing-showmoreBtn > a').addClass('disable');
+                }
+            } else {
+                $('#listing-showmoreBtn > a').addClass('loading');
+
+                
+                fetch(link)
+                    .then((response) => response.text())
+                    .then((content) => {
+                        var template = document.createElement("div");
+                        template.innerHTML = content;
+
+                        let newContent = template.querySelector("#product-listing-container .productListing")
+                        $productListingContainer.append(newContent.innerHTML);
+                        
+                    })
+            }
+
+            if (clickCount == paginationLength) {
+                $('#listing-showmoreBtn > a').addClass('btn-disable');
+                $('#listing-showmoreBtn > a').text('No More Products');
+            }
+        });
+
+    }
 }

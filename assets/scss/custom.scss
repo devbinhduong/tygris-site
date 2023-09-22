@@ -60,6 +60,21 @@ body {
 
 }
 
+/* pagination */
+.custom-pagination {
+    .pagination-list {
+        display: none;
+    }
+}
+
+.custom-product-show-more {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 41px;
+    transform: translateY(-5px);
+}
+
 /* Grease Finder Button */
 .grease-finder-button {
    img {
@@ -386,6 +401,14 @@ body {
                     max-height: 22px;
                 }
             }
+        }
+    }
+}
+
+.productGrid--maxCol1 {
+    .card {
+        .card-body {
+            padding: 0 20px;
         }
     }
 }
