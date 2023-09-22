@@ -9,6 +9,11 @@
         {{/each}}
     </div>
 {{/if}}
+
+{{#unless page_type '==' 'default'}}
+    {{> components/custom/homepage/banner-button-text}}
+{{/unless}}
+
 <footer class="footer" role="contentinfo">
     <h2 class="footer-title-sr-only">{{lang 'footer.title'}}</h2>
     <div class="container container-1684">
