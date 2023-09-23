@@ -454,7 +454,7 @@ body {
                     width: 33.3333%;
                     max-width: 222px;
                     + .col-3 {
-                        margin-left: 11px;
+                        margin-left: 14px;
                     }
                 }
             }
@@ -512,5 +512,13 @@ body {
                 
             }
         }
+    }
+}
+
+.contact-us__map {
+    margin-top: 80px;
+    
+    iframe {
+        display: block;
     }
 }

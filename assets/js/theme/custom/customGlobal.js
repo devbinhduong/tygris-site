@@ -21,6 +21,7 @@ export default function(context) {
             /* Add Funcion Here */
             megamenuEditor($context);
             homeProductsListID();
+            contactUsForm();
 
             if(window.innerWidth > 1024) {
                 activeMansory();
@@ -348,5 +349,76 @@ export default function(context) {
                 }
             });
         }
+    }
+
+    function contactUsForm () {
+        $(document).on('click', '#contact-ask-an-expert-button', event => {
+            var ask_proceed = true,
+                mailTo = context.themeSettings.contact_us_receive_mail,
+                contactFirstName = $('#contact-ask-an-expert-form input[name="contact_first_name"]').val(),
+                contactSurName = $('#contact-ask-an-expert-form input[name="contact_surname"]').val(),
+                contactEmail = $('#contact-ask-an-expert-form input[name="contact_email"]').val(),
+                contactPhone = $('#contact-ask-an-expert-form input[name="contact_phone"]').val(),
+                contactAddress = $('#contact-ask-an-expert-form input[name="contact_address"]').val(),
+                contactCity = $('#contact-ask-an-expert-form input[name="contact_city"]').val(),
+                contactCountry = $('#contact-ask-an-expert-form input[name="contact_country"]').val(),
+                contactPostCode = $('#contact-ask-an-expert-form input[name="contact_post-code"]').val(),
+                contactIndustry = $('#contact-ask-an-expert-form select[name="contact_industrial"]').val(),
+                contactMessage = $('#contact-ask-an-expert-form textarea[name=comment_area]').val(),
+
+
+                message = "<div style='border: 1px solid #e6e6e6;padding: 30px;max-width: 500px;margin: 0 auto;'>\
+                            <h2 style='margin-top:0;margin-bottom:30px;color: #000000;'>Contact Us</h2>\
+                            <p style='border-bottom: 1px solid #e6e6e6;padding-bottom: 23px;margin-bottom:25px;color: #000000;'>You received a new message from Contact Us form.</p>\
+                            <table style='width:100%;'>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>First Name: </strong></td><td>" + contactFirstName + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>SurName: </strong></td><td>" + contactSurName + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Email Address: </strong></td><td>" + contactEmail + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Phone Number: </strong></td><td>" + contactPhone + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Address: </strong></td><td>" + contactAddress + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>City: </strong></td><td>" + contactCity + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Country: </strong></td><td>" + contactCountry + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Post Code: </strong></td><td>" + contactPostCode + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Industry: </strong></td><td>" + contactIndustry + "</td></tr>\
+                        <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Question: </strong></td><td>" + contactMessage + "</td></tr>\
+                    </table></div>";
+
+            $("#contact-ask-an-expert-form input[required], #contact-ask-an-expert-form textarea[required], #contact-ask-an-expert-form select[required]").each((index, el) => {
+                if (!$.trim($(el).val())) {
+                    $(el).parent('.form-field').removeClass('form-field--success').addClass('form-field--error');
+                    ask_proceed = false;
+                } else {
+                    $(el).parent('.form-field').removeClass('form-field--error').addClass('form-field--success');
+                }
+
+                var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+                if ($(el).attr("name") == "contact_email" && !email_reg.test($.trim($(el).val()))) {
+                    $(el).parent('.form-field').removeClass('form-field--success').addClass('form-field--error');
+                    ask_proceed = false;
+                }
+            });
+
+            if (ask_proceed) {
+                var ask_post_data = {
+                    "api": "i_send_mail",
+                    "from_name": contactFirstName,
+                    "email": mailTo,
+                    "email_from": contactEmail,
+                    "message": message
+                };
+
+                $.post('https://themevale.net/tools/sendmail/quotecart/sendmail.php', ask_post_data, (response) => {
+                    if (response.type == 'error') {
+                        var output = '<div class="alertBox alertBox--error"><p class="alertBox-message">' + response.text + '</p></div>';
+                    } else {
+                        var output = '<div class="alertBox alertBox--success"><p class="alertBox-message">Thank you. We\'ve received your feedback and will respond shortly.</p></div>';
+                        $("#contact-ask-an-expert-form  input[required], #contact-ask-an-expert-form textarea[required]").val('');
+                        $("#contact-ask-an-expert-form").hide();
+                    }
+                    $("#contact-ask-an-expert-results").hide().html(output).show();
+                }, 'json');
+            }
+        });
     }
 }

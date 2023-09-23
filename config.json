@@ -388,6 +388,7 @@
     "header_top_colorHover": "#ff5100",
     "header-background-color": "#ff5100",
     "recent_blog_size": "570x470",
+    "contact_us_receive_mail": "quangminh2169@gmail.com",
     "paymentbuttons-provider-sorting": [
 
     ]
@@ -807,6 +808,7 @@
         "megamenu_item6_img":"",
         "megamenu_item6_link":"#",
         "header-background-color": "#ff5100",
+        "contact_us_receive_mail": "quangminh2169@gmail.com",
         "paymentbuttons-provider-sorting": [
 
         ]
