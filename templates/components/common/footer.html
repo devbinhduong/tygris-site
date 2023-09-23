@@ -14,6 +14,11 @@
     {{> components/custom/homepage/banner-button-text}}
 {{/unless}}
 
+{{#if page_type '==' "page"}}
+    {{> components/custom/homepage/home-testimonial}}
+    {{{region name="home_below_testimonial"}}}
+{{/if}}
+
 <footer class="footer" role="contentinfo">
     <h2 class="footer-title-sr-only">{{lang 'footer.title'}}</h2>
     <div class="container container-1684">

@@ -409,7 +409,7 @@
         "type": "color",
         "label": "Field Border Active",
         "id": "input-border-color-active"
-      }
+      },
     ]
   },
   {
@@ -1767,6 +1767,24 @@
             "label": "Specify Dimensions"
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Other Pages",
+    "settings":[
+      {
+        "type": "heading",
+        "content": "Contact US Page"
+      },
+      {
+        "type": "text",
+        "label": "Email Receive Contact Us Form",
+        "id": "contact_us_receive_mail"
+      },
+      {
+        "type": "heading",
+        "content": "About Us Page"
       }
     ]
   },

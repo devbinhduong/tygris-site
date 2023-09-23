@@ -522,3 +522,143 @@ body {
         display: block;
     }
 }
+
+/* About Us Page */
+.custom-about-us {
+    .about-us__banner {
+        position: relative;
+        padding-top: 22.1354%;
+
+        .banner__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            h2 {
+                margin-bottom: 60px;
+            }
+
+            .banner__learn-more {
+                text-align: center;
+
+                a {
+                    font-size: 36px;
+                    letter-spacing: 0;
+                    line-height: 1.3888em;
+                }
+            }
+        }
+    }
+
+    .about-us__tabs {
+        .title__list {
+            margin-left: -38px;
+            margin-right: -38px;
+            padding-top: 31px;
+            padding-bottom: 28px;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+
+            .title__item {
+                padding-left: 38px;
+                padding-right: 38px;
+
+                .title__link {
+                    font-size: 15px;
+                    color: #232323;
+                    line-height: 1.53em;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us-video-with-text {
+        .about-us__wrapper {
+            padding-top: 37px;
+            @media (max-width: 1024px) {
+                flex-direction: column-reverse;
+            }
+        }
+        .about-us__info {
+            width: 100%;
+            max-width: 646px;
+        }
+
+        .about-us__video {
+            width: 100%;
+            max-width: 678px;
+            @media (min-width: 1025px) {
+                margin-left: 37px;
+            }
+
+            iframe {
+                min-height: 260px;
+            }
+        }
+    }
+
+    .about-us-history {
+        h2 {
+            margin: 0;
+        }
+        .history-banner__list {
+            margin-left: -4px;
+            margin-right: -4px;
+
+            .history-banner__item {
+                position: relative;
+                padding-left: 4px;
+                padding-right: 4px;
+
+                .banner__image {
+                    min-height: 373px;
+                    @media (min-width: 768px) {
+                        min-height: 370px;
+                    }
+                }
+
+                .banner__content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    display: block;
+                    padding-left: 61px;
+                    padding-right: 62px;
+                    padding-bottom: 38px;
+
+                    h5, p{
+                        margin-bottom: 0;
+                        font-weight: 400;
+                    }
+
+                }
+            }
+        }
+
+        .slick-arrow {
+            &.slick-next {
+                right: 22px;
+
+                &::before {
+                    background-image: url('data:image/svg+xml,<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="%23000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="%23ffffff"></path></g></svg>');
+                }
+            }
+
+            &.slick-prev {
+                left: 22px;
+
+                &::before {
+                    background-image: url('data:image/svg+xml,<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="%23000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="%23ffffff"></path></g></svg>');
+                }
+            }
+        }
+    }
+}
