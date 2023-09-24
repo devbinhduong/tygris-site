@@ -1,6 +1,6 @@
 {{inject 'outOfStockDefaultMessage' (lang 'products.out_of_stock_default_message')}}
 
-<div class="productView"
+<div class="productView custom-productView"
     data-event-type="product"
     data-entity-id="{{product.id}}"
     data-name="{{product.title}}"
@@ -64,13 +64,15 @@
                 {{/if}}
             </div>
         </figure>
-        <ul class="productView-thumbnails"{{#gt product.images.length 5}} data-slick='{
+        <ul class="productView-thumbnails"{{#gt product.images.length 4}} data-slick='{
                 "infinite": false,
                 "mobileFirst": true,
                 "dots": false,
                 "accessibility": false,
-                "slidesToShow": 5,
-                "slidesToScroll": 5
+                "vertical": true,
+                "verticalSwiping": true,
+                "slidesToShow": 4,
+                "slidesToScroll": 1
             }'{{/gt}}>
             {{#each product.images}}
                 <li class="productView-thumbnail">
@@ -95,25 +97,12 @@
 
     <section class="productView-details product-data">
         <div class="productView-product">
-            <h1 class="productView-title">{{product.title}}</h1>
+            <h1 class="productView-title heading-h3">{{product.title}}</h1>
             {{#if product.brand}}
                 <h2 class="productView-brand">
                     <a href="{{product.brand.url}}"><span>{{product.brand.name}}</span></a>
                 </h2>
             {{/if}}
-            {{#if product.call_for_price}}
-                <p class="productView-price">
-                    <span>{{product.call_for_price}}</span>
-                </p>
-            {{/if}}
-            <div class="productView-price">
-                {{#or customer (unless settings.hide_price_from_guests)}}
-                    {{> components/products/price price=product.price}}
-                {{else}}
-                    {{> components/common/login-for-pricing}}
-                {{/or}}
-            </div>
-            {{{region name="product_below_price"}}}
             <div class="productView-rating">
                 {{#if settings.show_product_rating}}
                     {{> components/products/ratings rating=product.rating}}
@@ -138,6 +127,54 @@
                     {{/unless}}
                 {{/if}}
             </div>
+
+            <div class="productView-options">
+                {{#if product.release_date }}
+                    <p>{{product.release_date}}</p>
+                {{/if}}
+                <form class="form" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
+                      data-cart-item-add>
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="{{product.id}}"/>
+                    <div data-product-option-change style="display:none;">
+                        {{inject 'showSwatchNames' theme_settings.show_product_swatch_names}}
+                        {{#each product.options}}
+                            {{{dynamicComponent 'components/products/options'}}}
+                        {{/each}}
+                    </div>
+                    <div class="form-field form-field--stock{{#unless product.stock_level}} u-hiddenVisually{{/unless}}">
+                        <label class="form-label form-label--alternate">
+                            {{lang 'products.current_stock'}}
+                            <span data-product-stock>{{product.stock_level}}</span>
+                        </label>
+                    </div>
+                    {{> components/products/add-to-cart with_wallet_buttons=true}}
+                    {{#if product.out_of_stock}}
+                        {{#if product.out_of_stock_message}}
+                            {{> components/common/alert/alert-error product.out_of_stock_message}}
+                        {{else}}
+                            {{> components/common/alert/alert-error (lang 'products.sold_out')}}
+                        {{/if}}
+                    {{/if}}
+                </form>
+                {{#if settings.show_wishlist}}
+                    {{> components/common/wishlist-dropdown}}
+                {{/if}}
+            </div>
+
+            {{#if product.call_for_price}}
+                <p class="productView-price">
+                    <span>{{product.call_for_price}}</span>
+                </p>
+            {{/if}}
+            <div class="productView-price">
+                {{#or customer (unless settings.hide_price_from_guests)}}
+                    {{> components/products/price price=product.price}}
+                {{else}}
+                    {{> components/common/login-for-pricing}}
+                {{/or}}
+            </div>
+            {{{region name="product_below_price"}}}
             {{product.detail_messages}}
             <dl class="productView-info">
                 <dt class="productView-info-name sku-label"{{#unless product.sku}} style="display: none;"{{/unless}}>{{lang 'products.sku'}}</dt>
@@ -226,39 +263,6 @@
     </section>
 
     <section class="productView-details product-options">
-        <div class="productView-options">
-            {{#if product.release_date }}
-                <p>{{product.release_date}}</p>
-            {{/if}}
-            <form class="form" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
-                  data-cart-item-add>
-                <input type="hidden" name="action" value="add">
-                <input type="hidden" name="product_id" value="{{product.id}}"/>
-                <div data-product-option-change style="display:none;">
-                    {{inject 'showSwatchNames' theme_settings.show_product_swatch_names}}
-                    {{#each product.options}}
-                        {{{dynamicComponent 'components/products/options'}}}
-                    {{/each}}
-                </div>
-                <div class="form-field form-field--stock{{#unless product.stock_level}} u-hiddenVisually{{/unless}}">
-                    <label class="form-label form-label--alternate">
-                        {{lang 'products.current_stock'}}
-                        <span data-product-stock>{{product.stock_level}}</span>
-                    </label>
-                </div>
-                {{> components/products/add-to-cart with_wallet_buttons=true}}
-                {{#if product.out_of_stock}}
-                    {{#if product.out_of_stock_message}}
-                        {{> components/common/alert/alert-error product.out_of_stock_message}}
-                    {{else}}
-                        {{> components/common/alert/alert-error (lang 'products.sold_out')}}
-                    {{/if}}
-                {{/if}}
-            </form>
-            {{#if settings.show_wishlist}}
-                {{> components/common/wishlist-dropdown}}
-            {{/if}}
-        </div>
         {{> components/common/share url=product.url}}
     </section>
 

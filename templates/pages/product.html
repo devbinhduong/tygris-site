@@ -19,7 +19,7 @@ product:
         {{> components/common/alert/alert-info message}}
     {{/each}}
 
-    <div>
+    <div class="container container-1684">
         {{> components/products/product-view}}
 
         {{{region name="product_below_content"}}}
@@ -32,7 +32,12 @@ product:
             {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
         {{/all}}
 
-        {{> components/products/tabs}}
+
+        {{#if product.related_products}}
+            <div role="tabpanel" aria-hidden="false" class="tab-content has-jsContent is-active" id="tab-related">
+                {{> components/products/carousel products=product.related_products columns=6 list="Related Products"}}
+            </div>
+        {{/if}}
     </div>
 
     {{> components/products/schema}}
