@@ -563,6 +563,7 @@ body {
             }
 
             .title__item {
+                position: relative;
                 padding-left: 38px;
                 padding-right: 38px;
 
@@ -571,6 +572,18 @@ body {
                     color: #232323;
                     line-height: 1.53em;
                     font-weight: 600;
+
+                    &.is-active {
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: -65px;
+                            left: 43%;
+                            border-style: solid;
+                            border-width: 20px 13px 20px 13px;
+                            border-color: #ff5100 transparent transparent transparent;
+                        }
+                    }
 
                     &:hover {
                         color: #ffffff;

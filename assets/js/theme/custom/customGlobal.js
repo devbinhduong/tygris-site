@@ -22,6 +22,7 @@ export default function(context) {
             megamenuEditor($context);
             homeProductsListID();
             contactUsForm();
+            sectionScroll();
 
             if(window.innerWidth > 1024) {
                 activeMansory();
@@ -420,5 +421,27 @@ export default function(context) {
                 }, 'json');
             }
         });
+    }
+
+    function sectionScroll() {
+        let scrollList = document.querySelectorAll(".scroll-title");
+
+        for (let scrollItem of scrollList) {
+            scrollItem.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                let itemHref = scrollItem.getAttribute("href");
+
+                for (let item of scrollList) {
+                    item.classList.remove("is-active");
+                }
+
+                scrollItem.classList.add("is-active");
+
+              $('html, body').animate({
+                scrollTop: $(itemHref).offset().top
+              }, 1000);
+            })
+        }
     }
 }
