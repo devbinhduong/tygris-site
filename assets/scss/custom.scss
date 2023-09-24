@@ -606,12 +606,17 @@ body {
     }
 
     .about-us-history {
+        position: relative;
+        padding-bottom: 280px;
+
         h2 {
             margin: 0;
         }
         .history-banner__list {
-            margin-left: -4px;
-            margin-right: -4px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 9;
 
             .history-banner__item {
                 position: relative;
@@ -657,6 +662,100 @@ body {
 
                 &::before {
                     background-image: url('data:image/svg+xml,<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="%23000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="%23ffffff"></path></g></svg>');
+                }
+            }
+        }
+    }
+
+    .revolution {
+        position: relative;
+        padding-top: 128px;
+        padding-bottom: 46px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 900px) {
+            background-size: cover;
+        }
+
+        &::after {
+            content: "";
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .revolution-block__wrapper {
+            margin-left: -18px;
+            margin-right: -18px;
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+            }
+
+            + .revolution-block__wrapper {
+                padding-top: 60px;
+            }
+        }
+
+        .revolution__block {
+            @media (max-width: 900px) {
+                flex-direction: column;
+            }
+            &.revolution__bottom {
+                @media (max-width: 900px) {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            .block__left {
+                padding-left: 18px;
+                padding-right: 18px;
+                width: 100%;
+                
+                @media (min-width: 901px) {
+                    max-width: 650px;
+                }
+
+                .image-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -2px;
+                    margin-right: -2px;
+
+                    img {
+                        width: 50%;
+                        padding: 2px;
+                    }
+                }
+            }
+
+            .block__right {
+                padding-left: 18px;
+                padding-right: 18px;
+                width: 100%;
+
+                @media (min-width: 901px) {
+                    max-width: 677px;
+                }
+            }
+        }
+
+        .revolution__top {
+            .top__quote {
+                padding: 36px 75px 33px 53px;
+
+                p {
+                    margin-bottom: 0;
                 }
             }
         }
