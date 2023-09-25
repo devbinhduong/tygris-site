@@ -438,9 +438,9 @@ export default function(context) {
 
                 scrollItem.classList.add("is-active");
 
-              $('html, body').animate({
-                scrollTop: $(itemHref).offset().top
-              }, 1000);
+                $('html, body').animate({
+                    scrollTop: $(itemHref).offset().top
+                }, 1000);
             })
         }
     }
