@@ -288,12 +288,35 @@ body {
     padding-bottom: 17px;
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     background-position: center;
+
+    @media (max-width: 767px) {
+        padding-top: 13px;
+        padding-bottom: 19px;
+    }
 
     h2 {
         margin-top: 0;
         margin-bottom: 4px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        @media (max-width: 767px) {
+            margin-top: -2px;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 500px) {
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -373,6 +396,7 @@ body {
 
             @media (max-width: 767px) {
                 margin-top: 40px;
+                padding: 26px 12px 23px 13px;
             }
 
             &::before {
@@ -399,6 +423,14 @@ body {
                     height: 100%;
                     max-width: 23px;
                     max-height: 22px;
+                }
+            }
+        }
+
+        .row > .s-1:first-child {
+            .testimonial__item {
+                @media (max-width: 767px) {
+                    margin-top: 14px;
                 }
             }
         }
@@ -578,16 +610,43 @@ body {
 .custom-about-us {
     .about-us__banner {
         position: relative;
-        padding-top: 22.1354%;
-
+        .banner__image {
+            img {
+                min-height: 425px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
         .banner__content {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
 
+            @media (min-width: 1025px) {
+                bottom: -60px;
+            }
+
+            @media (max-width: 767px) {
+                top: 48%;
+                bottom: -10px;
+            }
+
             h2 {
-                margin-bottom: 60px;
+                @media (min-width: 1025px) {
+                    margin-bottom: 116px;
+                    margin-top: 88px;
+                }
+
+                @media (max-width: 767px) {
+                    text-align: center;
+                    margin-top: 0;
+                    font-size: 49px;
+                    line-height: 55px;
+                    letter-spacing: 0;
+                    margin-bottom: 86px;
+                }
             }
 
             .banner__learn-more {
@@ -611,6 +670,8 @@ body {
 
             @media (max-width: 767px) {
                 flex-direction: column;
+                padding-top: 13px;
+                padding-bottom: 13px;
             }
 
             .title__item {
@@ -645,20 +706,57 @@ body {
     }
 
     .about-us-video-with-text {
+        .container {
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+        }
         .about-us__wrapper {
             padding-top: 37px;
+            padding-bottom: 25px;
+
             @media (max-width: 1024px) {
                 flex-direction: column-reverse;
+                padding-top: 0;
+                padding-bottom: 15px;
             }
         }
         .about-us__info {
             width: 100%;
             max-width: 646px;
+
+            h3 {
+                font-weight: bold;
+                @media (max-width: 767px) {
+                    margin-top: 17px;
+                    margin-bottom: 13px;
+                }
+            }
+
+            p {
+                @media (max-width: 767px) {
+                    margin-bottom: 23px;
+                }
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (max-width: 767px) {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
         }
 
         .about-us__video {
             width: 100%;
             max-width: 678px;
+
+            @media (max-width: 767px) {
+                border: 1px solid #707070;
+            }
+
             @media (min-width: 1025px) {
                 margin-left: 37px;
             }
@@ -675,6 +773,11 @@ body {
 
         h2 {
             margin: 0;
+            font-weight: bold;
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
         }
         .history-banner__list {
             position: absolute;
@@ -686,6 +789,11 @@ body {
                 position: relative;
                 padding-left: 4px;
                 padding-right: 4px;
+
+                @media (max-width: 767px) {
+                    padding-left: 9px;
+                    padding-right: 9px;
+                }
 
                 .banner__image {
                     min-height: 373px;
@@ -702,6 +810,12 @@ body {
                     padding-left: 61px;
                     padding-right: 62px;
                     padding-bottom: 38px;
+
+                    @media (max-width: 767px) {
+                        padding-left: 27px;
+                        padding-right: 24px;
+                        padding-bottom: 15px;
+                    }
 
                     h5, p{
                         margin-bottom: 0;
@@ -733,13 +847,15 @@ body {
 
     .revolution {
         position: relative;
-        padding-top: 128px;
+        padding-top: 140px;
         padding-bottom: 46px;
         background-repeat: no-repeat;
         background-position: center;
 
         @media (max-width: 900px) {
             background-size: cover;
+            padding-top: 105px;
+            padding-bottom: 13px;
         }
 
         &::after {
@@ -768,6 +884,10 @@ body {
 
             + .revolution-block__wrapper {
                 padding-top: 60px;
+
+                @media (max-width: 767px) {
+                    padding-top: 15px;
+                }
             }
         }
 
@@ -790,11 +910,38 @@ body {
                     max-width: 650px;
                 }
 
+                @media (max-width: 767px) {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    margin-top: 65px;
+
+                    @media (max-width: 767px) {
+                        margin-top: 14px;
+                        margin-bottom: 14px;
+                        line-height: 36px;
+                    }
+
+                    @media (max-width: 500px) {
+                        max-width: 70%;
+                    }
+                }
+
+                p {
+                    @media (max-width: 500px) {
+                        max-width: 405px
+                    }
+                }
+
                 .image-group {
                     display: flex;
                     flex-wrap: wrap;
                     margin-left: -2px;
                     margin-right: -2px;
+                    min-height: 427px;
 
                     img {
                         width: 50%;
@@ -811,12 +958,46 @@ body {
                 @media (min-width: 901px) {
                     max-width: 677px;
                 }
+
+                @media (max-width: 767px) {
+                    padding-left: 11px;
+                    padding-right: 11px;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    margin-top: 17px;
+                    margin-bottom: 13px;
+
+                    @media (max-width: 767px) {
+                        margin-top: 16px;
+                        margin-bottom: 14px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 21px;
+
+                    @media (max-width: 767px) {
+                        margin-bottom: 23px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
             }
         }
 
         .revolution__top {
             .top__quote {
-                padding: 36px 75px 33px 53px;
+                padding: 35px 75px 33px 53px;
+                margin-top: 35px;
+
+                @media (max-width: 767px) {
+                    margin-top: -8px;
+                    padding: 16px 30px 14px 60px;
+                }
 
                 p {
                     margin-bottom: 0;
