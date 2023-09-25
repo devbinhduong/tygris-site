@@ -809,6 +809,13 @@
         "megamenu_item6_link":"#",
         "header-background-color": "#ff5100",
         "contact_us_receive_mail": "team101@tygrisindustrial.com",
+        "custom_ask_an_expert": true,
+        "custom_ask_an_expert_title": "Have Question?",
+        "custom_ask_an_expert_desc1": "Ask an Expert anything on TYGRIS",
+        "custom_ask_an_expert_desc2": "We will follow up with you via email within 24-36 hours",
+        "custom_ask_an_expert_desc3": "Please answer the following questionnaire",
+        "custom_ask_an_expert_mailto": "team101@tygrisindustrial.com",
+        "custom_ask_an_expert_subject_mail": "Ask An Expert",
         "paymentbuttons-provider-sorting": [
 
         ]

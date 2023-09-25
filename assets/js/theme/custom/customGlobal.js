@@ -23,6 +23,7 @@ export default function(context) {
             homeProductsListID();
             contactUsForm();
             sectionScroll();
+            customAksAnExpert($context);
 
             if(window.innerWidth > 1024) {
                 activeMansory();
@@ -443,5 +444,131 @@ export default function(context) {
                 }, 1000);
             })
         }
+    }
+
+
+    function customAksAnExpert(context) {
+        var message;
+
+        if (!$('body').hasClass('page-type-product')) {
+            $('.ask-an-expert-link').on('click', event => {
+                event.preventDefault();
+
+                const $options = {
+                    template: 'custom/ask-an-expert/custom-ask-an-expert-content'
+                };
+
+                const modal = defaultModal();
+
+                modal.$modal.removeClass().addClass('modal modal--standard custom-ask-an-expert');
+                modal.open();
+
+                utils.api.getPage('/', $options, (err, response) => {
+                    modal.updateContent(response);
+                });
+            });
+        } else if ($('body').hasClass('page-type-product')) {
+            $('.ask-an-expert-link').on('click', event => {
+                event.preventDefault();
+
+                const $options = {
+                    template: 'custom/ask-an-expert/custom-ask-an-expert-content'
+                };
+
+                const modal = defaultModal();
+
+                modal.$modal.removeClass().addClass('modal modal--standard custom-ask-an-expert');
+                modal.open();
+
+                utils.api.product.getById($context.productId, $options, (err, response) => {
+                    modal.updateContent(response);
+                });
+            });
+        }
+
+        $(document).on('click', '#custom-ask-an-expert-button', event => {
+            var ask_proceed = true,
+                subjectMail = context.themeSettings.custom_ask_an_expert_subject_mail,
+                mailTo = context.themeSettings.custom_ask_an_expert_mailto,
+                customerName = $('#custom-ask-an-expert-form input[name=customer_name]').val(),
+                customerMail = $('#custom-ask-an-expert-form input[name=customer_email]').val(),
+                customerPhone = $('#custom-ask-an-expert-form input[name=customer_phone]').val(),
+                typeContact = $('#custom-ask-an-expert-form input[name=type_contact]:checked').val(),
+                typePackage = $('#custom-ask-an-expert-form input[name=type_package]:checked').val(),
+                customerMessage = $('#custom-ask-an-expert-form textarea[name=comment_area]').val();
+
+            if (!$('body').hasClass('page-type-product')) {
+                message = "<div style='border: 1px solid #e6e6e6;padding: 30px;max-width: 500px;margin: 0 auto;'>\
+                                <h2 style='margin-top:0;margin-bottom:30px;color: #000000;'>" + subjectMail + "</h2>\
+                                <p style='border-bottom: 1px solid #e6e6e6;padding-bottom: 23px;margin-bottom:25px;color: #000000;'>You received a new message from your online store's ask an expert form.</p>\
+                                <table style='width:100%;'>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Customer Name: </strong></td><td>" + customerName + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Email Address: </strong></td><td>" + customerMail + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Phone Number: </strong></td><td>" + customerPhone + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>How would you like me to contact you? </strong></td><td>" + typeContact + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Do you need: </strong></td><td>" + typePackage + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>What can i help you with today? </strong></td><td>" + customerMessage + "</td></tr>\
+                        </table></div>";
+            } else if ($('body').hasClass('page-type-product')) {
+                var img = $('.custom-ask-an-expert [data-product-image]').attr('data-product-image'),
+                    title = $('.custom-ask-an-expert [data-product-title]').attr('data-product-title'),
+                    sku = $('.custom-ask-an-expert [data-product-sku]').attr('data-product-sku'),
+                    url = $('.custom-ask-an-expert [data-product-url]').attr('data-product-url');
+
+
+                message = "<div style='border: 1px solid #e6e6e6;padding: 30px;max-width: 500px;margin: 0 auto;'>\
+                                <h2 style='margin-top:0;margin-bottom:30px;color: #000000;'>" + subjectMail + "</h2>\
+                                <p style='border-bottom: 1px solid #e6e6e6;padding-bottom: 23px;margin-bottom:25px;color: #000000;'>You received a new message from your online store's ask an expert form.</p>\
+                                <table style='width:100%;'>\
+                                <tr>\
+                                    <td style='border-bottom: 1px solid #e6e6e6;padding-bottom: 25px;margin-bottom:25px;width:50%;'><img width='100px' src='" + img + "' alt='" + title + "' title='" + title + "'></td><td style='border-bottom: 1px solid #e6e6e6;padding-bottom: 25px;margin-bottom:25px;'>" + sku + " <br><a href='" + url + "'>" + title + "</a></td>\
+                                </tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Customer Name: </strong></td><td>" + customerName + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Email Address: </strong></td><td>" + customerMail + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Phone Number: </strong></td><td>" + customerPhone + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>How would you like me to contact you? </strong></td><td>" + typeContact + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>Do you need: </strong></td><td>" + typePackage + "</td></tr>\
+                            <tr><td style='padding-right: 10px;vertical-align: top;width:50%;'><strong>What can i help you with today? </strong></td><td>" + customerMessage + "</td></tr>\
+                        </table></div>";
+            }
+
+            $("#custom-ask-an-expert-form input[required], #custom-ask-an-expert-form textarea[required]").each((index, el) => {
+                if (!$.trim($(el).val())) {
+                    $(el).parent('.form-field').removeClass('form-field--success').addClass('form-field--error');
+                    ask_proceed = false;
+                } else {
+                    $(el).parent('.form-field').removeClass('form-field--error').addClass('form-field--success');
+                }
+
+                var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+                if ($(el).attr("name") == "customer_email" && !email_reg.test($.trim($(el).val()))) {
+                    $(el).parent('.form-field').removeClass('form-field--success').addClass('form-field--error');
+                    ask_proceed = false;
+                }
+            });
+
+            if (ask_proceed) {
+                var ask_post_data = {
+                    "api": "i_send_mail",
+                    "subject": subjectMail,
+                    "from_name": customerName,
+                    "email": mailTo,
+                    "email_from": customerMail,
+                    "message": message
+                };
+
+                $.post('https://themevale.net/tools/sendmail/quotecart/sendmail.php', ask_post_data, (response) => {
+                    if (response.type == 'error') {
+                        var output = '<div class="alertBox alertBox--error"><p class="alertBox-message">' + response.text + '</p></div>';
+                    } else {
+                        var output = '<div class="alertBox alertBox--success"><p class="alertBox-message">Thank you. We\'ve received your feedback and will respond shortly.</p></div>';
+                        $("#custom-ask-an-expert-form  input[required], #custom-ask-an-expert-form textarea[required]").val('');
+                        $("#custom-ask-an-expert-form").hide();
+                    }
+                    $("#custom-ask-an-expert-results").hide().html(output).show();
+                }, 'json');
+            }
+        });
     }
 }

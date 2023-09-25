@@ -401,3 +401,208 @@
         }
     }
 }
+
+/* Ask An Expert Form */
+.custom-ask-an-expert {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #a6a6a6;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #787878;
+    }
+
+    .modal-body {
+        padding: 15px 30px 0 30px;
+        overflow: unset;
+        margin: 12px auto 0 auto;
+        max-width: 100%;
+
+        .custom-ask-an-expert-heading {
+            font-size: $fontSize-root;
+            font-weight: $fontWeight-semibold;
+            color: $color-textBase;
+            letter-spacing: $letterSpacing-base;
+            line-height: 24px;
+            text-align: center;
+            margin: 0;
+            text-transform: unset;
+            padding: 4px 30px;
+        }
+
+        .custom-ask-an-expert-text {
+            font-size: $fontSize-root;
+            font-weight: $fontWeight-normal;
+            color: $color-textBase;
+            letter-spacing: $letterSpacing-base;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .custom-ask-an-expert-intro {
+            font-size: $fontSize-root;
+            font-weight: $fontWeight-normal;
+            color: $color-textBase;
+            letter-spacing: $letterSpacing-base;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 0
+        }
+
+        .custom-line {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: 1px;
+            background: #ff5100;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            font-size: 0px;
+            margin-bottom: 20px;
+        }
+
+        #custom-ask-an-expert-results {
+            margin-bottom: 22px;
+        }
+    }
+
+
+    .alertBox {
+        font-size: $fontSize-root;
+        margin: 20px 0 40px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .alertBox-message {
+        display: inherit;
+        text-align: center;
+    }
+
+    .form-field {
+        margin-bottom: 0;
+
+        .hiddenLabels {
+            display: none;
+        }
+
+        +.form-field {
+            margin-top: 15px;
+
+            &.form-field-radio {
+                margin-top: 22px;
+                border-bottom: none;
+                padding-bottom: 0;
+
+                @media (max-width: 767px) {
+                    .form-label {
+                        &:first-child {
+                            display: block;
+                            margin-right: 0;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        +.form-field-textarea {
+            margin-top: 13px;
+
+            .form-input {
+                max-height: 136px;
+                line-height: 26px;
+            }
+        }
+
+        +.form-field-checkbox {
+            margin-top: 21px;
+        }
+
+        &.form-field-radio .form-radio+.form-label {
+            color: $color-textBase;
+        }
+    }
+
+    .form-label {
+        margin-bottom: 10px;
+    }
+
+    .form-input {
+        font-style: normal;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-field-checkbox {
+        position: relative;
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            border-radius: 0;
+            border: 1px solid #d0d0d0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            +.form-label {
+                font-size: $fontSize-root;
+                font-weight: $fontWeight-normal;
+                color: $color-textSecondary;
+                padding-left: 25px;
+                margin-bottom: 0;
+                position: relative;
+            }
+
+            &:checked {
+                background: $check-pip-backgroundImage;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .link {
+            border-bottom: 1px solid $color-textLink;
+            color: $color-textLink;
+        }
+    }
+
+    .form-field-radio {
+        padding-top: 0;
+    }
+
+    .form-actions {
+        text-align: center;
+        margin-top: 25px;
+
+        .button {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .modal-body {
+            padding-left: 0;
+            padding-right: 0;
+            max-width: 500px;
+        }
+    }
+}
