@@ -1,15 +1,13 @@
 <form action="{{product.add_to_wishlist_url}}" class="form form-wishlist form-action" data-wishlist-add method="post">
     <a aria-controls="wishlist-dropdown"
        aria-expanded="false"
-       class="button dropdown-menu-button"
+       class="btn btn-primary dropdown-menu-button uppercase"
        data-dropdown="wishlist-dropdown"
        href="#"
     >
         <span>{{lang 'account.wishlists.add_item'}}</span>
         <i aria-hidden="true" class="icon">
-            <svg>
-                <use href="#icon-chevron-down" />
-            </svg>
+            <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/heart.png" alt="Wish List Icon">
         </i>
     </a>
     <ul aria-hidden="true" class="dropdown-menu" data-dropdown-content id="wishlist-dropdown">

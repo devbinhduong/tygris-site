@@ -19,31 +19,21 @@ If you are making a change here or in price-range.html, you probably want to mak
                 {{price.rrp_with_tax.formatted}}
             </span>
         </div>
-        <div class="price-section price-section--withTax non-sale-price--withTax" {{#unless price.non_sale_price_with_tax}}style="display: none;"{{/unless}}>
-            <span>
-                {{> components/products/price-label
-                    label_value=theme_settings.pdp-non-sale-price-label
-                    fallback=(lang "page_builder.pdp-non-sale-price-label")
-                }}
-            </span>
-            <span data-product-non-sale-price-with-tax class="price price--non-sale">
-                {{price.non_sale_price_with_tax.formatted}}
-            </span>
-        </div>
         <div class="price-section price-section--withTax">
-            <span class="price-label" {{#if price.non_sale_price_with_tax}}style="display: none;"{{/if}}>
-                {{theme_settings.pdp-price-label}}
+            <span data-product-price-with-tax class="price price--withTax">
+                {{price.with_tax.formatted}}
+                (Ex. VAT)
             </span>
-            <span class="price-now-label" {{#unless price.non_sale_price_with_tax}}style="display: none;"{{/unless}}>
-                {{> components/products/price-label
-                    label_value=theme_settings.pdp-sale-price-label
-                    fallback=(lang "page_builder.pdp-sale-price-label")
-                }}
-            </span>
-            <span data-product-price-with-tax class="price price--withTax">{{price.with_tax.formatted}}</span>
             {{#if price.without_tax}}
                 <abbr title="{{lang 'products.including_tax'}}">{{lang 'products.price_with_tax' tax_label=price.tax_label}}</abbr>
             {{/if}}
+        </div>
+
+        <div class="price-section price-section--withTax non-sale-price--withTax" {{#unless price.non_sale_price_with_tax}}style="display: none;"{{/unless}}>
+            <span data-product-non-sale-price-with-tax class="price price--non-sale">
+                {{price.non_sale_price_with_tax.formatted}}
+                (Inc. VAT)
+            </span>
         </div>
     {{/if}}
     {{#if price.without_tax}}

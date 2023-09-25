@@ -127,127 +127,141 @@
                     {{/unless}}
                 {{/if}}
             </div>
+        </div>
+    </section>
 
-            <div class="productView-options">
-                {{#if product.release_date }}
-                    <p>{{product.release_date}}</p>
-                {{/if}}
-                <form class="form" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
-                      data-cart-item-add>
-                    <input type="hidden" name="action" value="add">
-                    <input type="hidden" name="product_id" value="{{product.id}}"/>
-                    <div data-product-option-change style="display:none;">
-                        {{inject 'showSwatchNames' theme_settings.show_product_swatch_names}}
-                        {{#each product.options}}
-                            {{{dynamicComponent 'components/products/options'}}}
-                        {{/each}}
-                    </div>
-                    <div class="form-field form-field--stock{{#unless product.stock_level}} u-hiddenVisually{{/unless}}">
-                        <label class="form-label form-label--alternate">
-                            {{lang 'products.current_stock'}}
-                            <span data-product-stock>{{product.stock_level}}</span>
-                        </label>
-                    </div>
-                    {{> components/products/add-to-cart with_wallet_buttons=true}}
-                    {{#if product.out_of_stock}}
-                        {{#if product.out_of_stock_message}}
-                            {{> components/common/alert/alert-error product.out_of_stock_message}}
-                        {{else}}
-                            {{> components/common/alert/alert-error (lang 'products.sold_out')}}
-                        {{/if}}
-                    {{/if}}
-                </form>
-                {{#if settings.show_wishlist}}
-                    {{> components/common/wishlist-dropdown}}
-                {{/if}}
-            </div>
-
-            {{#if product.call_for_price}}
-                <p class="productView-price">
-                    <span>{{product.call_for_price}}</span>
-                </p>
+    <section class="productView-details product-options">
+        <div class="productView-options">
+            {{#if product.release_date }}
+                <p>{{product.release_date}}</p>
             {{/if}}
-            <div class="productView-price">
-                {{#or customer (unless settings.hide_price_from_guests)}}
-                    {{> components/products/price price=product.price}}
-                {{else}}
-                    {{> components/common/login-for-pricing}}
-                {{/or}}
-            </div>
-            {{{region name="product_below_price"}}}
-            {{product.detail_messages}}
-            <dl class="productView-info">
-                <dt class="productView-info-name sku-label"{{#unless product.sku}} style="display: none;"{{/unless}}>{{lang 'products.sku'}}</dt>
-                <dd class="productView-info-value" data-product-sku>{{product.sku}}</dd>
-                <dt class="productView-info-name upc-label"{{#unless product.upc}} style="display: none;"{{/unless}}>{{lang 'products.upc'}}</dt>
-                <dd class="productView-info-value" data-product-upc>{{product.upc}}</dd>
-                {{#if product.condition}}
-                    <dt class="productView-info-name">{{lang 'products.condition'}}</dt>
-                    <dd class="productView-info-value">{{product.condition}}</dd>
+            <form class="form" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
+                  data-cart-item-add>
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="product_id" value="{{product.id}}"/>
+                <div data-product-option-change style="display:none;">
+                    {{inject 'showSwatchNames' theme_settings.show_product_swatch_names}}
+                    {{#each product.options}}
+                        {{{dynamicComponent 'components/products/options'}}}
+                    {{/each}}
+                </div>
+                {{#if product.call_for_price}}
+                    <p class="productView-price">
+                        <span>{{product.call_for_price}}</span>
+                    </p>
                 {{/if}}
-                {{#if product.availability}}
-                    <dt class="productView-info-name">{{lang 'products.availability'}}</dt>
-                    <dd class="productView-info-value">{{product.availability}}</dd>
-                {{/if}}
-                {{#all product.weight theme_settings.show_product_weight}}
-                    <dt class="productView-info-name">{{lang 'products.weight'}}</dt>
-                    <dd class="productView-info-value" data-product-weight>{{product.weight}}</dd>
-                {{/all}}
-                {{#all product.width product.height product.depth theme_settings.show_product_dimensions}}
-                    <dt class="productView-info-name">{{lang 'products.width'}}</dt>
-                    <dd class="productView-info-value" data-product-width>
-                        {{product.width}}
-                        {{#if settings.measurements.length '==' 'Centimeters'}}
-                        ({{lang 'products.measurement.metric'}})
-                        {{else}}
-                        ({{lang 'products.measurement.imperial'}})
-                        {{/if}}
-                    </dd>
-                    <dt class="productView-info-name">{{lang 'products.height'}}</dt>
-                    <dd class="productView-info-value" data-product-height>
-                        {{product.height}}
-                        {{#if settings.measurements.length '==' 'Centimeters'}}
-                        ({{lang 'products.measurement.metric'}})
-                        {{else}}
-                        ({{lang 'products.measurement.imperial'}})
-                        {{/if}}
-                    </dd>
-                    <dt class="productView-info-name">{{lang 'products.depth'}}</dt>
-                    <dd class="productView-info-value" data-product-depth>
-                        {{product.depth}}
-                        {{#if settings.measurements.length '==' 'Centimeters'}}
-                        ({{lang 'products.measurement.metric'}})
-                        {{else}}
-                        ({{lang 'products.measurement.imperial'}})
-                        {{/if}}
-                    </dd>
-                {{/all}}
-                {{#if product.min_purchase_quantity}}
-                    <dt class="productView-info-name">{{lang 'products.min_purchase_quantity'}}</dt>
-                    <dd class="productView-info-value">{{lang 'products.purchase_units' quantity=product.min_purchase_quantity}}</dd>
-                {{/if}}
-                {{#if product.max_purchase_quantity}}
-                    <dt class="productView-info-name">{{lang 'products.max_purchase_quantity'}}</dt>
-                    <dd class="productView-info-value">{{lang 'products.purchase_units' quantity=product.max_purchase_quantity}}</dd>
-                {{/if}}
-                {{#if product.gift_wrapping_available}}
-                    <dt class="productView-info-name">{{lang 'products.gift_wrapping'}}</dt>
-                    <dd class="productView-info-value">{{lang 'products.gift_wrapping_available'}}</dd>
-                {{/if}}
-                {{#if product.shipping}}
-                    {{#if product.shipping.calculated}}
-                        <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
-                        <dd class="productView-info-value">{{lang 'products.shipping_calculated'}}</dd>
+                <div class="productView-price">
+                    {{#or customer (unless settings.hide_price_from_guests)}}
+                        {{> components/products/price price=product.price}}
                     {{else}}
-                        {{#if product.shipping.price.value '===' 0}}
+                        {{> components/common/login-for-pricing}}
+                    {{/or}}
+                </div>
+                {{{region name="product_below_price"}}}
+
+                {{product.detail_messages}}
+            <div class="productView-info">
+                <div class="productView-info-item productView-info-item--sku" style="display: none;">
+                    <span class="productView-info-name sku-label">{{lang 'products.sku'}}</span>
+                    <span class="productView-info-value" data-product-sku>{{product.sku}}</span>
+                </div>
+
+                <div class="productView-info-item productView-info-item--upc">
+                    <span class="productView-info-name upc-label"{{#unless product.upc}} style="display: none;"{{/unless}}>{{lang 'products.upc'}}</span>
+                    <span class="productView-info-value" data-product-upc>{{product.upc}}</span>
+                </div>
+
+                <div class="productView-info-item productView-info-item--condition">
+                    {{#if product.condition}}
+                        <span class="productView-info-name">{{lang 'products.condition'}}</span>
+                        <span class="productView-info-value">{{product.condition}}</span>
+                    {{/if}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--availability">
+                    {{#if product.availability}}
+                        <span class="productView-info-name">{{lang 'products.availability'}}</span>
+                        <span class="productView-info-value">{{product.availability}}</span>
+                    {{/if}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--weight">
+                    {{#all product.weight theme_settings.show_product_weight}}
+                        <span class="productView-info-name">{{lang 'products.weight'}}</span>
+                        <span class="productView-info-value" data-product-weight>{{product.weight}}</span>
+                    {{/all}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--height">
+                    {{#all product.width product.height product.depth theme_settings.show_product_dimensions}}
+                        <span class="productView-info-name">{{lang 'products.width'}}</span>
+                        <span class="productView-info-value" data-product-width>
+                            {{product.width}}
+                            {{#if settings.measurements.length '==' 'Centimeters'}}
+                            ({{lang 'products.measurement.metric'}})
+                            {{else}}
+                            ({{lang 'products.measurement.imperial'}})
+                            {{/if}}
+                        </span>
+                        <span class="productView-info-name">{{lang 'products.height'}}</span>
+                        <span class="productView-info-value" data-product-height>
+                            {{product.height}}
+                            {{#if settings.measurements.length '==' 'Centimeters'}}
+                            ({{lang 'products.measurement.metric'}})
+                            {{else}}
+                            ({{lang 'products.measurement.imperial'}})
+                            {{/if}}
+                        </span>
+                        <span class="productView-info-name">{{lang 'products.depth'}}</span>
+                        <span class="productView-info-value" data-product-depth>
+                            {{product.depth}}
+                            {{#if settings.measurements.length '==' 'Centimeters'}}
+                            ({{lang 'products.measurement.metric'}})
+                            {{else}}
+                            ({{lang 'products.measurement.imperial'}})
+                            {{/if}}
+                        </span>
+                    {{/all}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--min-qty">
+                    {{#if product.min_purchase_quantity}}
+                        <span class="productView-info-name">{{lang 'products.min_purchase_quantity'}}</span>
+                        <span class="productView-info-value">{{lang 'products.purchase_units' quantity=product.min_purchase_quantity}}</span>
+                    {{/if}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--max-qty">
+                     {{#if product.max_purchase_quantity}}
+                        <span class="productView-info-name">{{lang 'products.max_purchase_quantity'}}</span>
+                        <span class="productView-info-value">{{lang 'products.purchase_units' quantity=product.max_purchase_quantity}}</span>
+                    {{/if}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--wrapping">
+                    {{#if product.gift_wrapping_available}}
+                        <dt class="productView-info-name">{{lang 'products.gift_wrapping'}}</dt>
+                        <dd class="productView-info-value">{{lang 'products.gift_wrapping_available'}}</dd>
+                    {{/if}}
+                </div>
+
+                <div class="productView-info-item productView-info-item--shipping">
+                    {{#if product.shipping}}
+                        {{#if product.shipping.calculated}}
                             <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
-                            <dd class="productView-info-value">{{lang 'products.shipping_free'}}</dd>
+                            <dd class="productView-info-value">{{lang 'products.shipping_calculated'}}</dd>
                         {{else}}
-                            <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
-                            <dd class="productView-info-value">{{lang 'products.shipping_fixed' amount=product.shipping.price.formatted}}</dd>
+                            {{#if product.shipping.price.value '===' 0}}
+                                <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
+                                <dd class="productView-info-value">{{lang 'products.shipping_free'}}</dd>
+                            {{else}}
+                                <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
+                                <dd class="productView-info-value">{{lang 'products.shipping_fixed' amount=product.shipping.price.formatted}}</dd>
+                            {{/if}}
                         {{/if}}
                     {{/if}}
-                {{/if}}
+                </div>
+
 
                 {{#if settings.bulk_discount_enabled}}
                     <div class="productView-info-bulkPricing">
@@ -258,21 +272,48 @@
                 {{#if theme_settings.show_custom_fields_tabs '!==' true}}
                     {{> components/products/custom-fields }}
                 {{/if}}
-            </dl>
+            </div>
+
+                <div class="form-field form-field--stock{{#unless product.stock_level}} u-hiddenVisually{{/unless}}">
+                    <label class="form-label form-label--alternate">
+                        {{lang 'products.current_stock'}}
+                        <span data-product-stock>{{product.stock_level}}</span>
+                    </label>
+                </div>
+                {{> components/products/add-to-cart with_wallet_buttons=true}}
+                {{#if product.out_of_stock}}
+                    {{#if product.out_of_stock_message}}
+                        {{> components/common/alert/alert-error product.out_of_stock_message}}
+                    {{else}}
+                        {{> components/common/alert/alert-error (lang 'products.sold_out')}}
+                    {{/if}}
+                {{/if}}
+
+                <!-- Add To Quote Button -->
+            </form>
+            <div class="productView-button-group flex">
+                <div class="custom-add-to-quote">
+                    <a href="#" class="btn btn-primary add-to-quote-btn uppercase">
+                        Add To Quote
+                        <span class="icon icon--product-quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="quote" width="13.333" height="15" viewBox="0 0 13.333 15">
+                                <path id="Path_84" data-name="Path 84" d="M9.167,10.833h2.154L9.167,12.988Zm-7.5-9.167h10v7.5H7.5v4.167H1.667ZM0,0V15H9.512l3.822-3.821V0Z" fill="#ff5100"></path>
+                                <rect id="Rectangle_10" data-name="Rectangle 10" width="8" height="2" transform="translate(2.667 3.25)" fill="#ff5100"></rect>
+                                <rect id="Rectangle_11" data-name="Rectangle 11" width="8" height="2" transform="translate(2.667 6.5)" fill="#ff5100"></rect>
+                                <rect id="Rectangle_12" data-name="Rectangle 12" width="3" height="2" transform="translate(3.18 9.75)" fill="#ff5100"></rect>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                {{#if settings.show_wishlist}}
+                    {{> components/common/wishlist-dropdown}}
+                {{/if}}
+            </div>
         </div>
-    </section>
 
-    <section class="productView-details product-options">
-        {{> components/common/share url=product.url}}
+        <!-- Product Detail Tabs -->
+        {{> components/custom/product/product-detail-tabs desc=product.description}}
     </section>
-
-    <article class="productView-description">
-        {{#if theme_settings.show_product_details_tabs}}
-            {{> components/products/description-tabs}}
-        {{else}}
-            {{> components/products/description}}
-        {{/if}}
-    </article>
 </div>
 
 <div id="previewModal" class="modal modal--large" data-reveal>

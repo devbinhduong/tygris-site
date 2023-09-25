@@ -8,9 +8,7 @@
                     <button class="button button--icon" data-action="dec">
                         <span class="is-srOnly">{{lang 'products.quantity_decrease' name=product.title}}</span>
                         <i class="icon" aria-hidden="true">
-                            <svg>
-                                <use href="#icon-keyboard-arrow-down"/>
-                            </svg>
+                            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z" fill="#727C8E"></path> </g></svg>
                         </i>
                     </button>
                     <input class="form-input form-input--incrementTotal"
@@ -26,9 +24,8 @@
                     <button class="button button--icon" data-action="inc">
                         <span class="is-srOnly">{{lang 'products.quantity_increase' name=product.title}}</span>
                         <i class="icon" aria-hidden="true">
-                            <svg>
-                                <use href="#icon-keyboard-arrow-up"/>
-                            </svg>
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0">
+                            </g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#727C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         </i>
                     </button>
                 </div>
@@ -47,7 +44,7 @@
                 <input
                         id="form-action-addToCart"
                         data-wait-message="{{lang 'products.adding_to_cart'}}"
-                        class="button button--primary"
+                        class="btn btn-secondary uppercase"
                         type="submit"
                         value="{{#if product.pre_order}}{{lang 'products.pre_order'}}{{else}}{{lang 'products.add_to_cart'}}{{/if}}"
                 >
