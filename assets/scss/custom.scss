@@ -418,6 +418,7 @@ body {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    margin-top: 48px;
 
     .contact-us__top {
         .contact-us-top__wrapper {
@@ -469,22 +470,50 @@ body {
                 }
             }
             .form-field {
-                margin-bottom: 11px;
+                margin-bottom: 10px;
 
                 .form-input::placeholder {
                     color: #232323;
                 }
             }
 
+            #contact-ask-an-expert-form  {
+                margin-bottom: 0;
+            }
+
+            .form-input {
+                height: 40px;
+            }
+
+            textarea.form-input {
+                height: 96px;
+                border-radius: 0;
+            }
+
             select {
+                position: relative;
                 min-height: 40px;
                 padding-left: 12px;
                 padding-right: 16px;
                 color: #232323;
+                font-size: 12px;
+                line-height: 1.5em;
+                font-weight: 600;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: transparent;
+                background-image: url('data:image/svg+xml,<svg width="35px" height="12px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="%23000000" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>arrow_up [%23340]</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-140.000000, -6683.000000)" fill="%23000000"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M84,6532.61035 L85.4053672,6534 L94.0131154,6525.73862 L94.9311945,6526.61986 L94.9261501,6526.61502 L102.573446,6533.95545 L104,6532.58614 C101.8864,6530.55736 95.9854722,6524.89321 94.0131154,6523 C92.5472155,6524.40611 93.9757869,6523.03486 84,6532.61035" id="arrow_up-[%23340]"></path></g></g></g></g></svg>');
+                background-repeat: no-repeat;
+                background-position-x: 100%;
+                background-position-y: 50%;
 
                 &::placeholder {
                     color: #232323;
                 }
+            }
+
+            #contact-ask-an-expert-button {
+                margin-bottom: 0;
             }
         }
     
@@ -500,9 +529,12 @@ body {
 
             @media (max-width: 800px) {
                 min-height: 278px;
+                margin-top: 9px;
             }
 
             .content {
+                max-width: 255px;
+
                 @media (min-width: 801px) {
                     position: absolute;
                     top: 50%;
@@ -510,6 +542,25 @@ body {
                     transform: translate(-50%,-50%);
                 }
                 
+                h4 {
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    &:hover {
+                        color: #ff5100;
+                    }
+                }
+
+                .text-info {
+                    margin-bottom: 0;
+                }
+
+                address {
+                    margin-top: 19px;
+                    font-style: normal;
+                }
             }
         }
     }
