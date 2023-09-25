@@ -606,3 +606,28 @@
         }
     }
 }
+
+/* Technical Sheet */
+.technical-sheet__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .technical-sheet__item {
+        max-width: 42px;
+        max-height: 60px;
+
+        .technical-sheet__link {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+        }
+
+        + .technical-sheet__item {
+            margin-top: 16px;
+        }
+    }
+}
