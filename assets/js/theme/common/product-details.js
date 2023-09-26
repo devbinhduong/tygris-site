@@ -593,8 +593,13 @@ export default class ProductDetails extends ProductDetailsBase {
         for (let title of tabTitles) {
             title.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 title.classList.toggle('is-open');
+
+                let tabConent = title.querySelector('.custom-toggle-content');
+
+                tabConent.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                })
             });
         }
     }

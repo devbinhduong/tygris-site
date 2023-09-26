@@ -35,8 +35,10 @@ product:
 
         {{#if product.related_products}}
             <div role="tabpanel" aria-hidden="false" class="tab-content has-jsContent is-active" id="tab-related">
-                <h5 class="heading-h5 custom-home-tilte"><span>Recommended Products</span></h5>
-                {{> components/products/carousel2 products=product.related_products columns=5 list="Related Products"}}
+                <div class="container container-1408">
+                    <h5 class="heading-h5 custom-home-tilte"><span>Recommended Products</span></h5>
+                    {{> components/products/carousel2 products=product.related_products columns=5 list="Related Products"}}
+                </div>
             </div>
         {{/if}}
     </div>

@@ -64,15 +64,15 @@
                 {{/if}}
             </div>
         </figure>
-        <ul class="productView-thumbnails"{{#gt product.images.length 4}} data-slick='{
+        <ul class="productView-thumbnails hide-on-tablet"{{#gt product.images.length 4}} data-slick='{
                 "infinite": false,
                 "mobileFirst": true,
                 "dots": false,
                 "accessibility": false,
-                "vertical": true,
-                "verticalSwiping": true,
                 "slidesToShow": 4,
-                "slidesToScroll": 1
+                "slidesToScroll": 1,
+                "vertical": true,
+                "verticalSwiping": true
             }'{{/gt}}>
             {{#each product.images}}
                 <li class="productView-thumbnail">
@@ -93,6 +93,40 @@
                 </li>
             {{/each}}
         </ul>
+
+        <ul class="productView-thumbnails productView-thumbnails--mobile hide-on-desktop"{{#gt product.images.length 4}} data-slick='{
+                "infinite": false,
+                "mobileFirst": true,
+                "dots": false,
+                "accessibility": false,
+                "slidesToShow": 4,
+                "slidesToScroll": 1,
+                "vertical": false,
+                "verticalSwiping": false
+            }'{{/gt}}>
+            {{#each product.images}}
+                <li class="productView-thumbnail">
+                    <a
+                        class="productView-thumbnail-link"
+                        href="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}"
+                        data-image-gallery-item
+                        data-image-gallery-new-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.product_size}}"
+                        data-image-gallery-new-image-srcset="{{getImageSrcset this use_default_sizes=true}}"
+                        data-image-gallery-zoom-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}"
+                    >
+                    {{> components/common/responsive-img
+                        image=this
+                        fallback_size=../theme_settings.productview_thumb_size
+                        lazyload=../theme_settings.lazyload_mode
+                    }}
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+
+        <i class="product-image-plus-icon">
+            <svg width="27px" height="27px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Magnifying_Glass_Plus"> <path id="Vector" d="M7 10H10M10 10H13M10 10V7M10 10V13M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+        </i>
     </section>
 
     <section class="productView-details product-data">

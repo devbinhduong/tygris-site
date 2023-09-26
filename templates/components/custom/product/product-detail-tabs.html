@@ -2,20 +2,42 @@
     <div class="custom-tab-content" id="tab-shipping">
         <div class="custom-toggle-title">
             <a class="custom-toggleLink" href="#tab-shipping">
-                <span class="text">Calculate Shipping Price</span>
+                <span class="text">
+                    <span class="tab-icon">
+                        <svg fill="#000000" width="20px" height="18px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M15.17 7.36 13 4.92a1.25 1.25 0 0 0-.94-.42h-2V2.75A1.25 1.25 0 0 0 8.82 1.5H1.76A1.25 1.25 0 0 0 .51 2.75v8.5a1.25 1.25 0 0 0 1.25 1.25h.33a2.07 2.07 0 0 0 2.13 2 2.08 2.08 0 0 0 2.14-2H10a2.07 2.07 0 0 0 2.13 2 2.08 2.08 0 0 0 2.14-2 1.26 1.26 0 0 0 1.2-1.25V8.19a1.22 1.22 0 0 0-.3-.83zM4.22 13.25a.82.82 0 0 1-.88-.75.82.82 0 0 1 .88-.75.83.83 0 0 1 .89.75.83.83 0 0 1-.89.75zm4.6-7.58v5.58H5.89a2.17 2.17 0 0 0-1.67-.75 2.17 2.17 0 0 0-1.66.75h-.8v-8.5h7.06zm1.25.08h2l1.44 1.63h-3.44zm2.08 7.5a.82.82 0 0 1-.88-.75.82.82 0 0 1 .88-.75.83.83 0 0 1 .89.75.83.83 0 0 1-.89.75zm0-2.75a2.17 2.17 0 0 0-1.66.75h-.42V8.62h4.17v2.63h-.42a2.17 2.17 0 0 0-1.67-.75z"></path></g></svg>
+                    </span>
+                    Calculate Shipping Price
+                </span>
                 <span class="icon-plus"></span>
             </a>
         </div>
 
         <div class="custom-toggle-content" id="tab-shipping">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores enim debitis perferendis repellat nesciunt officiis doloribus, neque, nulla inventore blanditiis dolore a fuga eligendi modi incidunt amet non libero.
+            <div class="calculate-shipping">
+                <select name="calculate-shipping" id="calculate-shipping-select">
+                    <option value="0">Select a country / region...</option>
+                    <option value="1">Country 1</option>
+                    <option value="2">Country 2</option>
+                    <option value="3">Country 3</option>
+                </select>
+
+                <div class="calculate-shipping__input">
+                    <input type="calculate-input calculate-input--city" placeholder="City" />
+                    <input type="calculate-input calculate-input--postCode" placeholder="Postcode / Zip" />
+                </div>
+
+                <a href="#" class="calculate__btn color-main">Calculate</a>
+            </div>
         </div>
     </div>
 
     <div class="custom-tab-content" id="tab-review">
         <div class="custom-toggle-title">
             <a class="custom-toggleLink" href="#tab-review">
-                <span class="text">Reviews</span>
+                <span class="text">
+                   <span class="tab-icon tab-icon--review"></span>
+                    Reviews
+                </span>
                 <span class="icon-plus"></span>
             </a>
         </div>
@@ -28,7 +50,13 @@
     <div class="custom-tab-content" id="tab-description">
         <div class="custom-toggle-title">
             <a class="custom-toggleLink" href="#tab-description">
-                <span class="text">Descriptions</span>
+                <span class="text">
+                    <span class="tab-icon">
+                        <svg width="17px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 13H14M8 17H16M13 3H5V21H19V9M13 3H14L19 8V9M13 3V7C13 8 14 9 15 9H19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </span>
+                    
+                    Descriptions
+                </span>
                 <span class="icon-plus"></span>
             </a>
         </div>
@@ -41,7 +69,12 @@
     <div class="custom-tab-content" id="tab-technical">
         <div class="custom-toggle-title">
             <a class="custom-toggleLink" href="#tab-technical">
-                <span class="text">Technical Information</span>
+                <span class="text">
+                    <span class="tab-icon">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 21h-4l-.551-2.48a6.991 6.991 0 0 1-1.819-1.05l-2.424.763-2-3.464 1.872-1.718a7.055 7.055 0 0 1 0-2.1L3.206 9.232l2-3.464 2.424.763A6.992 6.992 0 0 1 9.45 5.48L10 3h4l.551 2.48a6.992 6.992 0 0 1 1.819 1.05l2.424-.763 2 3.464-1.872 1.718a7.05 7.05 0 0 1 0 2.1l1.872 1.718-2 3.464-2.424-.763a6.99 6.99 0 0 1-1.819 1.052L14 21z"></path><circle cx="12" cy="12" r="3" stroke="#000000" stroke-width="2"></circle></g></svg>
+                    </span>
+                    Technical Information
+                </span>
                 <span class="icon-plus"></span>
             </a>
         </div>
