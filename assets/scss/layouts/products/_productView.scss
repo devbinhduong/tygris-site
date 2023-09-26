@@ -508,6 +508,10 @@
                 justify-content: space-between;
                 padding-left: 35px;
 
+                &.custom-toggleLink--review {
+                    padding-left: 110px;
+                }
+
                 .tab-icon {
                     position: absolute;
                     top: 50%;
@@ -935,5 +939,131 @@
         @media (max-width: 767px) {
             min-width: unset;
         }
+    }
+}
+
+/* Review Tabs */
+.icon--ratingFull svg {
+    fill: #ff5100;
+    stroke: #ff5100;
+    stroke-width: 1.5px;
+}
+
+.icon--ratingEmpty svg {
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 1.5px;
+}
+
+.productView-details {
+    .productView-reviewLink {
+        display: none;
+    }
+}
+
+.reviewChart__list {
+    max-width: 345px;
+
+    .reviewChart__item {
+        span {
+            font-size: 12px;
+            color: #232323;
+            line-height: 18px;
+            letter-spacing: 0.84px;
+            font-weight: normal;
+        }
+
+        .item-star {
+            width: 55px;
+            display: inline-block;
+        }
+
+        .item-progress {
+            flex: 1;
+            background-color: #EEEEEE;
+            display: block;
+            width: 100%;
+            height: 15px;
+            position: relative;
+
+            .process-percent {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #000000;
+                width: 0%;
+            }
+        }
+
+        .item-count {
+            width: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        + .reviewChart__item {
+            margin-top: 18px;
+        }
+    }
+}
+
+.custom-productReviews {
+    border-top: none;
+    margin-top: 30px;
+    margin-bottom: 0 !important;
+
+    .toggle-title {
+        display: none;
+    }
+
+    .toggle-content {
+        display: block !important;
+    }
+
+    .productReviews-list {
+        display: flex;
+        flex-direction: column;
+
+        .productReview-date {
+            font-size: 12px;
+            color: #232323;
+            letter-spacing: 0.84px;
+            line-height: 18px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .productReview-title {
+            font-size: 12px;
+            color: #232323;
+            letter-spacing: 0.84px;
+            line-height: 18px;
+            font-weight: bold;
+        }
+
+        .productReview-body {
+            font-size: 12px;
+            color: #232323;
+            letter-spacing: 0.84px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+
+        .productReview {
+            width: 100%;
+        }
+    }
+}
+
+.review-button-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    .btn + .btn {
+        margin-top: 10px;
     }
 }

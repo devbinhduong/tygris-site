@@ -27,6 +27,11 @@ export default class ProductDetails extends ProductDetailsBase {
         this.storeInitMessagesForSwatches();
 
         this.customProductTabs();
+        this.productChartReview();
+        this.changeDateReview(this.convertDateReview);
+
+        this.newWriteAReview();
+        this.viewAllReview();
 
         const $form = $('form[data-cart-item-add]', $scope);
 
@@ -603,4 +608,108 @@ export default class ProductDetails extends ProductDetailsBase {
             });
         }
     }
+
+    productChartReview() {
+        let chartReview = document.querySelector('.reviewChart__list');
+
+        if(!chartReview) return;
+
+        let review5Length = document.querySelectorAll(".get-review-count .review5").length;
+        let review4Length = document.querySelectorAll(".get-review-count .review4").length;
+        let review3Length = document.querySelectorAll(".get-review-count .review3").length;
+        let review2Length = document.querySelectorAll(".get-review-count .review2").length;
+        let review1Length = document.querySelectorAll(".get-review-count .review1").length;
+
+        let chartItem5 = chartReview.querySelector('.reviewChart__item--5');
+        let chartItem4 = chartReview.querySelector('.reviewChart__item--4');
+        let chartItem3 = chartReview.querySelector('.reviewChart__item--3');
+        let chartItem2 = chartReview.querySelector('.reviewChart__item--2');
+        let chartItem1 = chartReview.querySelector('.reviewChart__item--1');
+        
+        chartItem5.querySelector(".item-count").innerHTML = `(${review5Length})`;
+        chartItem4.querySelector(".item-count").innerHTML = `(${review4Length})`;
+        chartItem3.querySelector(".item-count").innerHTML = `(${review3Length})`;
+        chartItem2.querySelector(".item-count").innerHTML = `(${review2Length})`;
+        chartItem1.querySelector(".item-count").innerHTML = `(${review1Length})`;
+
+        let totalReview = review5Length + review4Length + review3Length + review2Length + review1Length;
+
+        let review5Percent = (review5Length / totalReview) * 100;
+        let review4Percent = (review4Length / totalReview) * 100;
+        let review3Percent = (review3Length / totalReview) * 100;
+        let review2Percent = (review2Length / totalReview) * 100;
+        let review1Percent = (review1Length / totalReview) * 100;
+
+        chartItem5.querySelector(".process-percent").style.width = `${review5Percent}%`;
+        chartItem4.querySelector(".process-percent").style.width = `${review4Percent}%`;
+        chartItem3.querySelector(".process-percent").style.width = `${review3Percent}%`;
+        chartItem2.querySelector(".process-percent").style.width = `${review2Percent}%`;
+        chartItem1.querySelector(".process-percent").style.width = `${review1Percent}%`;
+    }
+
+    convertDateReview(reviewDate) {
+        const parts = reviewDate.match(/(\d+)(?:st|nd|rd|th) (\w+) (\d{4})/);
+
+        if (!parts) {
+            return null;
+        }
+
+        const monthList = [
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        ];
+
+        const day = parts[1];
+        const month = monthList.indexOf(parts[2]) + 1;
+        const year = parts[3];
+
+        if (day && month && year) {
+            return `${day.toString().padStart(2, '0')}.${month.toString().padStart(2, '0')}.${year}`;
+        }
+
+        return null;
+    }
+
+    changeDateReview(convertDateReview) {
+
+        let dateReviewList = document.querySelectorAll(".productReview-date");
+
+        for (let dateReview of dateReviewList) {
+            let date = dateReview.innerHTML;
+            let result = convertDateReview(date);
+            dateReview.innerHTML = result;
+        }
+    }
+
+    newWriteAReview() {
+        let newWriteAReview = document.querySelector('.review-button-group .write-a-review'),
+            oldButton = document.querySelector('.productView-product .productView-reviewLink');
+
+        newWriteAReview.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            oldButton.click();
+        })
+    }
+
+    viewAllReview() {
+        let viewAllReview = document.querySelector('.review-button-group .view-all-review'),
+            reviewList = document.querySelectorAll(".productReviews-list .productReview");
+
+        for(let i = 0; i < reviewList.length; i++) {
+            if(i > 1) {
+                reviewList[i].style.display = "none";
+            }
+        }
+
+        viewAllReview.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            for(let i = 0; i < reviewList.length; i++) {
+                reviewList[i].style.display = "block";
+            }
+
+            viewAllReview.style.display = "none";
+        })
+    }    
 }

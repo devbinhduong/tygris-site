@@ -33,17 +33,39 @@
 
     <div class="custom-tab-content" id="tab-review">
         <div class="custom-toggle-title">
-            <a class="custom-toggleLink" href="#tab-review">
+            <a class="custom-toggleLink custom-toggleLink--review" href="#tab-review">
                 <span class="text">
-                   <span class="tab-icon tab-icon--review"></span>
-                    Reviews
+                   <span class="tab-icon tab-icon--review">
+                    {{#if settings.show_product_rating}}
+                        {{> components/products/ratings rating=product.rating product_top=true}}
+                    {{/if}}
+                   </span>
+
+                   {{#if product.reviews.total}}
+                        Base on {{product.reviews.total}} {{#if product.reviews.total '>' 1}}Reviews{{else}}Review{{/if}}
+                   {{else}}
+                        Reviews 
+                   {{/if}}
                 </span>
                 <span class="icon-plus"></span>
             </a>
         </div>
 
         <div class="custom-toggle-content" id="tab-review">
-           Review Content
+            <!-- Chart Review -->
+            {{> components/custom/product/chart-review product=product rating=product.rating reviews=product.reviews urls=urls}}
+            {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
+
+            <div class="review-button-group">
+                <a href="#" class="btn btn-secondary view-all-review uppercase {{#if product.reviews.total '<' 3}}btn-disable{{/if}}">
+                    {{#if product.reviews.total '<' 3}}
+                        No More Review
+                    {{else}}
+                        View All Review
+                    {{/if}}
+                </a>
+                <a href="#" class="btn btn-primary write-a-review uppercase">Write A Review</a>
+            </div>
         </div>
     </div>
 

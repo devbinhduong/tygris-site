@@ -1,0 +1,57 @@
+<div class="reviewChart__list">
+    <div class="reviewChart__item reviewChart__item--5 flex-align-center">
+        <span class="item-star">5 starts</span>
+        <span class="item-progress">
+            <span class="process-percent"></span>
+        </span>
+        <span class="item-count">(1)</span>
+    </div>
+    <div class="reviewChart__item reviewChart__item--4 flex-align-center">
+        <span class="item-star">4 starts</span>
+        <span class="item-progress">
+            <span class="process-percent"></span>
+        </span>
+        <span class="item-count">(1)</span>
+    </div>
+    <div class="reviewChart__item reviewChart__item--3 flex-align-center">
+        <span class="item-star">3 starts</span>
+        <span class="item-progress">
+            <span class="process-percent"></span>
+        </span>
+        <span class="item-count">(1)</span>
+    </div>
+    <div class="reviewChart__item reviewChart__item--2 flex-align-center">
+        <span class="item-star">2 starts</span>
+        <span class="item-progress">
+            <span class="process-percent"></span>
+        </span>
+        <span class="item-count">(1)</span>
+    </div>
+    <div class="reviewChart__item reviewChart__item--1 flex-align-center">
+        <span class="item-star">1 starts</span>
+        <span class="item-progress">
+            <span class="process-percent"></span>
+        </span>
+        <span class="item-count">(1)</span>
+    </div>
+</div>
+
+<div class="get-review-count" style="display: none;">
+    {{#each reviews.list}}
+        {{#if rating '==' 5}}
+            <span class="review5">{{rating}}</span>
+        {{/if}}
+        {{#if rating '==' 4}}
+            <span class="review4">{{rating}}</span>
+        {{/if}}
+        {{#if rating '==' 3}}
+            <span class="review3">{{rating}}</span>
+        {{/if}}
+        {{#if rating '==' 2}}
+            <span class="review2">{{rating}}</span>
+        {{/if}}
+        {{#if rating '==' 1}}
+            <span class="review1">{{rating}}</span>
+        {{/if}}
+    {{/each}}
+</div>
