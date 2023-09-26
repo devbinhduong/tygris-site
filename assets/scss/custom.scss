@@ -1006,3 +1006,185 @@ body {
         }
     }
 }
+
+/* Team Page */
+.team-page {
+    .breadcrumbs {
+        margin-top: 0;
+        padding-top: 28px;
+
+        .breadcrumb:not(:first-child)::before {
+            color: #ffffff;
+        }
+    }
+
+    .team-page__info {
+        padding-top: 18px;
+        .info__content {
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .content__heading {
+                margin-top: 24px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .team-page__images {
+        margin-top: 50px;
+        position: relative;
+
+        .image__list {
+            overflow: hidden;
+
+            .image__item {
+                margin-bottom: 4px;
+            }
+        }
+
+        .left-banner-info {
+            background-color: rgba($color: #ff5100, $alpha: 0.9);
+            position: absolute;
+            top: 50%;
+            transform: translateY(calc(-50% - 2px));
+            width: 50%;
+            height: calc(33.33333% - 4px);
+            padding-left: 75px;
+            padding-right: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 1400px) {
+                width: 100%;
+            }
+
+            @media (max-width: 1024px) {
+                height: 50%;
+            }
+
+            @media (max-width: 767px) {
+                height: calc(33.33333% - 4px);
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            @media (max-width: 430px) {
+                height: 50%;
+                top: 41.7%;
+
+            }
+
+            h2, h4 {
+                margin: 0;
+            }
+
+            .info__title {
+                @media (max-width: 430px) {
+                    font-size: 24px;
+                    line-height: 1.5em;
+                }
+            }
+
+
+            h4 {
+                font-weight: 400;
+
+                @media (max-width: 430px) {
+                    font-size: 14px;
+                }
+            }
+
+            .info__row {
+                justify-content: space-between;
+                padding-top: 20px;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
+
+                @media (max-width: 430px) {
+                    padding-top: 8px;
+                }
+
+                .info__col {
+                    width: 100%;
+                    &--left {
+                        @media (min-width: 768px) {
+                            max-width: 471px;
+                        }
+                    }
+
+                    &--right {
+                        @media (min-width: 768px) {
+                            padding-left: 2px;
+                            max-width: 232px;
+                        }
+                    }
+
+                    p {
+                        @media (max-width: 767px) {
+                            font-size: 13px;
+                        }
+
+                        @media (max-width: 430px) {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+
+                .info__invite {
+                    @media (max-width: 767px) {
+                        margin-bottom: 13px;
+                    }
+
+                    @media (max-width: 430px) {
+                        margin-bottom: 5px;
+                    }
+                    > a {
+                        &:hover {
+                            color: #232323;
+                        }
+                    }
+                    .icon {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .close-banner-button {
+                background-color: #ffffff;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 42px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+
+                .icon {
+                    width: 36px;
+                    height: 36px;
+
+                    svg {
+                        fill: #000000;
+                    }
+                }
+
+                &:hover {
+                    background-color: #232323;
+
+                    .icon {
+                        svg {
+                            fill: #ff5100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

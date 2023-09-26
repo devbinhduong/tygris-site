@@ -10,6 +10,10 @@
         --grid-gap: 0;
     }
 
+    &.gap-4 {
+        --grid-gap: 4px;
+    }
+
     &.gap-9{
         --grid-gap: 9px;
     }
