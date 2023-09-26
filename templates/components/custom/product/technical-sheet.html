@@ -1,12 +1,25 @@
+{{#each product.custom_fields}}
+    {{#startsWith '__' name}}
+        {{#if name '==' "__safety-sheets"}}
+            {{assignVar "safetySheets" value}}
+        {{/if}}
+
+        {{#if name '==' "__technical-sheets"}}
+            {{assignVar "technicalSheets" value}}
+        {{/if}}
+    {{/startsWith}}
+{{/each}}
+
+
 <div class="technical-sheet__list">
     <div class="technical-sheet__item">
-        <a href="#" class="technical-sheet__link">
+        <a href="{{getVar 'safetySheets'}}" class="technical-sheet__link">
             <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/safety-sheet.png" alt="Safety Sheet">
             <span>SAFETY SHEEETS</span>
         </a>
     </div>
     <div class="technical-sheet__item">
-        <a href="#" class="technical-sheet__link">
+        <a href="{{getVar 'technicalSheets'}}" class="technical-sheet__link">
             <img src="https://cdn11.bigcommerce.com/s-gr2r925k9d/images/stencil/original/image-manager/tech-sheet.png" alt="Tech Sheet">
             <span>TECHNICAL DATA SHEEETS</span>
         </a>
@@ -17,3 +30,4 @@
         </a>
     </div>
 </div>
+

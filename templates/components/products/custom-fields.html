@@ -1,4 +1,7 @@
 {{#each product.custom_fields}}
-<dt class="productView-info-name">{{name}}:</dt>
-<dd class="productView-info-value">{{{value}}}</dd>
+    {{#startsWith '__' name}}
+    {{else}}
+        <dt class="productView-info-name">{{name}}:</dt>
+        <dd class="productView-info-value">{{{value}}}</dd>
+    {{/startsWith}}
 {{/each}}

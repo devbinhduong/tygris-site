@@ -32,6 +32,7 @@ export default class ProductDetails extends ProductDetailsBase {
 
         this.newWriteAReview();
         this.viewAllReview();
+        this.customTechnicalTab();
 
         const $form = $('form[data-cart-item-add]', $scope);
 
@@ -711,5 +712,15 @@ export default class ProductDetails extends ProductDetailsBase {
 
             viewAllReview.style.display = "none";
         })
-    }    
+    }
+    
+    customTechnicalTab() {
+        let customContent = document.querySelector('.technical-tab-content'),
+            technicalTab = document.querySelector('#tab-technicalContent');
+
+        if(!technicalTab) return;
+
+        /* Appen customContent to technical tab */
+        technicalTab.appendChild(customContent);
+    }
 }
