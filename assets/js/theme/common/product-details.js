@@ -720,7 +720,6 @@ export default class ProductDetails extends ProductDetailsBase {
 
         if(!technicalTab) return;
 
-        /* Appen customContent to technical tab */
         technicalTab.appendChild(customContent);
     }
 }
