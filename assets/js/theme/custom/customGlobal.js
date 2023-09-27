@@ -24,6 +24,7 @@ export default function(context) {
             contactUsForm();
             sectionScroll();
             customAksAnExpert($context);
+            teamPageSidebar();
 
             if(window.innerWidth > 1024) {
                 activeMansory();
@@ -570,5 +571,23 @@ export default function(context) {
                 }, 'json');
             }
         });
+    }
+
+    function teamPageSidebar() {
+        let closeSidebarButton = document.querySelector(".close-banner-button"),
+            openSidebarButton = document.querySelector(".open-banner-button"),
+            sidebar = document.querySelector(".team-page__images");
+        
+        if(closeSidebarButton && openSidebarButton) {
+            closeSidebarButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                sidebar.classList.remove("is-open");
+            });
+
+            openSidebarButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                sidebar.classList.add("is-open");
+            });
+        }
     }
 }

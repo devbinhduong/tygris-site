@@ -1056,6 +1056,8 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            left: -100%;
+            transition: all 0.3s ease;
 
             @media (max-width: 1400px) {
                 width: 100%;
@@ -1184,6 +1186,28 @@ body {
                         }
                     }
                 }
+            }
+        }
+
+        .open-banner-button {
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        &.is-open {
+            .left-banner-info {
+                left: 0;
+            }
+
+            .open-banner-button {
+                display: none;
             }
         }
     }
