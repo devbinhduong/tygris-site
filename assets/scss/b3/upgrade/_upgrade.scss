@@ -1,0 +1,107 @@
+.body {
+  display: none;
+}
+
+.navBar-section {
+
+  .navBar-item {
+
+    &.is-active {
+      font-size: 12px;
+    }
+  }
+}
+
+.button,
+.modal .button {
+
+  &.modal-close--button {
+    padding: 13px 35px 12px 35px;
+  }
+}
+
+.addressBook .address-lists-wrap.b2b-wrap .search-toolbar .search-input-box .button {
+  background-color: #232323;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.addressBook .address-lists-wrap .search-toolbar .search-input-box input[type="text"] {
+  min-height: auto;
+}
+
+.addressBook .address-lists-wrap.b2b-wrap .search-toolbar .search-input-box .button.button-clear {
+  border: 1px solid transparent;
+}
+
+.buyAgain .buy-again-search-container {
+  width: 100%;
+}
+
+.modal {
+
+  &#modal-user-management-new-form, 
+  &#modal-user-management-edit-form {
+    overflow: initial !important;
+  }
+}
+
+.b2b-wrap {
+  clear: both;
+}
+
+.page_title_user_management {
+
+  .b2b-wrap {
+
+    .table-toolbar {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.productView {
+
+  .form {
+
+    & +.form-action {
+
+      > .form {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: 220px;
+
+        .dropdown-menu {
+
+          .button {
+            white-space: break-spaces;
+          }
+        }
+      }
+    }
+  }
+}
+
+.salerep-infobox {
+
+  .container {
+
+    &:before,
+    &:after {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+.themevale_header-top {
+
+  .salerep-infobox {
+    z-index: 19;
+  }
+}

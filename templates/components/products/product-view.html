@@ -308,6 +308,9 @@
                     </label>
                 </div>
                 {{> components/products/add-to-cart with_wallet_buttons=true}}
+
+                <!-- <div id="add-to-cart-wrapper" class="form-action"></div> -->
+                
                 {{#if product.out_of_stock}}
                     {{#if product.out_of_stock_message}}
                         {{> components/common/alert/alert-error product.out_of_stock_message}}
@@ -316,26 +319,11 @@
                     {{/if}}
                 {{/if}}
 
-                <!-- Add To Quote Button -->
-            </form>
-            <div class="productView-button-group flex">
-                <div class="custom-add-to-quote">
-                    <a href="#" class="btn btn-primary add-to-quote-btn uppercase">
-                        Add To Quote
-                        <span class="icon icon--product-quote">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="quote" width="13.333" height="15" viewBox="0 0 13.333 15">
-                                <path id="Path_84" data-name="Path 84" d="M9.167,10.833h2.154L9.167,12.988Zm-7.5-9.167h10v7.5H7.5v4.167H1.667ZM0,0V15H9.512l3.822-3.821V0Z" fill="#ff5100"></path>
-                                <rect id="Rectangle_10" data-name="Rectangle 10" width="8" height="2" transform="translate(2.667 3.25)" fill="#ff5100"></rect>
-                                <rect id="Rectangle_11" data-name="Rectangle 11" width="8" height="2" transform="translate(2.667 6.5)" fill="#ff5100"></rect>
-                                <rect id="Rectangle_12" data-name="Rectangle 12" width="3" height="2" transform="translate(3.18 9.75)" fill="#ff5100"></rect>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
                 {{#if settings.show_wishlist}}
                     {{> components/common/wishlist-dropdown}}
                 {{/if}}
-            </div>
+
+            </form>
         </div>
 
         <!-- Product Detail Tabs -->

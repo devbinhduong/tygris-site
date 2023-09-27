@@ -50,6 +50,14 @@
         {{~inject 'carouselArrowAndDotAriaLabel' (lang 'carousel.arrow_and_dot_aria_label')}}
         {{~inject 'carouselActiveDotAriaLabel' (lang 'carousel.active_dot_aria_label')}}
         {{~inject 'carouselContentAnnounceMessage' (lang 'carousel.content_announce_message')}}
+
+        {{!-- BundleB2B --}}
+        {{~inject "customer" customer}}
+        {{~inject 'store_hash' settings.store_hash}}
+        {{~inject "settings" settings}}
+        {{~inject "page_type" page_type}}
+        {{~inject "currency_selector" currency_selector}}
+        {{!-- BundleB2B --}}
     </head>
     <body class="page-type-{{page_type}}">
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
@@ -59,6 +67,13 @@
         {{> components/common/footer }}
 
         <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+
+        <script>
+            {{!-- BundleB2B --}}
+            window.jsContext = JSON.parse({{jsContext}});
+            {{!-- BundleB2B --}}
+        </script>
+
         <script>
             {{!-- Exported in app.js --}}
             function onThemeBundleMain() {

@@ -1,0 +1,288 @@
+/* B2B Request A Quote */
+#my-quote-entry-custom {
+    margin-right: 36px;
+
+    .header-top__icon {
+        margin-right: 0;
+    }
+    .navUser-action {
+        font-size: 13px;
+        color: #ffffff;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+
+/* Hide 2 Button Default Quote + Shopping */
+#add-to-cart-wrapper {
+    .add-to-cart-buttons {
+        .b2b-add-to-list,
+        .b2b-add-to-quote {
+            display: none !important;
+        }
+    }
+
+    .rfq-pdp-button-container {
+        @media (max-width: 1250px) {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    .add-to-quote {
+        position: relative;
+        font-weight: 600;
+        display: inline-block;
+        padding: 15px;
+        font-size: 12px;
+        letter-spacing: 0.84px;
+        line-height: 1.5em;
+        text-decoration: none;
+        min-width: 188px;
+        text-align: center;
+        max-height: 48px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        text-transform: uppercase;
+        padding-left: 4px;
+        
+        @media (min-width: 1530px) {
+            margin-bottom: 0;
+            transform: translateY(-20px);
+        }
+
+        @media (max-width: 1250px) {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 4px;
+        }
+        &::after {
+            content: "";
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" id="quote" width="13.333" height="15" viewBox="0 0 13.333 15"><path id="Path_84" data-name="Path 84" d="M9.167,10.833h2.154L9.167,12.988Zm-7.5-9.167h10v7.5H7.5v4.167H1.667ZM0,0V15H9.512l3.822-3.821V0Z" fill="%23ff5100"></path><rect id="Rectangle_10" data-name="Rectangle 10" width="8" height="2" transform="translate(2.667 3.25)" fill="%23ff5100"></rect><rect id="Rectangle_11" data-name="Rectangle 11" width="8" height="2" transform="translate(2.667 6.5)" fill="%23ff5100"></rect><rect id="Rectangle_12" data-name="Rectangle 12" width="3" height="2" transform="translate(3.18 9.75)" fill="%23ff5100"></rect></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-45%);
+            right: 20px;
+            transition: all 0.2s ease-in;
+            width: 15px;
+            height: 15px;
+        }
+
+    }
+
+    + .dropdown-menu-button {
+        @media (min-width: 1251px) {
+            width: 33.333%;
+            max-width: 188px;
+        }
+    }
+}
+
+/* Request A Quote Form */
+.rfq-form-wrapper {
+    .form-container {
+        height: 77vh !important;
+        max-height: 545px !important;
+        .title-container {
+            background: #000000 !important;
+            height: 44px !important;
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+            
+            h3 {
+                color: #ffffff !important;
+                text-transform: uppercase !important;
+                font-size: 14px !important;
+                letter-spacing: 0 !important;
+                line-height: 21px !important;
+                font-weight: bold !important;
+                position: relative !important;
+                padding-left: 27px !important;
+                
+                &::after {
+                    content: "" !important;
+                    width: 20px !important;
+                    height: 22px !important;
+                    position: absolute !important;
+                    left: 0 !important;
+                    top: 0 !important;
+                    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" id="quote" width="13.333" height="15" viewBox="0 0 13.333 15"><path id="Path_84" data-name="Path 84" d="M9.167,10.833h2.154L9.167,12.988Zm-7.5-9.167h10v7.5H7.5v4.167H1.667ZM0,0V15H9.512l3.822-3.821V0Z" fill="%23ff5100"></path><rect id="Rectangle_10" data-name="Rectangle 10" width="8" height="2" transform="translate(2.667 3.25)" fill="%23ff5100"></rect><rect id="Rectangle_11" data-name="Rectangle 11" width="8" height="2" transform="translate(2.667 6.5)" fill="%23ff5100"></rect><rect id="Rectangle_12" data-name="Rectangle 12" width="3" height="2" transform="translate(3.18 9.75)" fill="%23ff5100"></rect></svg>') !important;
+                    background-repeat: no-repeat !important;
+                    background-position: center !important;
+                }
+            }
+            
+            .quote-modal-close {
+                position: relative !important;
+                background: transparent !important;
+                font-size: 0 !important;
+                width: 18px !important;
+                height: 18px !important;
+                background-image: url('data:image/svg+xml,<svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="%23000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>close [%231511]</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)" fill="%23ff5100"><g id="icons" transform="translate(56.000000, 160.000000)"><polygon id="close-[%231511]" points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"></polygon></g></g></g></g></svg>') !important;
+            }
+        }
+        
+        .quote-edit-container {
+            .quote-edit-information {
+                width: 47.8% !important;
+                padding-left: 25px !important;
+                padding-right: 17px !important;
+                
+                .body-container {
+                    .form-title {
+                        font-size: 16px !important;
+                        text-transform: uppercase !important;
+                        color: #232323 !important;
+                        line-height: 25px !important;
+                        font-weight: bold !important;
+                        letter-spacing: 0 !important;
+                    }
+                    
+                    .form-field {
+                        width: calc(50% - 6px) !important;
+                        
+                        &:nth-child(even) {
+                            margin-right: 12px !important;
+                        }
+                        
+                        .form-label {
+                            color: 12px !important;
+                            line-height: 18px !important;
+                            color: #232323 !important;
+                            font-weight: 600 !important;
+                        }
+                        
+                        .form-input {
+                            border-color: #232323 !important;
+                            max-height: 40px !important;
+                        }
+                        
+                        select {
+                            border-radius: 0 !important;
+                            border-color: #232323 !important;
+                        }
+                        
+                    }
+                    
+                    .form-divide {
+                        background: #EFEFEF !important;
+                        margin-top: 20px !important;
+                    }
+                }
+                
+                .message-container {
+                    textarea {
+                        border-radius: 0 !important;
+                        border-color: #232323 !important;
+                    }
+                }
+            }
+            
+            .quote-edit-item {
+                width: 52.2% !important;
+                
+                
+                .products-search-container {
+                    padding-top: 15px !important;
+                    justify-content: flex-start !important;
+                    padding-left: 29px !important;
+                    padding-right: 25px !important;
+                    height: 55px !important;
+                    
+                    > p {
+                        font-size: 12px !important;
+                        letter-spacing: 0 !important;
+                        line-height: 18px !important;
+                        font-weight: 600 !important;
+                        white-space: nowrap !important;
+                    }
+                    
+                    .search-input-container {
+                        max-height: 40px !important;
+                        width: 100% !important;
+                        
+                        .form-products-input {
+                            width: 100% !important;
+                            padding-left: 19px !important;
+                            font-size: 12px !important;
+                            letter-spacing: 0 !important;
+                            line-height: 18px !important;
+                            font-weight: 600 !important;
+                            color: #232323 !important;
+                            
+                            &::placeholder {
+                                font-size: 12px !important;
+                                letter-spacing: 0 !important;
+                                line-height: 18px !important;
+                                font-weight: 600 !important;
+                                color: #232323 !important;
+                            }
+                        }
+                        
+                        .searchBtn-container {
+                            position: relative !important;
+                            
+                            .button {
+                                position: absolute !important;
+                                right: 0 !important;
+                                top: 5px !important;
+                                right: 12px !important;
+                                font-size: 0 !important;
+                                background-image: url('data:image/svg+xml,<svg fill="%23ff5100" width="64px" height="64px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1458.948 1305.626c104.637-136.95 167.527-307.187 167.527-492.388C1626.475 364.764 1261.711 0 813.238 0 364.764 0 0 364.764 0 813.238c0 448.473 364.764 813.237 813.238 813.237 185.201 0 355.547-62.89 492.496-167.527L1766.678 1920 1920 1766.678l-461.052-461.052Zm-645.71 103.986c-328.874 0-596.375-267.61-596.375-596.374 0-328.765 267.501-596.375 596.375-596.375 328.873 0 596.374 267.61 596.374 596.375s-267.501 596.374-596.374 596.374Z" fill-rule="evenodd"></path></g></svg>') !important;
+                                width: 25px !important;
+                                height: 25px !important;
+                                background-size: contain !important;
+                                border-left-color: transparent !important;
+                                margin: 0 !important ;
+                                height: 100% !important ;
+                                background-repeat: no-repeat !important;
+                            }
+                        }
+                    }
+                }
+                
+                .products-container {
+                    h4 {
+                        text-transform: uppercase !important;
+                    
+                    }
+                    p.text-center {
+                        height: 342px !important;
+                        border: 1px solid #000000 !important;
+                        margin-top: 0 !important;
+                        color: #232323 !important;
+                        font-weight: 600 !important;
+                        padding-top: 14px !important;
+                    }
+                }
+                
+                .quote-submit-container {
+                    padding-right: 25px !important;
+                    padding-bottom: 32px !important;
+                    .button {
+                        margin-right: 0 !important;
+                        margin-bottom: 0 !important;
+                        width: 147px !important;
+                        height: 48px !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        background: #ff5100 !important;
+                        border: none !important;
+                        color: #232323 !important;
+                        font-size: 12px !important;
+                        letter-spacing: 0.84px !important;
+                        line-height: 18px !important;
+                        font-weight: 600 !important;
+                    }
+                }
+            }
+        }
+    }
+}

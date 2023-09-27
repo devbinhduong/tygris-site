@@ -122,6 +122,10 @@ export default class Auth extends PageManager {
         const $password2Element = $(password2Selector);
 
         createAccountValidator.add(validationModel);
+        
+        /* BundleB2B */
+        window.createAccountValidator = createAccountValidator;
+        /* BundleB2B */
 
         if ($stateElement) {
             let $last;
