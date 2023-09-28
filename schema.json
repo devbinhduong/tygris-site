@@ -891,188 +891,189 @@
       },
       {
         "type": "heading",
-        "content": "Products"
+        "content": "Banner Below Carousel"
       },
       {
-        "type": "select",
-        "label": "Number Of Featured Products",
-        "id": "homepage_featured_products_count",
-        "force_reload": true,
-        "options": [
-          {
-            "value": 0,
-            "label": "Disable"
-          },
-          {
-            "value": 1,
-            "label": "1"
-          },
-          {
-            "value": 2,
-            "label": "2"
-          },
-          {
-            "value": 3,
-            "label": "3"
-          },
-          {
-            "value": 4,
-            "label": "4"
-          },
-          {
-            "value": 5,
-            "label": "5"
-          },
-          {
-            "value": 6,
-            "label": "6"
-          },
-          {
-            "value": 7,
-            "label": "7"
-          },
-          {
-            "value": 8,
-            "label": "8"
-          },
-          {
-            "value": 9,
-            "label": "9"
-          },
-          {
-            "value": 10,
-            "label": "10"
-          },
-          {
-            "value": 11,
-            "label": "11"
-          },
-          {
-            "value": 12,
-            "label": "12"
-          }
-        ]
+        "type": "text",
+        "label": "Banner Title",
+        "id": "belowCarousel_banner_title"
       },
       {
-        "type": "select",
-        "label": "Number Of Most Popular Products",
-        "id": "homepage_top_products_count",
-        "force_reload": true,
-        "options": [
-          {
-            "value": 0,
-            "label": "Disable"
-          },
-          {
-            "value": 1,
-            "label": "1"
-          },
-          {
-            "value": 2,
-            "label": "2"
-          },
-          {
-            "value": 3,
-            "label": "3"
-          },
-          {
-            "value": 4,
-            "label": "4"
-          },
-          {
-            "value": 5,
-            "label": "5"
-          },
-          {
-            "value": 6,
-            "label": "6"
-          },
-          {
-            "value": 7,
-            "label": "7"
-          },
-          {
-            "value": 8,
-            "label": "8"
-          },
-          {
-            "value": 9,
-            "label": "9"
-          },
-          {
-            "value": 10,
-            "label": "10"
-          },
-          {
-            "value": 11,
-            "label": "11"
-          },
-          {
-            "value": 12,
-            "label": "12"
-          }
-        ]
+        "type": "input",
+        "label": "Banner Text",
+        "id": "belowCarousel_banner_text"
       },
       {
-        "type": "select",
-        "label": "Number Of New Products",
-        "id": "homepage_new_products_count",
-        "force_reload": true,
-        "options": [
-          {
-            "value": 0,
-            "label": "Disable"
-          },
-          {
-            "value": 1,
-            "label": "1"
-          },
-          {
-            "value": 2,
-            "label": "2"
-          },
-          {
-            "value": 3,
-            "label": "3"
-          },
-          {
-            "value": 4,
-            "label": "4"
-          },
-          {
-            "value": 5,
-            "label": "5"
-          },
-          {
-            "value": 6,
-            "label": "6"
-          },
-          {
-            "value": 7,
-            "label": "7"
-          },
-          {
-            "value": 8,
-            "label": "8"
-          },
-          {
-            "value": 9,
-            "label": "9"
-          },
-          {
-            "value": 10,
-            "label": "10"
-          },
-          {
-            "value": 11,
-            "label": "11"
-          },
-          {
-            "value": 12,
-            "label": "12"
-          }
-        ]
+        "type": "text",
+        "label": "Banner Button Text",
+        "id": "belowCarousel_button_text"
+      },
+      {
+        "type": "text",
+        "label": "Banner Button Link",
+        "id": "belowCarousel_button_link"
+      },
+      {
+        "type":"heading",
+        "content": "Home Section 4 Banner"
+      },
+      {
+        "type": "text",
+        "label": "Item 1 Image",
+        "id": "home_section_4_banner_item_1_image"
+      },
+      {
+        "type": "text",
+        "label": "Item 1 Link",
+        "id": "home_section_4_banner_item_1_link"
+      },
+      {
+        "type": "text",
+        "label": "Item 2 Image",
+        "id": "home_section_4_banner_item_2_image"
+      },
+      {
+        "type": "text",
+        "label": "Item 2 Link",
+        "id": "home_section_4_banner_item_2_link"
+      },
+      {
+        "type": "text",
+        "label": "Item 3 Image",
+        "id": "home_section_4_banner_item_3_image"
+      },
+      {
+        "type": "text",
+        "label": "Item 3 Link",
+        "id": "home_section_4_banner_item_3_link"
+      },
+      {
+        "type": "text",
+        "label": "Item 4 Image",
+        "id": "home_section_4_banner_item_4_image"
+      },
+      {
+        "type": "text",
+        "label": "Item 4 Link",
+        "id": "home_section_4_banner_item_4_link"
+      },
+      {
+        "type": "heading",
+        "content": "Home Section Product Block"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "products_block_listID_1_title" 
+      },
+      {
+        "type": "text",
+        "label": "Product Ids",
+        "id": "home_product_custom_block_1_list_id" 
+      },
+      {
+        "type": "heading",
+        "content": "Home Section 2 Banner"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "home_2_banner_title"
+      },
+      {
+        "type": "text",
+        "label": "Banner 1 Image",
+        "id": "home_2_banner_item1_image"
+      },
+      {
+        "type": "text",
+        "label": "Banner 1 Link",
+        "id": "home_2_banner_item1_link"
+      },
+      {
+        "type": "text",
+        "label": "Banner 2 Image",
+        "id": "home_2_banner_item2_image"
+      },
+      {
+        "type": "text",
+        "label": "Banner 2 Link",
+        "id": "home_2_banner_item2_link"
+      },
+      {
+        "type": "text",
+        "label": "Banner 3 Image",
+        "id": "home_2_banner_item3_image"
+      },
+      {
+        "type": "text",
+        "label": "Banner 3 Link",
+        "id": "home_2_banner_item3_link"
+      },
+      {
+        "type": "heading",
+        "label": "Home Section Blog"
+      },
+      {
+        "type": "text",
+        "label": "Home Section Blog Title",
+        "id": "home_blog_title"
+      },
+      {
+        "type": "input",
+        "label": "Home Section Blog Description",
+        "id": "home_blog_description"
+      },
+      {
+        "type": "heading",
+        "label": "Banner Global"
+      },
+      {
+        "type": "text",
+        "label": "Banner Global Background",
+        "id": "global_banner_bg"
+      },
+      {
+        "type": "text",
+        "label": "Banner Global Title",
+        "id": "global_banner_heading"
+      },
+      {
+        "type": "input",
+        "label": "Banner Global Text",
+        "id": "global_banner_text"
+      },
+      {
+        "type": "text",
+        "label": "Banner Global Button",
+        "id": "global_banner_button"
+      },
+      {
+        "type": "text",
+        "label": "Banner Global Link",
+        "id": "global_banner_link"
+      },
+
+      {
+        "type": "heading",
+        "label": "Section Testimonial Global"
+      },
+      {
+        "type": "text",
+        "label": "Testimonial Global Title",
+        "id": "global_testimonial_heading"
+      },
+      {
+        "type": "input",
+        "label": "Testimonial Global Item 1",
+        "id": "global_testimonial_item_1"
+      },
+      {
+        "type": "input",
+        "label": "Testimonial Global Item 2",
+        "id": "global_testimonial_item_2"
       }
+      
     ]
   },
   {

@@ -679,3 +679,17 @@ $card-preview-zoom-bottom-offset:       6rem;
     padding-bottom: spacing("single");
     padding-right: spacing("single");
 }
+
+
+/* Cart Preview */
+#cart-preview-dropdown {
+    top: 57px !important;
+    z-index: 9;
+    min-width: 320px;
+}
+
+.navPages-container {
+    @media (min-width: 1025px) {
+        z-index: -1;
+    }
+}
