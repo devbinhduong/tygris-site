@@ -247,6 +247,10 @@
         }
     }
 
+    .footer-logo-image {
+        max-height: 41px;
+    }
+
     &.is-open {
         .footer-info-list {
             @media (max-width: 550px) {
@@ -265,12 +269,27 @@
 
     .custom-footer-intro-image  {
         margin-top: 20px;
+
+        + p {
+            margin-top: -4px;
+            margin-bottom: 14px;
+        }
     }
 
     .custom-footer-form {
         .form-fieldset {
             @media (min-width: 1025px) {
                 max-width: 396px;
+
+                .form-field {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .form-field {
+                @media (max-width: 767px) {
+                    margin-bottom: 16px;
+                }
             }
         }
         .form-prefixPostfix {

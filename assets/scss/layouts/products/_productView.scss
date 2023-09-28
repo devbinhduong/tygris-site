@@ -1074,3 +1074,29 @@
         margin-top: 10px;
     }
 }
+
+/* Change Quick View Product Page */
+.page-type-product {
+    #modal {
+        @media (min-width: 1025px) {
+            max-width: 900px;
+        }
+    }
+    #modal-content {
+        .modal-body {
+            &.quickView {
+                max-width: 100%;
+    
+                .productView {
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .productView-images {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

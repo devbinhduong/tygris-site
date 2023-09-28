@@ -1011,7 +1011,7 @@
       },
       {
         "type": "heading",
-        "label": "Home Section Blog"
+        "content": "Home Section Blog"
       },
       {
         "type": "text",
@@ -1025,7 +1025,7 @@
       },
       {
         "type": "heading",
-        "label": "Banner Global"
+        "content": "Banner Global"
       },
       {
         "type": "text",
@@ -1055,7 +1055,7 @@
 
       {
         "type": "heading",
-        "label": "Section Testimonial Global"
+        "content": "Section Testimonial Global"
       },
       {
         "type": "text",

@@ -173,6 +173,7 @@
 .card {
     .card-figure {
         padding: 0;
+        border: 1px solid #707070;
         .card-img-container::after {
             padding-bottom: 100%;
         }
