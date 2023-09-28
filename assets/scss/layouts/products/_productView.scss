@@ -155,6 +155,7 @@
                 padding: 0;
                 padding-top: 9px;
                 padding-bottom: 9px;
+                width: 100%;
 
                 .productView-thumbnail-link {
                     max-width: 100%;
@@ -489,6 +490,12 @@
         .icon {
             margin-left: 4px;
             float: unset;
+        }
+    }
+
+    &.productView--quickView {
+        .technical-sheet__list {
+            display: none;
         }
     }
 }

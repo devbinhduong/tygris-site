@@ -47,7 +47,7 @@ export default function(context) {
             showLeftSidebar();
         });
 
-        if(body.classList.contains("page-type-category")) {
+        if(body.classList.contains("page-type-category")|| body.classList.contains("page-type-brand") || body.classList.contains("page-type-search")) {
             let facetedSearch = document.querySelectorAll("#facetedSearch-navList"),
                 sidebarContent = document.querySelector(".sidebar-content"),
                 cmsBlockImage = document.querySelectorAll(".custom-category-banner"),
@@ -64,11 +64,11 @@ export default function(context) {
                     }
     
                     /* Append facetedSearch To Sidebar */
-                    sidebarContent.appendChild(facetedSearch[0]);
-                    sidebarContent.appendChild(cmsBlockImage[0]);
+                    sidebarContent?.appendChild(facetedSearch[0]);
+                    sidebarContent?.appendChild(cmsBlockImage[0]);
                 } else {
-                    desktopSidebar.appendChild(facetedSearch[0]);
-                    desktopSidebar.appendChild(cmsBlockImage[0]);
+                    desktopSidebar?.appendChild(facetedSearch[0]);
+                    desktopSidebar?.appendChild(cmsBlockImage[0]);
                 }
             }
 

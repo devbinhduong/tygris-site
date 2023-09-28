@@ -1212,3 +1212,102 @@ body {
         }
     }
 }
+
+/* Modal */
+.modal-content {
+    .modal-header {
+        .modal-header-title {
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+
+    .productView-details {
+        width: 100%;
+        .productView-title{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+
+    .previewCartCheckout-price {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+/* Page */
+.page-type-page {
+    .page {
+        margin-bottom: 50px;
+
+        /* Team Page */
+        &:has(.team-page),
+        &:has(.page-contact-us-layout) {
+            margin-bottom: 0;
+        }
+
+        .page-heading {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}
+
+.page-type-blog,
+.page-type-brand,
+.page-type-cart {
+    .page {
+        margin-bottom: 50px;
+    }
+    .page-heading {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.page-type-product {
+    #previewModal {
+        @media (min-width: 1025px) {
+            width: 100%;
+            max-width: 900px;
+
+            .previewCartCheckout {
+                width: 100%;
+                max-width: 40%
+            }
+
+            .productView {
+                width: 100%;
+                max-width: 60%;
+
+                .productView-image {
+                    width: 100%;
+
+                    .productView-img-container {
+                        &::after {
+                            padding-bottom: 100%;
+                        }
+                    }
+                }
+
+                .productView-details {
+                    margin-top: 20px;
+
+                    .productView-price {
+                        margin-bottom: 0;
+                        font-size: 20px;
+                    }
+
+                    .productView-info {
+                        .productView-info-name{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

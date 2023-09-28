@@ -785,6 +785,15 @@
         "type": "text",
         "label": "Footer Column 2 Link6",
         "id": "footer_column_2_link6"
+      },
+      {
+        "type": "heading",
+        "content": "Footer Column 4"
+      },
+      {
+        "type": "text",
+        "label": "Footer Contact Us Email",
+        "id": "footer-contact-email"
       }
     ]
   },

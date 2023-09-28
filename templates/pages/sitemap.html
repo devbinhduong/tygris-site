@@ -1,31 +1,33 @@
 {{#partial "page"}}
-<h1>{{lang 'sitemap.page_title'}}</h1>
+<h1 class="text-center uppercase">{{lang 'sitemap.page_title'}}</h1>
 
-<ul>
-{{#each sitemap}}
-    <li>
-        <h2>{{label}}</h2>
-        <ul>
-            {{#each body}}
-            <li>
-                <a href="{{url}}">{{label}}</a>
-                {{#if children}}
-                    <ul>
-                    {{#each children}}
-                        {{> components/sitemap/links}}
-                    {{/each}}
-                    </ul>
+<div class="container container-1408">
+    <ul>
+    {{#each sitemap}}
+        <li>
+            <h2>{{label}}</h2>
+            <ul>
+                {{#each body}}
+                <li>
+                    <a href="{{url}}">{{label}}</a>
+                    {{#if children}}
+                        <ul>
+                        {{#each children}}
+                            {{> components/sitemap/links}}
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                </li>
+                {{/each}}
+                {{#if show_all_link}}
+                <li>
+                    <a href="{{subsection_url}}">{{lang 'sitemap.show_all_link'}}</a>
+                </li>
                 {{/if}}
-            </li>
-            {{/each}}
-            {{#if show_all_link}}
-            <li>
-                <a href="{{subsection_url}}">{{lang 'sitemap.show_all_link'}}</a>
-            </li>
-            {{/if}}
-        </ul>
-    </li>
-{{/each}}
-</ul>
+            </ul>
+        </li>
+    {{/each}}
+    </ul>
+</div>
 {{/partial}}
 {{> layout/base}}
