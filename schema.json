@@ -724,77 +724,67 @@
       },
       {
         "type": "heading",
-        "content": "Display Settings"
+        "content": "Footer Column 2"
       },
       {
-        "type": "checkbox",
-        "label": "Show Powered By BigCommerce",
-        "force_reload": true,
-        "id": "show_powered_by"
+        "type": "text",
+        "label": "Footer Column 2 Text1",
+        "id": "footer_column_2_text1"
       },
       {
-        "type": "checkbox",
-        "label": "Show Brands In Footer",
-        "force_reload": true,
-        "id": "shop_by_brand_show_footer"
+        "type": "text",
+        "label": "Footer Column 2 Link1",
+        "id": "footer_column_2_link1"
       },
       {
-        "type": "checkbox",
-        "label": "Show Current Year And",
-        "force_reload": true,
-        "id": "show_copyright_footer"
+        "type": "text",
+        "label": "Footer Column 2 Text2",
+        "id": "footer_column_2_text2"
       },
       {
-        "type": "heading",
-        "content": "Payment Icons"
+        "type": "text",
+        "label": "Footer Column 2 Link2",
+        "id": "footer_column_2_link2"
       },
       {
-        "type": "checkbox",
-        "label": "Show American Express",
-        "force_reload": true,
-        "id": "show_accept_amex"
+        "type": "text",
+        "label": "Footer Column 2 Text3",
+        "id": "footer_column_2_text3"
       },
       {
-        "type": "checkbox",
-        "label": "Show Discover",
-        "force_reload": true,
-        "id": "show_accept_discover"
+        "type": "text",
+        "label": "Footer Column 2 Link3",
+        "id": "footer_column_2_link3"
       },
       {
-        "type": "checkbox",
-        "label": "Show Mastercard",
-        "force_reload": true,
-        "id": "show_accept_mastercard"
+        "type": "text",
+        "label": "Footer Column 2 Text4",
+        "id": "footer_column_2_text4"
       },
       {
-        "type": "checkbox",
-        "label": "Show PayPal",
-        "force_reload": true,
-        "id": "show_accept_paypal"
+        "type": "text",
+        "label": "Footer Column 2 Link4",
+        "id": "footer_column_2_link4"
       },
       {
-        "type": "checkbox",
-        "label": "Show Visa",
-        "force_reload": true,
-        "id": "show_accept_visa"
+        "type": "text",
+        "label": "Footer Column 2 Text5",
+        "id": "footer_column_2_text5"
       },
       {
-        "type": "checkbox",
-        "label": "Show Amazon Pay",
-        "force_reload": true,
-        "id": "show_accept_amazonpay"
+        "type": "text",
+        "label": "Footer Column 2 Link5",
+        "id": "footer_column_2_link5"
       },
       {
-        "type": "checkbox",
-        "label": "Show Google Pay",
-        "force_reload": true,
-        "id": "show_accept_googlepay"
+        "type": "text",
+        "label": "Footer Column 2 Text6",
+        "id": "footer_column_2_text6"
       },
       {
-        "type": "checkbox",
-        "label": "Show Klarna",
-        "force_reload": true,
-        "id": "show_accept_klarna"
+        "type": "text",
+        "label": "Footer Column 2 Link6",
+        "id": "footer_column_2_link6"
       }
     ]
   },
@@ -1077,8 +1067,71 @@
     ]
   },
   {
+    "name": "Category Page",
+    "settings": [
+      {
+        "type": "heading",
+        "content": "Category CMS Block"
+      },
+      {
+        "type": "text",
+        "label": "CMS Image 1",
+        "id": "category_cms_image_1"
+      },
+      {
+        "type": "text",
+        "label": "CMS Image 2",
+        "id": "category_cms_image_2"
+      }
+    ]
+  },
+  {
     "name": "Products",
     "settings": [
+      {
+        "type": "heading",
+        "content": "Ask An Expert"
+      },
+      {
+        "type": "checkbox",
+        "label": "Enable Ask An Expert",
+        "id": "custom_ask_an_expert",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "custom_ask_an_expert_title",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Text 1",
+        "id": "custom_ask_an_expert_desc1",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Text 2",
+        "id": "custom_ask_an_expert_desc2",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Text 3",
+        "id": "custom_ask_an_expert_desc3",
+        "force_reload": true
+      },
+      {
+        "type": "text",
+        "label": "Mail",
+        "id": "custom_ask_an_expert_mailto"
+      },
+      {
+        "type": "text",
+        "label": "Mail Subject",
+        "id": "custom_ask_an_expert_subject_mail"
+      },
       {
         "type": "heading",
         "content": "Product Sale Badges"

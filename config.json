@@ -846,6 +846,20 @@
         "global_testimonial_heading": "What people are saying",
         "global_testimonial_item_1": "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt ut labore et dolore ut.",
         "global_testimonial_item_2": "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt ut labore et dolore ut.",
+        "footer_column_2_text1": "MyTYGRIS",
+        "footer_column_2_link1": "#",
+        "footer_column_2_text2": "Sample Request",
+        "footer_column_2_link2": "#",
+        "footer_column_2_text3": "Order Tracking & Returns",
+        "footer_column_2_link3": "#",
+        "footer_column_2_text4": "Shipping & Returns Policy",
+        "footer_column_2_link4": "#",
+        "footer_column_2_text5": "Terms & Conditions",
+        "footer_column_2_link5": "#",
+        "footer_column_2_text6": "Privacy Policy",
+        "footer_column_2_link6": "#",
+        "category_cms_image_1": "cms-banner-1.png",
+        "category_cms_image_2": "cms-banner-2.png",
         "paymentbuttons-provider-sorting": [
 
         ]
