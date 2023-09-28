@@ -526,6 +526,10 @@ body {
     padding: 0;
     margin-top: 48px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 16px;
+    }
+
     .contact-us__top {
         .contact-us-top__wrapper {
             display: flex;
@@ -744,8 +748,8 @@ body {
 
             @media (max-width: 767px) {
                 flex-direction: column;
-                padding-top: 13px;
-                padding-bottom: 13px;
+                padding-top: 12px;
+                padding-bottom: 12px;
             }
 
             .title__item {
@@ -827,10 +831,6 @@ body {
             width: 100%;
             max-width: 678px;
 
-            @media (max-width: 767px) {
-                border: 1px solid #707070;
-            }
-
             @media (min-width: 1025px) {
                 margin-left: 37px;
             }
@@ -858,6 +858,7 @@ body {
             left: 0;
             right: 0;
             z-index: 9;
+            top: 55px;
 
             .history-banner__item {
                 position: relative;
@@ -972,6 +973,11 @@ body {
             &.revolution__bottom {
                 @media (max-width: 900px) {
                     flex-direction: column-reverse;
+
+                    .block__left {
+                        padding-left: 11px;
+                        padding-right: 11px;
+                    }
                 }
             }
 
@@ -981,7 +987,7 @@ body {
                 width: 100%;
                 
                 @media (min-width: 901px) {
-                    max-width: 650px;
+                    max-width: 678px;
                 }
 
                 @media (max-width: 767px) {
@@ -1006,7 +1012,7 @@ body {
 
                 p {
                     @media (max-width: 500px) {
-                        max-width: 405px
+                        max-width: 405px;
                     }
                 }
 
@@ -1015,11 +1021,20 @@ body {
                     flex-wrap: wrap;
                     margin-left: -2px;
                     margin-right: -2px;
-                    min-height: 427px;
+
+                    @media (min-width: 768px) {
+                        min-height: 427px;
+                    }
 
                     img {
                         width: 50%;
                         padding: 2px;
+
+                        @media (max-width: 500px) {
+                            padding-bottom: 0;
+                            margin-bottom: 2px;
+                            max-height: 133px;
+                        }
                     }
                 }
             }
@@ -1030,7 +1045,7 @@ body {
                 width: 100%;
 
                 @media (min-width: 901px) {
-                    max-width: 677px;
+                    max-width: 714px;
                 }
 
                 @media (max-width: 767px) {
@@ -1058,6 +1073,12 @@ body {
                         &:last-child {
                             margin-bottom: 0;
                         }
+                    }
+                }
+
+                > img {
+                    @media (max-width: 767px) {
+                        min-height: 267px;
                     }
                 }
             }
@@ -1103,12 +1124,30 @@ body {
                 margin-top: 24px;
                 margin-bottom: 16px;
             }
+
+            p {
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .info__banner {
+            img {
+                @media (max-width: 767px) {
+                    min-height: 268px;
+                }
+            }
         }
     }
 
     .team-page__images {
         margin-top: 50px;
         position: relative;
+
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
 
         .image__list {
             overflow: hidden;
@@ -1123,7 +1162,7 @@ body {
             position: absolute;
             top: 50%;
             transform: translateY(calc(-50% - 2px));
-            width: 50%;
+            width: calc(50% - 2px);
             height: calc(33.33333% - 4px);
             padding-left: 75px;
             padding-right: 75px;
