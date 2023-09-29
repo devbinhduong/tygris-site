@@ -798,6 +798,125 @@
     ]
   },
   {
+    "name": "Mega Menu",
+    "settings": [
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 1"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 1 Position",
+        "id": "megamenu_item1"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 1 Image",
+        "id": "megamenu_item1_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 1 Link",
+        "id": "megamenu_item1_link"
+      },
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 2"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 2 Position",
+        "id": "megamenu_item2"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 2 Image",
+        "id": "megamenu_item2_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 2 Link",
+        "id": "megamenu_item2_link"
+      },
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 3"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 3 Position",
+        "id": "megamenu_item3"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 3 Image",
+        "id": "megamenu_item3_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 3 Link",
+        "id": "megamenu_item1_link"
+      },
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 4"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 4 Position",
+        "id": "megamenu_item4"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 4 Image",
+        "id": "megamenu_item4_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 4 Link",
+        "id": "megamenu_item4_link"
+      },
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 5"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 5 Position",
+        "id": "megamenu_item5"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 5 Image",
+        "id": "megamenu_item5_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 5 Link",
+        "id": "megamenu_item5_link"
+      },
+      {
+        "type": "heading",
+        "content": "Mega Menu Item 6"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 6 Position",
+        "id": "megamenu_item6"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 6 Image",
+        "id": "megamenu_item6_img"
+      },
+      {
+        "type": "text",
+        "label": "Mega Menu Item 6 Link",
+        "id": "megamenu_item6_link"
+      }
+    ]
+  },
+  {
     "name": "Home Page",
     "settings": [
       {
@@ -887,6 +1006,35 @@
         "type": "color",
         "label": "Play Pause Button Border",
         "id": "carousel-play-pause-button-borderColor"
+      },
+      {
+        "type": "heading",
+        "content": "Home Carousel Mobile"
+      },
+      {
+        "type": "text",
+        "label": "Mobile Carousel Image 1",
+        "id": "homepage_show_carousel_0_mobile-image"
+      },
+      {
+        "type": "text",
+        "label": "Mobile Carousel Image 2",
+        "id": "homepage_show_carousel_1_mobile-image"
+      },
+      {
+        "type": "text",
+        "label": "Mobile Carousel Image 3",
+        "id": "homepage_show_carousel_2_mobile-image"
+      },
+      {
+        "type": "text",
+        "label": "Mobile Carousel Image 4",
+        "id": "homepage_show_carousel_3_mobile-image"
+      },
+      {
+        "type": "text",
+        "label": "Mobile Carousel Image 5",
+        "id": "homepage_show_carousel_4_mobile-image"
       },
       {
         "type": "heading",

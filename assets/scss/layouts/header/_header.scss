@@ -429,7 +429,7 @@
             align-items: center;
             justify-content: flex-end;
             padding-top: 15px;
-            padding-bottom: 17px;
+            padding-bottom: 16px;
 
             .header-logo--desktop {
                 position: absolute;
@@ -809,6 +809,12 @@
 
                         .header-top__icon {
                             margin-right: 12px;
+
+                            img {
+                                @media (max-width: 1024px) {
+                                    max-width: 15px;
+                                }
+                            }
                         }
 
                         &.navPages-item--account {
@@ -963,5 +969,12 @@
             top: 5px;
             left: 0;
         }
+    }
+}
+
+.previewCartAction {
+    @media (min-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

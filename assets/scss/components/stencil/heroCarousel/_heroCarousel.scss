@@ -255,6 +255,9 @@
 
     .heroCarousel-image-wrapper {
         height: fit-content;
+
+        /* Fix Bug Carousel */
+        overflow: hidden;
         
         .heroCarousel-image {
             @media (max-width: 550px) {

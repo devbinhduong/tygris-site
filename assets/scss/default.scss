@@ -563,3 +563,15 @@ input,
     opacity: 1;
 }
 
+/* Remove Outline */
+[contenteditable="true"]:focus,
+[href]:focus,
+[tabindex]:not([tabindex="-1"]):focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
+}

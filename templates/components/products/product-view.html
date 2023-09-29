@@ -318,10 +318,11 @@
                         {{> components/common/alert/alert-error (lang 'products.sold_out')}}
                     {{/if}}
                 {{/if}}
-
-                {{#if settings.show_wishlist}}
-                    {{> components/common/wishlist-dropdown}}
-                {{/if}}
+                <div class="wish-list-wrapper">
+                    {{#if settings.show_wishlist}}
+                        {{> components/common/wishlist-dropdown}}
+                    {{/if}}
+                </div>
 
             </form>
         </div>
